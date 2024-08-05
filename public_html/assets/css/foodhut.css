@@ -4948,7 +4948,7 @@ input[type="button"].btn-block {
 }
 
 .navbar {
-  position: relative;
+  position: fixed;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12248,6 +12248,7 @@ pre {
 }
 
 .custom-navbar .collapse .navbar-nav:last-child {
+  margin-right: 50px;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
@@ -12291,17 +12292,17 @@ pre {
 }
 
 .affix .navbar-brand .brand-img {
-  -webkit-transform: translateY(-30px);
-  -ms-transform: translateY(-30px);
-  transform: translateY(-30px);
-  opacity: 0;
-  visibility: hidden;
-  width: 50px;
+  width: 84px;
+  display: inline-block;
+  margin: auto;
+  opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .affix .navbar-brand .brand-txt {
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility:visible;
   bottom: 50%;
 }
 
@@ -12353,24 +12354,15 @@ pre {
 
 .header .overlay {
   height: 100%;
-  background: rgba(33, 37, 41, 0.85);
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
+  background: linear-gradient(
+    to bottom, /* Degradado de arriba hacia abajo */
+    rgba(33, 37, 41, 0.85) 0%, /* Color inicial con opacidad */
+    rgba(33, 37, 41, 0) 70%, /* Color con menos opacidad, hacia el final */
+    rgba(33, 37, 41, 0.82) 100% /* Color completamente transparente al final */
+  );
+  display: flex; /* Utiliza solo la sintaxis estándar de flexbox */
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -12411,8 +12403,7 @@ pre {
 }
 
 .has-img-bg {
-  background: url(../imgs/about-section.jpg) no-repeat center center;
-  background-size: cover;
+  background: url(../imgs/blog-1.jpg) no-repeat center center; 
 }
 
 .has-bg-overlay {
@@ -12554,4 +12545,30 @@ video {
 .text-hover:hover {
   color: #dfdff1 !important; /* Color del texto al pasar el mouse */
   border-bottom: 1px solid #dfdff1;
+}
+
+
+#background-video {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Usa 100vh para ocupar toda la altura del viewport */
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantiene la proporción del video y lo cubre completamente */
+  transform: translate(-50%, -50%); /* Centra el video en el contenedor */
+}
+@media (max-width: 600px) {
+  .header {
+      height: 50vh; /* Ajusta la altura en pantallas más pequeñas si es necesario */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header {
+      height: 75vh; /* Ajusta la altura en pantallas medianas si es necesario */
+  }
 }
