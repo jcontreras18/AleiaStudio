@@ -2125,7 +2125,7 @@ pre code {
 }
 
 .table-hover tbody tr:hover {
-  color: #f8f9fa;
+  color: #2475c6;
   background-color: rgba(0, 0, 0, 0.075);
 }
 
@@ -3081,14 +3081,13 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #ff214f;
-  border-color: #ff214f;
-}
+  background-color: #f5f9f353;
+  border-color: #fefffd53;
+} 
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #fa0034;
-  border-color: #ed0031;
+  background-color: #3b3b8f;
 }
 
 .btn-primary:focus,
@@ -12288,8 +12287,7 @@ pre {
 
 .affix {
   min-height: 80px;
-  background: #343a40;
-  border-bottom: 1px solid #495057;
+  background: #030303;
 }
 
 .affix .navbar-brand .brand-img {
@@ -12548,5 +12546,12 @@ video {
   width: 100%;
   height: 100%;
   border: 2px solid #333;
+
   border-radius: 10px;
+}
+
+
+.text-hover:hover {
+  color: #dfdff1 !important; /* Color del texto al pasar el mouse */
+  border-bottom: 1px solid #dfdff1;
 }
