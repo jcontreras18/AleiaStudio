@@ -12260,6 +12260,7 @@ pre {
 }
 
 .navbar-brand .brand-img {
+  margin-left: 21px !important;
   width: 110px;
   display: inline-block;
   margin: auto;
