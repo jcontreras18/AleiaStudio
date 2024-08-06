@@ -12573,3 +12573,15 @@ video {
       height: 75vh; /* Ajusta la altura en pantallas medianas si es necesario */
   }
 }
+
+.carousel-item img {
+  width: 100%;
+  height: 400px; /* Ajusta esta altura según tus necesidades */
+  object-fit: cover;
+}
+/* Asegura que el contenedor esté centrado */
+.carousel-container1 {
+ width: 900px; /* Ajusta el tamaño máximo del carrusel */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
