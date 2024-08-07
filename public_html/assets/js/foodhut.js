@@ -44,3 +44,15 @@ function initMap() {
       map: map
     });
  }
+
+
+ <script>
+document.querySelectorAll('.logo').forEach(logo => {
+    logo.addEventListener('mouseover', function() {
+        this.style.backgroundImage = `url(${this.getAttribute('data-hover')})`;
+    });
+    logo.addEventListener('mouseout', function() {
+        this.style.backgroundImage = '';
+    });
+});
+</script>

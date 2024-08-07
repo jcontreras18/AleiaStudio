@@ -2125,7 +2125,7 @@ pre code {
 }
 
 .table-hover tbody tr:hover {
-  color: #f8f9fa;
+  color: #2475c6;
   background-color: rgba(0, 0, 0, 0.075);
 }
 
@@ -3081,14 +3081,13 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #ff214f;
-  border-color: #ff214f;
-}
+  background-color: #f5f9f353;
+  border-color: #fefffd53;
+} 
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #fa0034;
-  border-color: #ed0031;
+  background-color: #1a1aec43;
 }
 
 .btn-primary:focus,
@@ -4949,7 +4948,7 @@ input[type="button"].btn-block {
 }
 
 .navbar {
-  position: relative;
+  position: fixed;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12249,6 +12248,7 @@ pre {
 }
 
 .custom-navbar .collapse .navbar-nav:last-child {
+  margin-right: 50px;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
@@ -12260,6 +12260,7 @@ pre {
 }
 
 .navbar-brand .brand-img {
+  margin-left: 21px !important;
   width: 110px;
   display: inline-block;
   margin: auto;
@@ -12288,22 +12289,21 @@ pre {
 
 .affix {
   min-height: 80px;
-  background: #343a40;
-  border-bottom: 1px solid #495057;
+  background: #030303;
 }
 
 .affix .navbar-brand .brand-img {
-  -webkit-transform: translateY(-30px);
-  -ms-transform: translateY(-30px);
-  transform: translateY(-30px);
-  opacity: 0;
-  visibility: hidden;
-  width: 50px;
+  width: 84px;
+  display: inline-block;
+  margin: auto;
+  opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .affix .navbar-brand .brand-txt {
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility:visible;
   bottom: 50%;
 }
 
@@ -12330,6 +12330,10 @@ pre {
   object-fit: cover;
   z-index: -1;
   transform: translate(-50%, -50%);
+  border-radius: 3px;
+  filter: blur(2px); /* Desenfoque opcional */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5)!important; /* Sombra difusa para suavizar los bordes */
+  
 }
 .content {
   position: relative;
@@ -12349,30 +12353,23 @@ pre {
 .overlay {
   position: relative;
   z-index: 1;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  pointer-events: none;
   /* Agrega más estilos para el contenido superpuesto aquí */
 }
 
 
 .header .overlay {
   height: 100%;
-  background: rgba(33, 37, 41, 0.85);
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
+  background: linear-gradient(
+    to bottom, /* Degradado de arriba hacia abajo */
+    rgba(33, 37, 41, 0.85) 0%, /* Color inicial con opacidad */
+    rgba(33, 37, 41, 0) 70%, /* Color con menos opacidad, hacia el final */
+    rgba(33, 37, 41, 0.82) 100% /* Color completamente transparente al final */
+  );
+  display: flex; /* Utiliza solo la sintaxis estándar de flexbox */
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -12413,8 +12410,7 @@ pre {
 }
 
 .has-img-bg {
-  background: url(../imgs/about-section.jpg) no-repeat center center;
-  background-size: cover;
+  background: url(../imgs/blog-1.jpg) no-repeat center center; 
 }
 
 .has-bg-overlay {
@@ -12548,5 +12544,110 @@ video {
   width: 100%;
   height: 100%;
   border: 2px solid #333;
+
   border-radius: 10px;
+}
+
+
+.text-hover:hover {
+  color: #dfdff1 !important; /* Color del texto al pasar el mouse */
+  border-bottom: 1px solid #dfdff1;
+}
+
+
+@media (max-width: 600px) {
+  .header {
+      height: 50vh; /* Ajusta la altura en pantallas más pequeñas si es necesario */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header {
+      height: 75vh; /* Ajusta la altura en pantallas medianas si es necesario */
+  }
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 400px; /* Ajusta esta altura según tus necesidades */
+  object-fit: cover;
+}
+/* Asegura que el contenedor esté centrado */
+.carousel-container1 {
+ width: 900px; /* Ajusta el tamaño máximo del carrusel */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.imagen-combinada {
+  position: relative;
+  display: inline-block;
+  transition: filter 0.3s ease; /* Animación suave para el filtro */
+}
+
+.imagen-combinada img {
+  display: block;
+  transition: filter 0.3s ease; /* Animación suave */
+}
+
+.imagen-combinada::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Negro con 30% de opacidad */
+  opacity: 0; /* Inicialmente invisible */
+  transition: opacity 0.3s ease; /* Animación suave */
+  pointer-events: none; /* No bloquear interacción con la imagen */
+}
+
+.imagen-combinada:hover img {
+  filter: brightness(0.6); /* Oscurecer la imagen */
+}
+
+.imagen-combinada:hover::after {
+  opacity: 1; /* Visible al pasar el ratón */
+}
+
+
+/* Contenedor de los logos */
+.logo-container {
+  display: flex;
+  flex-wrap: wrap; /* Para que los logos se ajusten en múltiples filas si es necesario */
+  justify-content: center; /* Centra los logos en la página */
+  gap: 20px; /* Espacio entre logos */
+  padding: 10px; /* Espacio alrededor del contenedor */
+}
+
+/* Estilo de cada logo */
+.logo {
+  width: 110px; /* Tamaño inicial del logo */
+  height: auto; /* Mantiene la proporción del logo */
+  opacity: 0.5; /* Opacidad por defecto para los logos */
+  transition: opacity 0.3s, background-color 0.3s; /* Transiciones para efectos suaves */
+  display: block; /* Hace que las imágenes se comporten como bloques */
+  background-size: cover; /* Asegura que la imagen de fondo cubra el logo */
+  background-position: center; /* Centra la imagen de fondo */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el logo */
+}
+
+/* Efecto al pasar el ratón sobre el logo */
+.logo:hover {
+  opacity: 1; /* Hace el logo completamente visible al pasar el ratón */
+  background-image: url("hover1.png"); /* Cambia la imagen de fondo */
+  background-blend-mode: lighten; /* Mezcla la imagen de fondo con el color de fondo */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+  .logo {
+      width: 80px; /* Tamaño del logo más pequeño en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+      width: 60px; /* Tamaño del logo aún más pequeño en pantallas muy pequeñas */
+  }
 }
