@@ -56,3 +56,15 @@ document.querySelectorAll('.logo').forEach(logo => {
     });
 });
 </script>
+
+window.addEventListener('scroll', function() {
+    var iconContainer = document.getElementById('icon-container');
+    var startScroll = 100; // Punto inicial en píxeles donde los íconos aparecen
+    var endScroll = 300;   // Punto final en píxeles donde los íconos desaparecen
+  
+    if (window.scrollY >= startScroll && window.scrollY <= endScroll) {
+      iconContainer.style.display = 'block';
+    } else {
+      iconContainer.style.display = 'none';
+    }
+  });
