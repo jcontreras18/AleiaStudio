@@ -46,17 +46,6 @@ function initMap() {
  }
 
 
- <script>
-document.querySelectorAll('.logo').forEach(logo => {
-    logo.addEventListener('mouseover', function() {
-        this.style.backgroundImage = `url(${this.getAttribute('data-hover')})`;
-    });
-    logo.addEventListener('mouseout', function() {
-        this.style.backgroundImage = '';
-    });
-});
-</script>
-
 window.addEventListener('scroll', function() {
     var iconContainer = document.getElementById('icon-container');
     var startScroll = 100; // Punto inicial en píxeles donde los íconos aparecen
@@ -68,3 +57,10 @@ window.addEventListener('scroll', function() {
       iconContainer.style.display = 'none';
     }
   });
+  $(window).scroll(function(){
+    if($(document).scrollTop()>=$(document).height()/5)
+        $("#spopup").show("slow");else $("#spopup").hide("slow");
+});
+function closeSPopup(){
+    $('#spopup').hide('slow');
+}
