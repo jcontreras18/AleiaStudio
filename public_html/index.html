@@ -306,16 +306,38 @@
         <img src="assets/imgs/Redes/X_b.png" class="social-icon">
     </a> -->
     </div>
-
-    <div id="spopup" style="display: none;">
-        <!--close button-->
-        <a style="position:absolute;top:14px;right:10px;color:#b13b3b;font-size:10px;font-weight:bold;" href="javascript:void(0);" onclick="return closeSPopup();">
-            <img src="assets/imgs/Redes/whatsapp_b.png" width="18" height="18"/>
-        </a>
-        <!--inserta el contenido del popup aqui-->
+    <div id="whatsapp-widget" class="whatsapp-widget">
+        <div class="whatsapp-button" id="whatsapp-button">
+            <div class="whatsapp-tooltip">Nuestras redes sociales</div>
+            <div class="whatsapp-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 14.06c0-.056.003-.113.006-.169.287-3.644-1.313-6.33-3.268-8.034-1.994-1.723-4.567-2.916-7.274-2.916-2.59 0-5.04.795-7.14 2.19L2 5l1 5 4-1L7 5c1.774-1.57 4.11-2.527 6.458-2.527 5.4 0 9.694 3.627 10.077 8.337.158 1.91-.08 3.71-.64 5.356-.274.715-.627 1.418-1.062 2.032-.416.584-.903 1.126-1.434 1.614-.044.037-.083.078-.128.115L21 14.06z" fill="#030303"/>
+                </svg>
+            </div>
+        </div>
+        <div class="whatsapp-popup" id="whatsapp-popup">
+            <div class="whatsapp-popup-header">
+                <div class="whatsapp-popup-title">Comenzar una conversación</div>
+                <div class="whatsapp-popup-description">¡Hola! Uno de nuestros asesores te atenderá. Haz click en el botón de abajo para empezar a chatear</div>
+            </div>
+            <div class="whatsapp-popup-body">
+                <div class="whatsapp-popup-notice">El equipo suele responder en unos minutos.</div>
+                <a href="https://api.whatsapp.com/send?phone=573213260498" target="_blank" rel="nofollow noopener noreferrer" class="whatsapp-contact">
+                    <div class="whatsapp-contact-avatar">
+                        <a href="https://web.whatsapp.com/" target="_blank" class="social-link">
+                            <img src="assets/imgs/Redes/whatsapp_b.png" class="social-icon">
+                        </a>
+                       
+                    </div>
+                    <div class="whatsapp-contact-info">
+                        <div class="whatsapp-contact-name">Nombre</div>
+                        <div class="whatsapp-contact-action">Haz click aquí</div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
-
-    <script src="//http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script.js"></script>
     <!-- page footer -->
     <footer class="footer fot py-4">
         <div class="container">

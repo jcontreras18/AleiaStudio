@@ -46,21 +46,8 @@ function initMap() {
  }
 
 
-window.addEventListener('scroll', function() {
-    var iconContainer = document.getElementById('icon-container');
-    var startScroll = 100; // Punto inicial en píxeles donde los íconos aparecen
-    var endScroll = 300;   // Punto final en píxeles donde los íconos desaparecen
-  
-    if (window.scrollY >= startScroll && window.scrollY <= endScroll) {
-      iconContainer.style.display = 'block';
-    } else {
-      iconContainer.style.display = 'none';
-    }
-  });
-  $(window).scroll(function(){
-    if($(document).scrollTop()>=$(document).height()/5)
-        $("#spopup").show("slow");else $("#spopup").hide("slow");
+// Funcionalidad del botón de WhatsApp
+document.getElementById('whatsapp-button').addEventListener('click', function() {
+    const popup = document.getElementById('whatsapp-popup');
+    popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
 });
-function closeSPopup(){
-    $('#spopup').hide('slow');
-}
