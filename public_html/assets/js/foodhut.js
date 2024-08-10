@@ -45,9 +45,8 @@ function initMap() {
     });
  }
 
-
-// Funcionalidad del botón de WhatsApp
-document.getElementById('whatsapp-button').addEventListener('click', function() {
-    const popup = document.getElementById('whatsapp-popup');
-    popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
-});
+ document.querySelector('.whatsapp-button').addEventListener('click', function() {
+    const socialIconsContainer = document.querySelector('.social-icons-container');
+    socialIconsContainer.classList.toggle('show');
+  });
+  
