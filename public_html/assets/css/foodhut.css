@@ -3083,7 +3083,7 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #f5f9f353;
   border-color: #fefffd53;
-} 
+}
 
 .btn-primary:hover {
   color: #fff;
@@ -12216,7 +12216,7 @@ pre {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  
+
 }
 
 .navbar-brand {
@@ -12267,12 +12267,12 @@ pre {
 
 .affix .navbar-brand .brand-txt {
   opacity: 0;
-  visibility:visible;
+  visibility: visible;
   bottom: 50%;
 }
 
 .colornegro {
-  background-color: #030303!important;
+  background-color: #030303 !important;
 }
 
 .header {
@@ -12289,6 +12289,7 @@ pre {
   height: 100%;
   overflow: hidden;
 }
+
 #background-video {
   position: absolute;
   top: 50%;
@@ -12299,10 +12300,13 @@ pre {
   z-index: -1;
   transform: translate(-50%, -50%);
   border-radius: 3px;
-  filter: blur(2px); /* Desenfoque opcional */
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5)!important; /* Sombra difusa para suavizar los bordes */
-  
+  filter: blur(2px);
+  /* Desenfoque opcional */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5) !important;
+  /* Sombra difusa para suavizar los bordes */
+
 }
+
 .content {
   position: relative;
   z-index: 1;
@@ -12323,13 +12327,17 @@ pre {
 
 .header .overlay {
   height: 100%;
-  background: linear-gradient(
-    to bottom, /* Degradado de arriba hacia abajo */
-    rgba(33, 37, 41, 0.32) 0%, /* Color inicial con opacidad */
-    rgba(33, 37, 41, 0) 70%, /* Color con menos opacidad, hacia el final */
-    rgba(33, 37, 41, 0.18) 100% /* Color completamente transparente al final */
-  );
-  display: flex; /* Utiliza solo la sintaxis estándar de flexbox */
+  background: linear-gradient(to bottom,
+      /* Degradado de arriba hacia abajo */
+      rgba(33, 37, 41, 0.32) 0%,
+      /* Color inicial con opacidad */
+      rgba(33, 37, 41, 0) 70%,
+      /* Color con menos opacidad, hacia el final */
+      rgba(33, 37, 41, 0.18) 100%
+      /* Color completamente transparente al final */
+    );
+  display: flex;
+  /* Utiliza solo la sintaxis estándar de flexbox */
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -12372,7 +12380,7 @@ pre {
 }
 
 .has-img-bg {
-  background: url(../imgs/blog-1.jpg) no-repeat center center; 
+  background: url(../imgs/blog-1.jpg) no-repeat center center;
 }
 
 .has-bg-overlay {
@@ -12512,43 +12520,52 @@ video {
 
 
 .text-hover:hover {
-  color: #dfdff1 !important; /* Color del texto al pasar el mouse */
+  color: #dfdff1 !important;
+  /* Color del texto al pasar el mouse */
   border-bottom: 1px solid #dfdff1;
 }
 
 
 @media (max-width: 600px) {
   .header {
-      height: 50vh; /* Ajusta la altura en pantallas más pequeñas si es necesario */
+    height: 50vh;
+    /* Ajusta la altura en pantallas más pequeñas si es necesario */
   }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
   .header {
-      height: 75vh; /* Ajusta la altura en pantallas medianas si es necesario */
+    height: 75vh;
+    /* Ajusta la altura en pantallas medianas si es necesario */
   }
 }
 
 .carousel-item img {
   width: 100%;
-  height: 400px; /* Ajusta esta altura según tus necesidades */
+  height: 400px;
+  /* Ajusta esta altura según tus necesidades */
   object-fit: cover;
 }
+
 /* Asegura que el contenedor esté centrado */
 .carousel-container1 {
- width: 900px; /* Ajusta el tamaño máximo del carrusel */
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  width: 900px;
+  /* Ajusta el tamaño máximo del carrusel */
+  margin: 0 auto;
+  /* Centra el contenedor horizontalmente */
 }
 
 .imagen-combinada {
   position: relative;
   display: inline-block;
-  transition: filter 0.3s ease; /* Animación suave para el filtro */
+  transition: filter 0.3s ease;
+  /* Animación suave para el filtro */
 }
 
 .imagen-combinada img {
   display: block;
-  transition: filter 0.3s ease; /* Animación suave */
+  transition: filter 0.3s ease;
+  /* Animación suave */
 }
 
 .imagen-combinada::after {
@@ -12558,222 +12575,181 @@ video {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3); /* Negro con 30% de opacidad */
-  opacity: 0; /* Inicialmente invisible */
-  transition: opacity 0.3s ease; /* Animación suave */
-  pointer-events: none; /* No bloquear interacción con la imagen */
+  background: rgba(0, 0, 0, 0.3);
+  /* Negro con 30% de opacidad */
+  opacity: 0;
+  /* Inicialmente invisible */
+  transition: opacity 0.3s ease;
+  /* Animación suave */
+  pointer-events: none;
+  /* No bloquear interacción con la imagen */
 }
 
 .imagen-combinada:hover img {
-  filter: brightness(0.6); /* Oscurecer la imagen */
+  filter: brightness(0.6);
+  /* Oscurecer la imagen */
 }
 
 .imagen-combinada:hover::after {
-  opacity: 1; /* Visible al pasar el ratón */
+  opacity: 1;
+  /* Visible al pasar el ratón */
 }
 
 
 /* Contenedor de los logos */
 .logo-container {
   display: flex;
-  flex-wrap: wrap; /* Para que los logos se ajusten en múltiples filas si es necesario */
-  justify-content: center; /* Centra los logos en la página */
-  gap: 20px; /* Espacio entre logos */
-  padding: 80px; /* Espacio alrededor del contenedor */
+  flex-wrap: wrap;
+  /* Para que los logos se ajusten en múltiples filas si es necesario */
+  justify-content: center;
+  /* Centra los logos en la página */
+  gap: 20px;
+  /* Espacio entre logos */
+  padding: 80px;
+  /* Espacio alrededor del contenedor */
 }
 
 /* Estilo de cada logo */
 .logo {
-  width: 110px; /* Tamaño inicial del logo */
-  height: auto; /* Mantiene la proporción del logo */
-  opacity: 0.5; /* Opacidad por defecto para los logos */
-  transition: opacity 0.3s, background-color 0.3s; /* Transiciones para efectos suaves */
-  display: block; /* Hace que las imágenes se comporten como bloques */
-  background-size: cover; /* Asegura que la imagen de fondo cubra el logo */
-  background-position: center; /* Centra la imagen de fondo */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el logo */
+  width: 110px;
+  /* Tamaño inicial del logo */
+  height: auto;
+  /* Mantiene la proporción del logo */
+  opacity: 0.5;
+  /* Opacidad por defecto para los logos */
+  transition: opacity 0.3s, background-color 0.3s;
+  /* Transiciones para efectos suaves */
+  display: block;
+  /* Hace que las imágenes se comporten como bloques */
+  background-size: cover;
+  /* Asegura que la imagen de fondo cubra el logo */
+  background-position: center;
+  /* Centra la imagen de fondo */
+  cursor: pointer;
+  /* Cambia el cursor al pasar sobre el logo */
 }
 
 /* Efecto al pasar el ratón sobre el logo */
 .logo:hover {
-  opacity: 1; /* Hace el logo completamente visible al pasar el ratón */
-  background-image: url("hover1.png"); /* Cambia la imagen de fondo */
-  background-blend-mode: lighten; /* Mezcla la imagen de fondo con el color de fondo */
+  opacity: 1;
+  /* Hace el logo completamente visible al pasar el ratón */
+  background-image: url("hover1.png");
+  /* Cambia la imagen de fondo */
+  background-blend-mode: lighten;
+  /* Mezcla la imagen de fondo con el color de fondo */
 }
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 600px) {
   .logo {
-      width: 80px; /* Tamaño del logo más pequeño en pantallas pequeñas */
+    width: 80px;
+    /* Tamaño del logo más pequeño en pantallas pequeñas */
   }
 }
 
 @media (max-width: 400px) {
   .logo {
-      width: 60px; /* Tamaño del logo aún más pequeño en pantallas muy pequeñas */
+    width: 60px;
+    /* Tamaño del logo aún más pequeño en pantallas muy pequeñas */
   }
 }
 
 /* Contenedor de redes sociales */
 .social-container {
-  position: fixed; /* Mantiene el contenedor fijo en el lado derecho */
-  right: 0; /* Alinea el contenedor al lado derecho */
-  top: 50%; /* Centra verticalmente en la pantalla */
-  transform: translateY(-50%); /* Ajusta la posición verticalmente para centrarlo */
+  position: fixed;
+  /* Mantiene el contenedor fijo en el lado derecho */
+  right: 0;
+  /* Alinea el contenedor al lado derecho */
+  top: 50%;
+  /* Centra verticalmente en la pantalla */
+  transform: translateY(-50%);
+  /* Ajusta la posición verticalmente para centrarlo */
   display: flex;
-  flex-direction: column; /* Alinea los íconos en columna */
-  gap: 20px; /* Espacio entre los íconos */
+  flex-direction: column;
+  /* Alinea los íconos en columna */
+  gap: 20px;
+  /* Espacio entre los íconos */
   padding: 10px;
-  background-color: transparent; /* Fondo transparente */
-  border-radius: 0; /* Sin bordes redondeados */
+  background-color: transparent;
+  /* Fondo transparente */
+  border-radius: 0;
+  /* Sin bordes redondeados */
   margin-right: 50px;
 }
 
 /* Estilo de los enlaces de redes sociales */
 .social-link {
   display: block;
-  transition: opacity 0.3s, transform 0.3s; /* Transiciones suaves */
+  transition: opacity 0.3s, transform 0.3s;
+  /* Transiciones suaves */
 }
 
 /* Estilo de los íconos de redes sociales */
 .social-icon {
-  width: 35px; /* Tamaño del ícono */
-  height: auto; /* Mantiene la proporción del ícono */
-  opacity: 0.8; /* Opacidad por defecto */
-  transition: opacity 0.3s, transform 0.3s; /* Transiciones suaves */
+  width: 35px;
+  /* Tamaño del ícono */
+  height: auto;
+  /* Mantiene la proporción del ícono */
+  opacity: 0.8;
+  /* Opacidad por defecto */
+  transition: opacity 0.3s, transform 0.3s;
+  /* Transiciones suaves */
 }
 
 /* Efecto al pasar el ratón sobre los íconos */
 .social-link:hover .social-icon {
-  opacity: 1; /* Hace el ícono completamente visible al pasar el ratón */
-  transform: scale(1.1); /* Escalar ligeramente el ícono al pasar el ratón */
+  opacity: 1;
+  /* Hace el ícono completamente visible al pasar el ratón */
+  transform: scale(1.1);
+  /* Escalar ligeramente el ícono al pasar el ratón */
 }
 
 /* Efecto al hacer clic en los íconos */
 .social-link:active .social-icon {
-  transform: scale(1.2); /* Agrandar el ícono al hacer clic */
-  opacity: 1; /* Mantener la opacidad completamente visible al hacer clic */
+  transform: scale(1.2);
+  /* Agrandar el ícono al hacer clic */
+  opacity: 1;
+  /* Mantener la opacidad completamente visible al hacer clic */
 }
 
 /* Estilos del popup */
 
-  /* Estilos para el widget */
-        .whatsapp-widget {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
-        .whatsapp-button {
-            display: flex;
-            align-items: center;
-            background-color: #25D366;
-            border-radius: 50%;
-            padding: 10px;
-            cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            position: relative;
-            margin-right: 50px;
-        }
-        .whatsapp-tooltip {
-            display: none;
-            position: absolute;
-            bottom: 100%;
-            right: 50%;
-            transform: translateX(50%);
-            background-color: #333;
-            color: #fff;
-            padding: 5px 10px;
-            border-radius: 4px;
-            white-space: nowrap;
-            font-size: 12px;
-            margin-bottom: 5px;
-        }
-        .whatsapp-button:hover .whatsapp-tooltip {
-            display: block;
-        }
-        .whatsapp-popup {
-            display: none;
-            position: absolute;
-            bottom: 60px;
-            right: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            width: 300px;
-            z-index: 1001;
-        }
-        .whatsapp-popup-header {
-            background-color: #25D366;
-            color: #fff;
-            padding: 10px;
-            border-radius: 8px 8px 0 0;
-        }
-        .whatsapp-popup-title {
-            font-weight: bold;
-        }
-        .whatsapp-popup-description {
-            font-size: 14px;
-        }
-        .whatsapp-popup-body {
-            padding: 10px;
-        }
-        .whatsapp-popup-notice {
-            font-size: 12px;
-            color: #666;
-            margin-bottom: 10px;
-        }
-        .whatsapp-contact {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: inherit;
-        }
-        .whatsapp-contact-avatar {
-            margin-right: 10px;
-        }
-        .whatsapp-contact-info {
-            flex: 1;
-        }
-        .whatsapp-contact-name {
-            font-weight: bold;
-        }
-        .whatsapp-contact-action {
-            font-size: 14px;
-            color: #25D366;
-        }
-        /* Estilos para el modal de redes sociales */
-        .social-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            justify-content: center;
-            align-items: center;
-        }
-        .social-modal-content {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            position: relative;
-            width: 300px;
-        }
-        .social-modal-content img {
-            width: 40px;
-            height: 40px;
-            margin: 0 10px;
-        }
-        .social-modal-close {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-            font-size: 20px;
-        }
+
+/* Estilos para el modal de redes sociales */
+.social-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.social-modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  width: 300px;
+}
+
+.social-modal-content img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+.social-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
 
 .fot {
   background-color: #353a40 !important;
@@ -12790,7 +12766,8 @@ video {
   margin-bottom: 15px;
 }
 
-.footer p, .footer a {
+.footer p,
+.footer a {
   color: #bbb;
   margin-bottom: 10px;
 }
@@ -12816,27 +12793,140 @@ video {
 /* Estilo Responsive */
 @media (max-width: 768px) {
   .social {
-      justify-content: center;
+    justify-content: center;
   }
 
   .social-icon img {
-      width: 35px;
-      height: 35px;
+    width: 35px;
+    height: 35px;
   }
 }
 
 @media (max-width: 480px) {
-  .social{
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
+  .social {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   .social-icon img {
-      width: 30px;
-      height: 30px;
+    width: 30px;
+    height: 30px;
   }
 }
+
 .e- {
   letter-spacing: 9px;
+}
+
+/* Estilos para el widget */
+.whatsapp-widget {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1000;
+}
+
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el icono */
+  background-color: #25D366;
+  border-radius: 50%;
+  padding: 15px; /* Aumenta el padding para un botón más grande */
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta la sombra para mayor impacto */
+  position: relative;
+  margin-right: 50px;
+  transition: transform 0.3s ease; /* Añade una animación de transformación */
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1); /* Agranda el botón al pasar el mouse */
+}
+
+.whatsapp-icon {
+  font-size: 32px; /* Aumenta el tamaño del icono */
+  color: #fff;
+}
+
+.whatsapp-tooltip {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px; /* Aumenta el padding del tooltip */
+  border-radius: 6px; /* Redondea más los bordes */
+  white-space: nowrap;
+  font-size: 14px; /* Aumenta el tamaño del texto */
+  margin-bottom: 8px; /* Aumenta el margen inferior */
+}
+
+.whatsapp-button:hover .whatsapp-tooltip {
+  display: block;
+}
+
+.whatsapp-popup {
+  display: none;
+  position: absolute;
+  bottom: 70px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta la sombra para mayor impacto */
+  width: 320px; /* Aumenta el ancho del popup */
+  z-index: 1001;
+}
+
+.whatsapp-popup-header {
+  background-color: #25D366;
+  color: #fff;
+  padding: 15px; /* Aumenta el padding del header */
+  border-radius: 8px 8px 0 0;
+}
+
+.whatsapp-popup-title {
+  font-weight: bold;
+  font-size: 16px; /* Aumenta el tamaño del título */
+}
+
+.whatsapp-popup-description {
+  font-size: 14px;
+}
+
+.whatsapp-popup-body {
+  padding: 15px; /* Aumenta el padding del cuerpo */
+}
+
+.whatsapp-popup-notice {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.whatsapp-contact {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.whatsapp-contact-avatar {
+  margin-right: 10px;
+}
+
+.whatsapp-contact-info {
+  flex: 1;
+}
+
+.whatsapp-contact-name {
+  font-weight: bold;
+}
+
+.whatsapp-contact-action {
+  font-size: 14px;
+  color: #25D366;
 }
