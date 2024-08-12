@@ -38,6 +38,8 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
+  --font-family: 'Gotham-Thin';
+  font-family: 'Laginchy', sans-serif;   
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -394,7 +396,7 @@ h6,
 .h5,
 .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Gotham-Thin', sans-serif;         
   font-weight: 500;
   line-height: 1.2;
 }
@@ -3087,7 +3089,7 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #088dfab4;
+  background-color: #2AB9D4;
 }
 
 .btn-primary:focus,
@@ -3785,25 +3787,7 @@ input[type="button"].btn-block {
   margin-left: 0;
 }
 
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  float: left;
-  min-width: 10rem;
-  padding: 0.5rem 0;
-  margin: 0.125rem 0 0;
-  font-size: 1rem;
-  color: #f8f9fa;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.2rem;
-}
+
 
 .dropdown-menu-left {
   right: auto;
@@ -3949,73 +3933,6 @@ input[type="button"].btn-block {
   vertical-align: 0;
 }
 
-.dropdown-menu[x-placement^="top"],
-.dropdown-menu[x-placement^="right"],
-.dropdown-menu[x-placement^="bottom"],
-.dropdown-menu[x-placement^="left"] {
-  right: auto;
-  bottom: auto;
-}
-
-.dropdown-divider {
-  height: 0;
-  margin: 0.5rem 0;
-  overflow: hidden;
-  border-top: 1px solid #eaf0fc;
-}
-
-.dropdown-item {
-  display: block;
-  width: 100%;
-  padding: 0.25rem 1.5rem;
-  clear: both;
-  font-weight: 400;
-  color: #212529;
-  text-align: inherit;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0;
-}
-
-.dropdown-item:hover,
-.dropdown-item:focus {
-  color: #16181b;
-  text-decoration: none;
-  background-color: #f8f9fa;
-}
-
-.dropdown-item.active,
-.dropdown-item:active {
-  color: #fff;
-  text-decoration: none;
-  background-color: #ff214f;
-}
-
-.dropdown-item.disabled,
-.dropdown-item:disabled {
-  color: #6c757d;
-  pointer-events: none;
-  background-color: transparent;
-}
-
-.dropdown-menu.show {
-  display: block;
-}
-
-.dropdown-header {
-  display: block;
-  padding: 0.5rem 1.5rem;
-  margin-bottom: 0;
-  font-size: 0.875rem;
-  color: #6c757d;
-  white-space: nowrap;
-}
-
-.dropdown-item-text {
-  display: block;
-  padding: 0.25rem 1.5rem;
-  color: #212529;
-}
 
 .btn-group,
 .btn-group-vertical {
@@ -12248,7 +12165,7 @@ pre {
   visibility: hidden;
   -webkit-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
-  font-family: "Oswald", sans-serif;
+  font-family: "Gotham-Thin", sans-serif;
 }
 
 .affix {
@@ -12819,7 +12736,7 @@ video {
   letter-spacing: 9px;
 }
 
-
+/* Estilo general */
 .whatsapp-widget {
   position: fixed;
   bottom: 50px;
@@ -12851,8 +12768,8 @@ video {
 
 .social-icons-container {
   position: absolute;
-  bottom: 70px;
-  right: 20px;
+  bottom: 64px;
+  right: 7px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12882,6 +12799,67 @@ video {
   max-height: 500px; /* Ajusta este valor según la cantidad de íconos */
   opacity: 1;
 }
+
+/* Media Queries para hacer el diseño responsive */
+
+/* Pantallas de hasta 768px (tablets en vertical y dispositivos móviles) */
+@media (max-width: 768px) {
+  .whatsapp-widget {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .whatsapp-button {
+    padding: 10px;
+  }
+
+  .whatsapp-icon {
+    font-size: 24px;
+  }
+
+  .social-icons-container {
+    bottom: 40px;
+    right: 5px;
+  }
+
+  .social-icon {
+    font-size: 24px;
+  }
+
+  .social-link {
+    margin-bottom: 10px; /* Reducir espacio entre íconos */
+  }
+}
+
+/* Pantallas de hasta 480px (teléfonos móviles pequeños) */
+@media (max-width: 480px) {
+  .whatsapp-widget {
+    bottom: 10px;
+    right: -7px;
+  }
+
+  .whatsapp-button {
+    padding: 8px;
+  }
+
+  .whatsapp-icon {
+    font-size: 20px;
+  }
+
+  .social-icons-container {
+    bottom: 30px;
+    right: 3px;
+  }
+
+  .social-icon {
+    font-size: 20px;
+  }
+
+  .social-link {
+    margin-bottom: 8px; /* Reducir espacio entre íconos */
+  }
+}
+
 
 /* Estilos básicos para el carrusel */
 .carousel1 {
@@ -12963,36 +12941,114 @@ video {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 150%; /* Espacio hacia abajo */
+  left: -10px; /* Desplazar a la izquierda */
   margin: 0;
   padding: 0;
-  border: 1px solid #ddd;
   border-radius: .25rem;
-  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
-  z-index: 1000; /* Asegúrate de que el dropdown esté por encima de otros elementos */
+  background-color: #6c757d69; /* Fondo gris oscuro */
 }
 
-/* Mostrar el dropdown al pasar el mouse sobre el elemento */
-.nav-item:hover .dropdown-menu {
+/* Mostrar el dropdown cuando se haga clic en el elemento */
+.nav-item.show .dropdown-menu {
   display: block;
 }
-
-/* Opcional: estilos adicionales para los ítems del dropdown */
+/* Estilo base para los ítems del dropdown */
 .dropdown-menu .dropdown-item {
   display: block;
   width: 100%;
   padding: .25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: #212529;
+  color: #ffffff; /* Texto blanco */
   text-align: inherit;
   white-space: nowrap;
-  background-color: transparent;
+  background-color: #6c757d69; /* Fondo semi-transparente */
   border: 0;
   cursor: pointer;
+  position: relative; /* Necesario para el efecto de la barra */
+  overflow: hidden; /* Para asegurar que la barra no se desborde */
+  transition: padding-left 0.3s ease; /* Transición para el efecto de desplazamiento */
 }
 
+/* Efecto de la barra al pasar el mouse */
+.dropdown-menu .dropdown-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px; /* Altura de la barra */
+  width: 0;
+  background-color: #d6d8d9; /* Color de la barra */
+  transition: width 0.3s ease; /* Tiempo de la animación */
+}
+
+/* Barra expandida al pasar el ratón */
+.dropdown-menu .dropdown-item:hover::after {
+  width: 100%; /* Barra llena al pasar el mouse */
+}
+
+/* Estilo para los ítems del dropdown al pasar el mouse sobre ellos */
 .dropdown-menu .dropdown-item:hover {
-  background-color: #f8f9fa;
+  background-color: #2AB9D4; /* Color de fondo al pasar el mouse */
+  padding-left: 1rem; /* Desplazar el texto hacia la izquierda */
+}
+
+
+
+/* Fuente LAGINCHY  */
+@font-face {
+font-family: 'LAGINCHY';
+  src: url('fonts/Laginchy.woff') format('woff'),
+       url('fonts/LAGINCHY.woff') format('woff');
+                                                  
+}
+
+.lag {
+  font-family: 'Laginchy', sans-serif;                                                
+            font-weight: normal; /* Especificar el peso si es necesario */
+            font-size: 2.5rem;   /* Ajusta el tamaño del título según tus necesidades */
+            color: #d6d8db;         /* Color del texto del título */
+            letter-spacing: 0.1rem; /* Espaciado entre letras */
+            text-indent: 4rem;   /* Ajusta la sangría según tus necesidades */
+}
+
+/* Fuente Gotham-Thin  */
+@font-face {
+  font-family: 'Gotham-Thin';
+  src: url('fonts/Gotham-Thin') format('woff2'),
+       url('fonts/Gotham-Thin') format('woff');
+}
+
+.Got {
+    font-family: 'Gotham-Thin', sans-serif;
+    font-weight: normal; /* Especificar el peso si es necesario */
+    font-size: 2.5rem;   /* Ajusta el tamaño del título según tus necesidades */
+    color: #333;         /* Color del texto del título */
+    letter-spacing: 0.1rem; /* Espaciado entre letras */
+    text-indent: 4rem;   /* Ajusta la sangría según tus necesidades */
+}
+
+/* Estilos para pantallas pequeñas (hasta 600px de ancho) */
+@media (max-width: 600px) {
+    .Got {
+        font-size: 1.5rem;   /* Ajusta el tamaño del texto para pantallas pequeñas */
+        text-indent: 2rem;   /* Ajusta la sangría para pantallas pequeñas */
+    }
+}
+
+/* Estilos para pantallas medianas (601px a 900px de ancho) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .Got {
+        font-size: 2rem;     /* Ajusta el tamaño del texto para pantallas medianas */
+        text-indent: 3rem;   /* Ajusta la sangría para pantallas medianas */
+    }
+}
+
+/* Estilos para pantallas grandes (más de 900px de ancho) */
+@media (min-width: 901px) {
+    .Got {
+        font-size: 2.5rem;   /* Tamaño del texto por defecto para pantallas grandes */
+        text-indent: 4rem;   /* Sangría por defecto para pantallas grandes */
+    }
 }

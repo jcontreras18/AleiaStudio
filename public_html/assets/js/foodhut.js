@@ -109,18 +109,50 @@ function closeModal() {
     modal.style.display = "none";
 }
 
-    document.addEventListener('DOMContentLoaded', function() {
-        var dropdown = document.querySelector('.nav-item.dropdown');
-        var dropdownMenu = dropdown.querySelector('.dropdown-menu');
 
-        dropdown.addEventListener('mouseover', function() {
-            dropdownMenu.style.display = 'block';
-        });
 
-        dropdown.addEventListener('mouseleave', function() {
-            dropdownMenu.style.display = 'none';
-        });
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Selecciona todos los elementos nav-item con dropdown
+  const dropdowns = document.querySelectorAll('.nav-item');
+
+  dropdowns.forEach(function (dropdown) {
+    // Al hacer clic en el nav-item
+    dropdown.addEventListener('click', function (event) {
+      // Evita el cierre inmediato al hacer clic dentro del menú
+      event.stopPropagation();
+      
+      // Cierra otros dropdowns abiertos
+      dropdowns.forEach(function (otherDropdown) {
+        if (otherDropdown !== dropdown) {
+          otherDropdown.classList.remove('show');
+        }
+      });
+
+      // Alterna la visibilidad del dropdown actual
+      dropdown.classList.toggle('show');
     });
 
+    // Mostrar el dropdown al pasar el mouse sobre el nav-item
+    dropdown.addEventListener('mouseenter', function () {
+      dropdown.classList.add('show');
+    });
 
-    
+    // Ocultar el dropdown cuando el mouse sale del nav-item
+    dropdown.addEventListener('mouseleave', function () {
+      // Retarda el cierre para permitir que el usuario mueva el ratón hacia el menú
+      setTimeout(() => {
+        if (!dropdown.querySelector('.dropdown-menu:hover')) {
+          dropdown.classList.remove('show');
+        }
+      }, 100);
+    });
+  });
+
+  // Cierra todos los dropdowns si se hace clic fuera de ellos
+  document.addEventListener('click', function () {
+    dropdowns.forEach(function (dropdown) {
+      dropdown.classList.remove('show');
+    });
+  });
+});
