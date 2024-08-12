@@ -81,6 +81,33 @@ function closeModal() {
     modal.style.display = "none";
 }
 
+function openModal(imageIndex) {
+    const modal = document.getElementById("myModal");
+    const modalImage = document.getElementById("modalImage");
+    const modalText = document.getElementById("modalText");
+
+    switch(imageIndex) {
+        case 1:
+            modalImage.src = "assets/imgs/Header2.jpeg";
+            modalText.innerText = "Descripción para la Imagen 1";
+            break;
+        case 2:
+            modalImage.src = "assets/imgs/Header1.jpeg";
+            modalText.innerText = "Descripción para la Imagen 2";
+            break;
+        case 3:
+            modalImage.src = "assets/imgs/Header3.jpeg";
+            modalText.innerText = "Descripción para la Imagen 3";
+            break;
+    }
+
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    const modal = document.getElementById("myModal");
+    modal.style.display = "none";
+}
 
     document.addEventListener('DOMContentLoaded', function() {
         var dropdown = document.querySelector('.nav-item.dropdown');
@@ -95,3 +122,5 @@ function closeModal() {
         });
     });
 
+
+    
