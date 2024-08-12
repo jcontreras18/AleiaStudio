@@ -12883,26 +12883,25 @@ video {
   opacity: 1;
 }
 
-
 /* Estilos básicos para el carrusel */
-.carousel {
+.carousel1 {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
 }
 
-.carousel img {
+.carousel1 img {
   width: 150px;
   cursor: pointer;
   transition: transform 0.2s;
 }
 
-.carousel img:hover {
+.carousel1 img:hover {
   transform: scale(1.1);
 }
 
 /* Estilos para el modal */
-.modal {
+.modal1 {
   display: none; /* Oculto por defecto */
   position: fixed;
   z-index: 1;
@@ -12914,7 +12913,7 @@ video {
   background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
 }
 
-.modal-content {
+.modal-content1 {
   margin: 15% auto;
   padding: 20px;
   width: 80%;
@@ -12923,27 +12922,27 @@ video {
   flex-direction: column;
 }
 
-.modal-columns {
+.modal-columns1 {
   display: flex;
 }
 
-.modal-image {
+.modal-image1 {
   flex: 1;
   padding: 10px;
 }
 
-.modal-image img {
+.modal-image1 img {
   width: 100%;
   height: auto;
 }
 
-.modal-text {
+.modal-text1 {
   flex: 1;
   padding: 10px;
 }
 
 /* Botón para cerrar el modal */
-.close {
+.close1 {
   position: absolute;
   top: 10px;
   right: 20px;
@@ -12953,9 +12952,10 @@ video {
   cursor: pointer;
 }
 
-.close:hover,
-.close:focus {
+.close1:hover,
+.close1:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
+
