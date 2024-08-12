@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with FoodHut landing page.">
+    <meta name="author" content="Devcrud">
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/vendors/animate/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <!-- Bootstrap + FoodHut main styles -->
+    <link rel="stylesheet" href="assets/css/foodhut.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" style="background-color: #030303;">
+
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
+        <a class="navbar-brand" href="#">
+            <img src="assets/imgs/Logo_4.png" class="brand-img" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="text-hover">
+                    <a class="nav-link text-hover" href="#blog">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-hover" href="#contact">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="components.html" class="nav-link btn btn-primary ml-xl-4">Contáctanos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <div class="header">
+        <video autoplay muted loop id="background-video">
+            <source src="assets/imgs/banner_1.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+        </div>
+    </div>
+
+    <!--  About Section  -->
+    <div id="about" class="container-fluid wow fadeIn" data-wow-duration="1.5s">
+        <div class="row colornegro">
+            <!-- Columna con imagen de fondo -->
+            <div class="col-lg-6 has-img-bg"></div>
+            <!-- Columna con contenido de texto -->
+            <div class="col-lg-6">
+                <div class="row justify-content-center">
+                    <div class="col-sm-8 py-5 my-5 ">
+                        <h2 class="mb-4">About Us</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, quisquam accusantium
+                            nostrum modi, nemo, officia veritatis ipsum facere maxime assumenda voluptatum enim! Labore
+                            maiores placeat impedit, vero sed est voluptas!
+                            <br><br>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita alias dicta autem,
+                            maiores doloremque quo perferendis, ut obcaecati harum,
+                            <br><br>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum necessitatibus iste, nulla
+                            recusandae porro minus nemo eaque cum repudiandae quidem voluptate magnam voluptatum?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div></div>
+
+    <div id="gallary" class="text-center bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
+        <h2 class="section-title">SERVICIOS</h2>
+    </div>
+
+   <!-- Carousel --> 
+<div class="carousel">
+    <img src="assets/imgs/Header2.jpeg" alt="Imagen 1" onclick="openModal(1)">
+    <img src="assets/imgs/Header1.jpeg" alt="Imagen 2" onclick="openModal(2)">
+    <img src="assets/imgs/Header3.jpeg" alt="Imagen 3" onclick="openModal(3)">
+</div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-columns">
+            <div class="modal-image">
+                <img id="modalImage" src="" alt="Imagen Modal">
+            </div>
+            <div class="modal-text">
+                <p id="modalText"></p>
+            </div>
+        </div>
+    </div>
+</div>
+   <!--Fin carousel --> 
+
+    <div id="gallary" class="text-center bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
+        <h2 class="section-title">ALIADOS</h2>
+    </div>
+    <div class="logo-container">
+        <img src="assets/Marcas/prueba.png" alt="Logo 1" class="logo">
+        <img src="assets/Marcas/kw.jpg" alt="Logo 2" class="logo">
+        <img src="assets/Marcas/logo corona-03.png" alt="Logo 3" class="logo">
+        <img src="assets/Marcas/logofinalblan.png" alt="Logo 4" class="logo">
+        <img src="assets/Marcas/Logotipo_de_RTVC_Sistema_de_Medios_Públicos.png" alt="Logo 5" class="logo">
+        <img src="assets/Marcas/OIMLOGOBlanco copia.png" alt="Logo 6" class="logo">
+        <!-- Añade más logos si es necesario -->
+    </div>
+
+    <script>
+        document.querySelectorAll('.logo').forEach(logo => {
+            logo.addEventListener('mouseover', function () {
+                this.style.backgroundImage = `url(${this.getAttribute('data-hover')})`;
+            });
+            logo.addEventListener('mouseout', function () {
+                this.style.backgroundImage = '';
+            });
+        });
+    </script>
+    
+    <div id="whatsapp-widget" class="whatsapp-widget">
+        <div class="whatsapp-button" id="whatsapp-button">
+            <div class="fab fa-whatsapp whatsapp-icon"></div>
+        </div>
+        <div class="social-icons-container" id="social-icons-container">
+            <a href="https://api.whatsapp.com/send?phone=573213260498" target="_blank" rel="nofollow noopener noreferrer" class="social-link">
+                <i class="fab fa-facebook-f social-icon"></i>
+            </a>
+            <a href="https://facebook.com/" target="_blank" class="social-link">
+                <i class="fab fa-instagram social-icon"></i>
+            </a>
+            <a href="https://instagram.com/" target="_blank" class="social-link">
+                <i class="fab fa-twitter social-icon"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="social-link">
+                <i class="fab fa-x-twitter social-icon"></i>
+            </a>
+        </div>
+    </div>
+    
+    
+    <script src="script.js"></script>
+    <!-- page footer -->
+    <footer class="footer fot py-4">
+        <div class="container">
+            <div class="row text-center text-md-left">
+                <!-- Columna 1 -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Sobre Nosotros</h5>
+                    <p class="text-muted">
+                        Somos una empresa dedicada a brindar soluciones innovadoras en tecnología. Nuestro objetivo es
+                        mejorar la vida de las personas a través de la tecnología.
+                    </p>
+                </div>
+                <!-- Columna 2 -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio" class="text-hover">Inicio</a></li>
+                        <li><a href="#nosotros" class="text-hover">Nosotros</a></li>
+                        <li><a href="#proyectos" class="text-hover">Proyectos</a></li>
+                        <li><a href="#contacto" class="text-hover">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <!-- Columna 3 -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Contacto</h5>
+                    <p class="text-muted">
+                        Dirección: Calle Falsa 123<br>
+                        Teléfono: (123) 456-7890<br>
+                        Email: info@ejemplo.com
+                    </p>
+                    <!-- Redes Sociales -->
+                    <div class="social-mt-3 e-">
+                        <a href="https://facebook.com" target="_blank" class="social-icon">
+                            <img src="assets/imgs/Redes/facebook_b.png" alt="Facebook">
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="social-icon">
+                            <img src="assets/imgs/Redes/instagram_b.png" alt="Twitter">
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-icon">
+                            <img src="assets/imgs/Redes/X_b.png" alt="Instagram">
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-icon">
+                            <img src="assets/imgs/Redes/whatsapp_b.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bg-dark text-light text-center border-top wow fadeIn">
+        <p class="mb-0 py-3 text-muted small">&copy; Copyright
+            <script>document.write(new Date().getFullYear())</script> AleiaStudio
+            <a href=""></a>
+        </p>
+    </div>
+    <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- wow.js -->
+    <script src="assets/vendors/wow/wow.js"></script>
+
+    <!-- google maps -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- FoodHut js -->
+    <script src="assets/js/foodhut.js"></script>
+
+</body>
+
+</html>

@@ -50,3 +50,33 @@ function initMap() {
     socialIconsContainer.classList.toggle('show');
   });
   
+// carrusel
+
+function openModal(imageIndex) {
+    const modal = document.getElementById("myModal");
+    const modalImage = document.getElementById("modalImage");
+    const modalText = document.getElementById("modalText");
+
+    // Configura la imagen y el texto según la imagen del carrusel que se haya clicado
+    switch(imageIndex) {
+        case 1:
+            modalImage.src = "imagen1.jpg";
+            modalText.innerText = "Descripción para la Imagen 1";
+            break;
+        case 2:
+            modalImage.src = "imagen2.jpg";
+            modalText.innerText = "Descripción para la Imagen 2";
+            break;
+        case 3:
+            modalImage.src = "imagen3.jpg";
+            modalText.innerText = "Descripción para la Imagen 3";
+            break;
+    }
+
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    const modal = document.getElementById("myModal");
+    modal.style.display = "none";
+}
