@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,22 +32,33 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="text-hover">
+                <li class="nav-item">
                     <a class="nav-link text-hover" href="#blog">Inicio<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-hover" href="#contact">Proyectos</a>
+                <!-- Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-hover" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Servicios
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="servicios.html">Marketing digital</a>
+                        <a class="dropdown-item" href="#service3">Fotografía</a>
+                        <a class="dropdown-item" href="#service3">Producción audiovisual</a>
+                        <a class="dropdown-item" href="#service3">Renta de equipos</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
                 </li>
+                
                 <li class="nav-item">
                     <a href="components.html" class="nav-link btn btn-primary ml-xl-4">Contáctanos</a>
                 </li>
             </ul>
         </div>
     </nav>
-
+    
     <!-- header -->
     <div class="header">
         <video autoplay muted loop id="background-video">

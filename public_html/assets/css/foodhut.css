@@ -12959,3 +12959,40 @@ video {
   cursor: pointer;
 }
 
+/* Estilo base para el dropdown */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ddd;
+  border-radius: .25rem;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  z-index: 1000; /* Asegúrate de que el dropdown esté por encima de otros elementos */
+}
+
+/* Mostrar el dropdown al pasar el mouse sobre el elemento */
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* Opcional: estilos adicionales para los ítems del dropdown */
+.dropdown-menu .dropdown-item {
+  display: block;
+  width: 100%;
+  padding: .25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f8f9fa;
+}

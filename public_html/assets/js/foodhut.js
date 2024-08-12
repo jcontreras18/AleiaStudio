@@ -80,3 +80,18 @@ function closeModal() {
     const modal = document.getElementById("myModal");
     modal.style.display = "none";
 }
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var dropdown = document.querySelector('.nav-item.dropdown');
+        var dropdownMenu = dropdown.querySelector('.dropdown-menu');
+
+        dropdown.addEventListener('mouseover', function() {
+            dropdownMenu.style.display = 'block';
+        });
+
+        dropdown.addEventListener('mouseleave', function() {
+            dropdownMenu.style.display = 'none';
+        });
+    });
+
