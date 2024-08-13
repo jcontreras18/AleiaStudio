@@ -12346,7 +12346,7 @@ pre {
 }
 
 .section-title {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .has-height-xs {
@@ -12748,7 +12748,7 @@ video {
   justify-content: center;
   background-color: #25D366;
   border-radius: 50%;
-  padding: 15px;
+  padding: 10px;
   cursor: pointer;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   position: relative;
@@ -12961,7 +12961,7 @@ video {
   color: #ffffff; /* Texto blanco */
   text-align: inherit;
   white-space: nowrap;
-  background-color: #6c757d69; /* Fondo semi-transparente */
+  background-color: #030303; /* Fondo semi-transparente */
   border: 0;
   cursor: pointer;
   position: relative; /* Necesario para el efecto de la barra */
