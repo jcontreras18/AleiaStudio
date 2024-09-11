@@ -12944,7 +12944,7 @@ video {
   margin: 0;
   padding: 0;
   border-radius: .25rem;
-  background-color: #6c757d69; /* Fondo gris oscuro */
+  background-color: #343a4021; /* Fondo gris oscuro */
 }
 
 /* Mostrar el dropdown cuando se haga clic en el elemento */
@@ -12961,7 +12961,7 @@ video {
   color: #ffffff; /* Texto blanco */
   text-align: inherit;
   white-space: nowrap;
-  background-color: #030303; /* Fondo semi-transparente */
+  background-color: #343a4021; /* Fondo semi-transparente */
   border: 0;
   cursor: pointer;
   position: relative; /* Necesario para el efecto de la barra */
