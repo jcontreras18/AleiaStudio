@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +11,7 @@
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <link rel="stylesheet" href="assets/vendors/animate/animate.css">
+    <link href="https://fonts.cdnfonts.com/css/laginchy" rel="stylesheet">                
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
@@ -42,11 +44,10 @@
                         Servicios
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="servicios.html">Marketing digital</a>
+                        <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
                         <a class="dropdown-item" href="#service3">Fotografía</a>
                         <a class="dropdown-item" href="#service3">Producción audiovisual</a>
                         <a class="dropdown-item" href="#service3">Renta de equipos</a>
-                        <div class="dropdown-divider"></div>
                     </div>
                 </li>
                 
@@ -56,7 +57,7 @@
             </ul>
         </div>
     </nav>
-
+    
     <!-- header -->
     <div class="header">
         <video autoplay muted loop id="background-video">
@@ -66,113 +67,119 @@
         </div>
     </div>
 
-    <!--  About Section  -->
-    <div id="about" class="container-fluid wow fadeIn" data-wow-duration="1.5s">
-        <div class="row colornegro">
-            <!-- Columna con imagen de fondo -->
-            <div class="col-lg-6 has-img-bg"></div>
-            <!-- Columna con contenido de texto -->
-            <div class="col-lg-6">
-                <div class="row justify-content-center">
-                    <div class="col-sm-8 py-5 my-5 ">
-                        <h2 class="mb-4">About Us</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, quisquam accusantium
-                            nostrum modi, nemo, officia veritatis ipsum facere maxime assumenda voluptatum enim! Labore
-                            maiores placeat impedit, vero sed est voluptas!
-                            <br><br>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita alias dicta autem,
-                            maiores doloremque quo perferendis, ut obcaecati harum,
-                            <br><br>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum necessitatibus iste, nulla
-                            recusandae porro minus nemo eaque cum repudiandae quidem voluptate magnam voluptatum?
-                        </p>
+
+    <div></div>
+
+    <div id="gallary" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
+        <lag class="section-title">SERVICIOS</lag>
+    </div>
+
+    <div class="container-fluid my-5">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicadores -->
+            <ul class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ul>
+    
+            <!-- Imágenes del carrusel -->
+            <div class="carousel-inner imagen-combinada">
+                <div class="carousel-item active">
+                    <img src="assets/imgs/Header1.jpeg" alt="Imagen 1">
+                    <div class="carousel-caption">
+                        <h3>Imagen 1</h3>
+                        <p>Descripción de la imagen 1</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/imgs/Header2.jpeg" alt="Imagen 2">
+                    <div class="carousel-caption">
+                        <h3>Imagen 2</h3>
+                        <p>Descripción de la imagen 2</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/imgs/Header3.jpeg" alt="Imagen 3">
+                    <div class="carousel-caption">
+                        <h3>Imagen 3</h3>
+                        <p>Descripción de la imagen 3</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Controles del carrusel -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+<!-- Modal -->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="" alt="Imagen del Modal" id="modalImage" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 id="modalTitle">Título</h5>
+                        <p id="modalText">Texto descriptivo aquí.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div></div>
-
-    <div id="gallary" class="text-center bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
-        <h2 class="section-title">SERVICIOS</h2>
-    </div>
-
-   <!-- Carousel --> 
-   <div class="container-fluid my-5">
-    <div id="myCarousel1" class="carousel slide" data-ride="carousel">
-        <!-- Indicadores -->
-        <ul class="carousel-indicators">
-            <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel1" data-slide-to="1"></li>
-            <li data-target="#myCarousel1" data-slide-to="2"></li>
-        </ul>
-
-        <!-- Imágenes del carrusel -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/imgs/Header2.jpeg" alt="Imagen 1" onclick="openModal(1)">
-                <div class="carousel-caption">
-                    <h3>Imagen 1</h3>
-                    <p>Descripción de la imagen 1</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/imgs/Header1.jpeg" alt="Imagen 2" onclick="openModal(2)">
-                <div class="carousel-caption">
-                    <h3>Imagen 2</h3>
-                    <p>Descripción de la imagen 2</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/imgs/Header3.jpeg" alt="Imagen 3" onclick="openModal(3)">
-                <div class="carousel-caption">
-                    <h3>Imagen 3</h3>
-                    <p>Descripción de la imagen 3</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Controles del carrusel -->
-        <a class="carousel-control-prev" href="#myCarousel1" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel1" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-    </div>
 </div>
 
-<!-- Modal -->
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <div class="modal-columns">
-            <div class="modal-image">
-                <img id="modalImage" src="" alt="Imagen Modal">
-            </div>
-            <div class="modal-text">
-                <p id="modalText"></p>
-            </div>
+    
+    <script>
+        document.querySelectorAll('.carousel-item img').forEach(img => {
+            img.addEventListener('click', function() {
+                // Obtener la imagen, título y texto
+                const imgSrc = this.src;
+                const caption = this.nextElementSibling; // carousel-caption div
+                const title = caption.querySelector('h3').innerText;
+                const text = caption.querySelector('p').innerText;
+    
+                // Actualizar el contenido del modal
+                document.getElementById('modalImage').src = imgSrc;
+                document.getElementById('modalTitle').innerText = title;
+                document.getElementById('modalText').innerText = text;
+    
+                // Mostrar el modal
+                $('#myModal').modal('show');
+            });
+        });
+    </script>
+    
+    
+
+    <div class="container lag text-center bg-dark text-light has-height-md wow fadeIn colornegro">
+        <div id="gallary" class="py-3 my-3">
+            <p class="section-title">ALIADOS</p>
+        </div>
+        <div class="py-3 my-3 logo-container">
+            <img src="assets/Marcas/kw.png" alt="Logo 2" class="logo">
+            <img src="assets/Marcas/corona.png" alt="Logo 3" class="logo">
+            <img src="assets/Marcas/photo.png" alt="Logo 4" class="logo">
+            <img src="assets/Marcas/rtvc.png" alt="Logo 5" class="logo">
+            <img src="assets/Marcas/oim.png" alt="Logo 6" class="logo">
         </div>
     </div>
-</div>
-
-   <!--Fin carousel --> 
-
-    <div id="gallary" class="text-center bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
-        <h2 class="section-title">ALIADOS</h2>
-    </div>
-    <div class="logo-container">
-        <img src="assets/Marcas/prueba.png" alt="Logo 1" class="logo">
-        <img src="assets/Marcas/kw.jpg" alt="Logo 2" class="logo">
-        <img src="assets/Marcas/logo corona-03.png" alt="Logo 3" class="logo">
-        <img src="assets/Marcas/logofinalblan.png" alt="Logo 4" class="logo">
-        <img src="assets/Marcas/Logotipo_de_RTVC_Sistema_de_Medios_Públicos.png" alt="Logo 5" class="logo">
-        <img src="assets/Marcas/OIMLOGOBlanco copia.png" alt="Logo 6" class="logo">
-        <!-- Añade más logos si es necesario -->
-    </div>
+    
+    
 
     <script>
         document.querySelectorAll('.logo').forEach(logo => {
@@ -196,11 +203,8 @@
             <a href="https://facebook.com/" target="_blank" class="social-link">
                 <i class="fab fa-instagram social-icon"></i>
             </a>
-            <a href="https://instagram.com/" target="_blank" class="social-link">
-                <i class="fab fa-twitter social-icon"></i>
-            </a>
             <a href="https://twitter.com/" target="_blank" class="social-link">
-                <i class="fab fa-x-twitter social-icon"></i>
+                <i class="fab fa-x social-icon"></i>
             </a>
         </div>
     </div>

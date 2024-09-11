@@ -12520,13 +12520,13 @@ video {
   /* Para que los logos se ajusten en múltiples filas si es necesario */
   justify-content: center;
   /* Centra los logos en la página */
-  gap: 20px;
+  gap: 28px;
   /* Espacio entre logos */
 }
 
 /* Estilo de cada logo */
 .logo {
-  width: 110px;
+  width: 155px;
   /* Tamaño inicial del logo */
   height: auto;
   /* Mantiene la proporción del logo */
