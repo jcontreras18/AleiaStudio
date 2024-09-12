@@ -12297,7 +12297,16 @@ pre {
 }
 
 .has-img-bg {
-  background: url(../imgs/blog-1.jpg) no-repeat center center;
+  /* width: 100%; Ajusta el ancho al 100% del viewport */
+  height: 90vh; /* Ajusta la altura al 100% del viewport */
+  background: url(../imgs/blog-1.png) no-repeat center center;
+  background-size: 61% auto; /* Ajusta el tamaño de la imagen al 50% del ancho del contenedor, altura automática para mantener la proporción */
+  position: relative;
+}
+
+.pad{
+  padding-top: 50px;
+  margin-top: 50px;
 }
 
 .has-bg-overlay {
@@ -12943,8 +12952,8 @@ video {
   left: -10px; /* Desplazar a la izquierda */
   margin: 0;
   padding: 0;
-  border-radius: .25rem;
-  background-color: #343a4021; /* Fondo gris oscuro */
+  border-radius: 1.1rem;
+  background-color: #9e9fa9c7; /* Fondo gris oscuro */
 }
 
 /* Mostrar el dropdown cuando se haga clic en el elemento */
@@ -12961,7 +12970,7 @@ video {
   color: #ffffff; /* Texto blanco */
   text-align: inherit;
   white-space: nowrap;
-  background-color: #343a4021; /* Fondo semi-transparente */
+  /*background-color: #343a4021;  Fondo semi-transparente */
   border: 0;
   cursor: pointer;
   position: relative; /* Necesario para el efecto de la barra */
@@ -12969,28 +12978,31 @@ video {
   transition: padding-left 0.3s ease; /* Transición para el efecto de desplazamiento */
 }
 
-/* Efecto de la barra al pasar el mouse */
+
+
 .dropdown-menu .dropdown-item::after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 0;
-  height: 2px; /* Altura de la barra */
-  width: 0;
-  background-color: #d6d8d9; /* Color de la barra */
-  transition: width 0.3s ease; /* Tiempo de la animación */
+  left: 0; /* Comienza desde la izquierda */
+  /*height: 1px;  Altura de la barra */
+  width: 0; /* Ancho inicial de la barra */
+  background-color: #ec6724; /* Color de la barra */
+  transition: width 1.3s ease; /* Animación de la anchura */
+  
 }
 
-/* Barra expandida al pasar el ratón */
-.dropdown-menu .dropdown-item:hover::after {
-  width: 100%; /* Barra llena al pasar el mouse */
+.dropdown-menu .dropdown-item:hover {
+  color: #173e48 /* Cambia el color de las letras al pasar el mouse */
 }
+
+.dropdown-menu .dropdown-item:hover::after {
+  width: 100%; /* La barra se expande hasta el 80% del ancho */
+}
+
 
 /* Estilo para los ítems del dropdown al pasar el mouse sobre ellos */
-.dropdown-menu .dropdown-item:hover {
-  background-color: #2AB9D4; /* Color de fondo al pasar el mouse */
-  padding-left: 1rem; /* Desplazar el texto hacia la izquierda */
-}
+
 
 
 
