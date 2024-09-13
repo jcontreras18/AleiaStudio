@@ -12966,7 +12966,7 @@ video {
   width: 100%;
   padding: .25rem 1.5rem;
   clear: both;
-  font-weight: 400;
+  font-weight: 500;
   color: #ffffff; /* Texto blanco */
   text-align: inherit;
   white-space: nowrap;
@@ -12993,7 +12993,7 @@ video {
 }
 
 .dropdown-menu .dropdown-item:hover {
-  color: #173e48 /* Cambia el color de las letras al pasar el mouse */
+  color: #040404c7;/* Cambia el color de las letras al pasar el mouse */
 }
 
 .dropdown-menu .dropdown-item:hover::after {
