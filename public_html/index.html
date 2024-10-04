@@ -305,24 +305,17 @@
         });
     </script>
     
-    <div id="whatsapp-widget" class="whatsapp-widget">
-        <div class="whatsapp-button" id="whatsapp-button">
-            <div class="fab fa-mouse whatsapp-icon"></div> <!-- Ícono para el botón de WhatsApp -->
+    <div class="social-widget" id="socialWidget">
+        <div class="social-button" onclick="toggleMenu()">
+            <img id="whatsappIcon" src="assets/imgs/Redes/whatsapp_b.png" alt="WhatsApp">
         </div>
-        <div class="social-icons-container" id="social-icons-container">
-            <a href="https://api.whatsapp.com/send?phone=573213260498" target="_blank" rel="nofollow noopener noreferrer" class="social-link">
-                <i class="ti-wand"></i> <!-- Usando el ícono personalizado "ti-wand" -->
-            </a>
-            <a href="https://facebook.com/" target="_blank" class="social-link">
-                <i class="ti-volume"></i> <!-- Usando el ícono personalizado "ti-volume" -->
-            </a>
-            <a href="https://twitter.com/" target="_blank" class="social-link">
-                <i class="fab fa-x social-icon"></i> <!-- Conservas el ícono de FontAwesome aquí -->
-            </a>
+        <div class="social-menu" id="socialMenu">
+            <a href="https://wa.me/1234567890" target="_blank" class="social-link">WhatsApp</a>
+            <a href="https://facebook.com" target="_blank" class="social-link">Facebook</a>
+            <a href="https://twitter.com" target="_blank" class="social-link">Twitter</a>
+            <a href="https://instagram.com" target="_blank" class="social-link">Instagram</a>
         </div>
     </div>
-    
-    
     
     <script src="script.js"></script>
     <!-- page footer -->

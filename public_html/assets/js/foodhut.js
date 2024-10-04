@@ -156,3 +156,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+
+function toggleMenu() {
+  const socialMenu = document.getElementById('socialMenu');
+  const whatsappIcon = document.getElementById('whatsappIcon');
+  socialMenu.classList.toggle('open');
+  
+  if (socialMenu.classList.contains('open')) {
+      whatsappIcon.src = 'assets/imgs/Redes/icons8-circulado-x-50.png'; // X icon
+  } else {
+      whatsappIcon.src = 'assets/imgs/Redes/whatsapp_b.png'; // WhatsApp icon
+  }
+}
