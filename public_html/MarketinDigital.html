@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +10,7 @@
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <link rel="stylesheet" href="assets/vendors/animate/animate.css">
-    <link href="https://fonts.cdnfonts.com/css/laginchy" rel="stylesheet">                
+    <link href="https://fonts.cdnfonts.com/css/laginchy" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
@@ -40,7 +39,8 @@
                 </li>
                 <!-- Dropdown Menu -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-hover" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Servicios
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -50,14 +50,13 @@
                         <a class="dropdown-item" href="#service3">Renta de equipos</a>
                     </div>
                 </li>
-                
                 <li class="nav-item">
                     <a href="components.html" class="nav-link btn btn-primary ml-xl-4">Contáctanos</a>
                 </li>
             </ul>
         </div>
     </nav>
-    
+
     <!-- header -->
     <div class="header">
         <video autoplay muted loop id="background-video">
@@ -71,106 +70,249 @@
     <div></div>
 
     <div id="gallary" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
-        <lag class="section-title">SERVICIOS</lag>
+        <lag class="section-title">Marketing</lag>
     </div>
 
-    <div class="container-fluid my-5">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicadores -->
-            <ul class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ul>
-    
-            <!-- Imágenes del carrusel -->
-            <div class="carousel-inner imagen-combinada">
-                <div class="carousel-item active">
-                    <img src="assets/imgs/Header1.jpeg" alt="Imagen 1">
-                    <div class="carousel-caption">
-                        <h3>Imagen 1</h3>
-                        <p>Descripción de la imagen 1</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/imgs/Header2.jpeg" alt="Imagen 2">
-                    <div class="carousel-caption">
-                        <h3>Imagen 2</h3>
-                        <p>Descripción de la imagen 2</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/imgs/Header3.jpeg" alt="Imagen 3">
-                    <div class="carousel-caption">
-                        <h3>Imagen 3</h3>
-                        <p>Descripción de la imagen 3</p>
-                    </div>
+ <!-- Imagen 1 -->
+<div class="container-fluid my-5">
+    <div class="bann imagen-combinada">
+        <img src="assets/imgs/Header1.jpeg" alt="Imagen 1" class="img-fluid hover-effect" data-toggle="modal" data-target="#imageModal1">
+    </div>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="imageModal1" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content d-flex">
+            <div class="modal-body d-flex align-items-center">
+                <img src="assets/imgs/Header1.jpeg" alt="Imagen 1" class="img-fluid mr-3" style="max-width: 50%; height: auto;">
+                <div>
+                    <h5 id="imageModalLabel1" class="lagnmodal">Proyectos</h5>
+                    <p class="Gotmodal">
+                        Los beneficios de tu producto o servicio, llama a la acción, o proporciona información relevante que atraiga la atención del usuario.
+                    </p>
                 </div>
             </div>
-    
-            <!-- Controles del carrusel -->
-            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
     </div>
-    
-    <!-- Modal -->
-<!-- Modal -->
-<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+</div>
+
+<!-- Imagen 2 -->
+<div class="container-fluid my-5">
+    <div class="bann imagen-combinada">
+        <img src="assets/imgs/Header2.jpeg" alt="Imagen 2" class="img-fluid hover-effect" data-toggle="modal" data-target="#imageModal2">
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content d-flex">
+            <div class="modal-body d-flex align-items-center">
+                <img src="assets/imgs/Header2.jpeg" alt="Imagen 2" class="img-fluid mr-3" style="max-width: 50%; height: auto;">
+                <div>
+                    <h5 id="imageModalLabel2" class="lagnmodal">Servicios</h5>
+                    <p class="Gotmodal">
+                        Aquí puedes detallar los servicios que ofreces y las ventajas que brindas a tus clientes.
+                    </p>
+                </div>
             </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="" alt="Imagen del Modal" id="modalImage" class="img-fluid">
-                    </div>
-                    <div class="col-md-6">
-                        <h5 id="modalTitle">Título</h5>
-                        <p id="modalText">Texto descriptivo aquí.</p>
-                    </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Imagen 3 -->
+<div class="container-fluid my-5">
+    <div class="bann imagen-combinada">
+        <img src="assets/imgs/Header3.jpeg" alt="Imagen 3" class="img-fluid hover-effect" data-toggle="modal" data-target="#imageModal3">
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="imageModal3" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content d-flex">
+            <div class="modal-body d-flex align-items-center">
+                <img src="assets/imgs/Header3.jpeg" alt="Imagen 3" class="img-fluid mr-3" style="max-width: 50%; height: auto;">
+                <div>
+                    <h5 id="imageModalLabel3" class="lagnmodal">Innovación</h5>
+                    <p class="Gotmodal">
+                        Promueve la innovación y destaca las novedades que ofreces para mantenerte a la vanguardia.
+                    </p>
+                </div>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Imagen 4 -->
+<div class="container-fluid my-5">
+    <div class="bann imagen-combinada">
+        <img src="assets/imgs/Header3.jpeg" alt="Imagen 4" class="img-fluid hover-effect" data-toggle="modal" data-target="#imageModal4">
+    </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="imageModal4" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel4" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content d-flex">
+            <div class="modal-body d-flex align-items-center">
+                <img src="assets/imgs/Header3.jpeg" alt="Imagen 4" class="img-fluid mr-3" style="max-width: 50%; height: auto;">
+                <div>
+                    <h5 id="imageModalLabel4" class="lagnmodal">Calidad</h5>
+                    <p class="Gotmodal">
+                        Enfócate en la calidad de tus productos o servicios y cómo aportan valor a tus clientes.
+                    </p>
+                </div>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Contenedor de Proyectos -->
+<div class="container my-5">
+    <div id="gallary" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
+        <lag class="section-title">Proyectos</lag>
+    </div>
+    <div class="row">
+        <!-- Proyecto 1 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="assets/imgs/proyecto1.jpeg" class="card-img-top img-fluid hover-effect" alt="Proyecto 1" data-toggle="modal" data-target="#proyectoModal1">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Proyecto 1</h5>
+                </div>
+            </div>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="assets/imgs/proyecto2.jpeg" class="card-img-top img-fluid hover-effect" alt="Proyecto 2" data-toggle="modal" data-target="#proyectoModal2">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Proyecto 2</h5>
+                </div>
+            </div>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="assets/imgs/proyecto3.jpeg" class="card-img-top img-fluid hover-effect" alt="Proyecto 3" data-toggle="modal" data-target="#proyectoModal3">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Proyecto 3</h5>
+                </div>
+            </div>
+        </div>
+        <!-- Proyecto 4 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="assets/imgs/proyecto4.jpeg" class="card-img-top img-fluid hover-effect" alt="Proyecto 4" data-toggle="modal" data-target="#proyectoModal4">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Proyecto 4</h5>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-    
-    <script>
-        document.querySelectorAll('.carousel-item img').forEach(img => {
-            img.addEventListener('click', function() {
-                // Obtener la imagen, título y texto
-                const imgSrc = this.src;
-                const caption = this.nextElementSibling; // carousel-caption div
-                const title = caption.querySelector('h3').innerText;
-                const text = caption.querySelector('p').innerText;
-    
-                // Actualizar el contenido del modal
-                document.getElementById('modalImage').src = imgSrc;
-                document.getElementById('modalTitle').innerText = title;
-                document.getElementById('modalText').innerText = text;
-    
-                // Mostrar el modal
-                $('#myModal').modal('show');
-            });
-        });
-    </script>
-    
-    
+<!-- Modal Proyecto 1 -->
+<div class="modal fade" id="proyectoModal1" tabindex="-1" role="dialog" aria-labelledby="proyectoModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content d-flex">
+            <div class="modal-body d-flex align-items-center">
+                <img src="assets/imgs/proyecto1.jpeg" alt="Proyecto 1" class="img-fluid mr-3" style="max-width: 50%; height: auto;">
+                <div>
+                    <h5 id="proyectoModalLabel1" class="lagnmodal">Proyecto 1</h5>
+                    <p class="Gotmodal">
+                        Aquí puedes detallar la información del Proyecto 1, destacando su importancia y resultados obtenidos.
+                    </p>
+                </div>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+</div>
 
+<!-- Modal Proyecto 2 -->
+<div class="modal fade" id="proyectoModal2" tabindex="-1" role="dialog" aria-labelledby="proyectoModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content d-flex">
+            <div class="modal-body d-flex align-items-center">
+                <img src="assets/imgs/proyecto2.jpeg" alt="Proyecto 2" class="img-fluid mr-3" style="max-width: 50%; height: auto;">
+                <div>
+                    <h5 id="proyectoModalLabel2" class="lagnmodal">Proyecto 2</h5>
+                    <p class="Gotmodal">
+                        Aquí puedes detallar la información del Proyecto 2, destacando su importancia y resultados obtenidos.
+                    </p>
+                </div>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Proyecto 3 -->
+<div class="modal fade" id="proyectoModal3" tabindex="-1" role="dialog" aria-labelledby="proyectoModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content d-flex">
+            <div class="modal-body d-flex align-items-center">
+                <img src="assets/imgs/proyecto3.jpeg" alt="Proyecto 3" class="img-fluid mr-3" style="max-width: 50%; height: auto;">
+                <div>
+                    <h5 id="proyectoModalLabel3" class="lagnmodal">Proyecto 3</h5>
+                    <p class="Gotmodal">
+                        Aquí puedes detallar la información del Proyecto 3, destacando su importancia y resultados obtenidos.
+                    </p>
+                </div>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Proyecto 4 -->
+<div class="modal fade" id="proyectoModal4" tabindex="-1" role="dialog" aria-labelledby="proyectoModalLabel4" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content d-flex">
+            <div class="modal-body d-flex align-items-center">
+                <img src="assets/imgs/proyecto4.jpeg" alt="Proyecto 4" class="img-fluid mr-3" style="max-width: 50%; height: auto;">
+                <div>
+                    <h5 id="proyectoModalLabel4" class="lagnmodal">Proyecto 4</h5>
+                    <p class="Gotmodal">
+                        Aquí puedes detallar la información del Proyecto 4, destacando su importancia y resultados obtenidos.
+                    </p>
+                </div>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+    
     <div class="container lag text-center bg-dark text-light has-height-md wow fadeIn colornegro">
-        <div id="gallary" class="py-3 my-3">
+        <div id="gallary" class="py-2 my-4">
             <p class="section-title">ALIADOS</p>
         </div>
-        <div class="py-3 my-3 logo-container">
+        <div class="py-5 my-4 logo-container">
             <img src="assets/Marcas/kw.png" alt="Logo 2" class="logo">
             <img src="assets/Marcas/corona.png" alt="Logo 3" class="logo">
             <img src="assets/Marcas/photo.png" alt="Logo 4" class="logo">
@@ -179,38 +321,26 @@
         </div>
     </div>
     
-    
-
-    <script>
-        document.querySelectorAll('.logo').forEach(logo => {
-            logo.addEventListener('mouseover', function () {
-                this.style.backgroundImage = `url(${this.getAttribute('data-hover')})`;
-            });
-            logo.addEventListener('mouseout', function () {
-                this.style.backgroundImage = '';
-            });
-        });
-    </script>
-    
-    <div id="whatsapp-widget" class="whatsapp-widget">
-        <div class="whatsapp-button" id="whatsapp-button">
-            <div class="fab fa-whatsapp whatsapp-icon"></div>
+    <div class="social-widget" id="socialWidget">
+        <div class="social-button" onclick="toggleMenu()">
+            <img id="whatsappIcon" src="assets/imgs/Redes/whatsapp_b.png" alt="WhatsApp">
         </div>
-        <div class="social-icons-container" id="social-icons-container">
-            <a href="https://api.whatsapp.com/send?phone=573213260498" target="_blank" rel="nofollow noopener noreferrer" class="social-link">
-                <i class="fab fa-facebook-f social-icon"></i>
+        <div class="social-menu" id="socialMenu">
+            <a href="https://x.com/" target="_blank" class="social-icon">
+                <img src="assets/imgs/Redes/X1_b.png" alt="LinkedIn">
             </a>
-            <a href="https://facebook.com/" target="_blank" class="social-link">
-                <i class="fab fa-instagram social-icon"></i>
+            <a href="https://facebook.com" target="_blank" class="social-icon">
+                <img src="assets/imgs/Redes/facebook_b.png" alt="Twitter">
             </a>
-            <a href="https://twitter.com/" target="_blank" class="social-link">
-                <i class="fab fa-x social-icon"></i>
+            <a href="https://instagram.com" target="_blank" class="social-icon">
+                <img src="assets/imgs/Redes/instagram_b.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-icon">
+                <img src="assets/imgs/Redes/whatsapp_b.png" alt="Instagram">
             </a>
         </div>
     </div>
-    
-    
-    <script src="script.js"></script>
+
     <!-- page footer -->
     <footer class="footer fot py-4">
         <div class="container">

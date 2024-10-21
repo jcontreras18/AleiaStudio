@@ -12578,13 +12578,13 @@ body {
 .social-widget {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 30px;
   z-index: 1000;
 }
 
 .social-button {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background-color: #25D366;
   border-radius: 50%;
   display: flex;
@@ -12595,8 +12595,8 @@ body {
 }
 
 .social-button img {
-  width: 86%;
-  height: 90%;
+  width: 70%;
+  height: 70%;
 }
 
 .social-button:hover {
@@ -12608,10 +12608,9 @@ body {
   position: absolute;
   bottom: 70px;
   right: 0;
-  background-color: #fff;
+  background-color: #000000;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .social-menu.open {
@@ -12810,8 +12809,8 @@ body {
 }
 
 .social-icon img {
-  width: 15px;
-  height: 15px;
+  width: 27px;
+  height: 27px;
   transition: transform 0.3s ease, opacity 0.3s ease;
   letter-spacing: 9px;
 }
@@ -13131,6 +13130,15 @@ font-family: 'LAGINCHY';
             text-indent: 4rem;   /* Ajusta la sangría según tus necesidades */
 }
 
+.lagnmodal {
+  font-family: 'Laginchy', sans-serif;                                                
+            font-weight: normal; /* Especificar el peso si es necesario */
+            font-size: 2.5rem;   /* Ajusta el tamaño del título según tus necesidades */
+            color: #343a40;         /* Color del texto del título */
+            letter-spacing: 0.1rem; /* Espaciado entre letras */
+            text-indent: 4rem;   /* Ajusta la sangría según tus necesidades */
+}
+
 /* Fuente Gotham-Thin  */
 @font-face {
   font-family: 'Gotham-Thin';
@@ -13145,6 +13153,14 @@ font-family: 'LAGINCHY';
     color: #333;         /* Color del texto del título */
     letter-spacing: 0.1rem; /* Espaciado entre letras */
     text-indent: 4rem;   /* Ajusta la sangría según tus necesidades */
+}
+
+.Gotmodal {
+  font-family: 'Gotham-Thin', sans-serif;
+  font-weight: normal; /* Especificar el peso si es necesario */ 
+  color: #333;         /* Color del texto del título */
+  letter-spacing: 0.1rem; /* Espaciado entre letras */
+  text-indent: 4rem;   /* Ajusta la sangría según tus necesidades */
 }
 
 /* Estilos para pantallas pequeñas (hasta 600px de ancho) */
@@ -13170,3 +13186,37 @@ font-family: 'LAGINCHY';
         text-indent: 4rem;   /* Sangría por defecto para pantallas grandes */
     }
 }
+
+.carousel-item {
+  cursor: pointer; /* Cambia el cursor al pasar sobre el carrusel */
+}
+
+.bann {
+  max-height: 60vh; /* Limita la altura máxima al 60% de la altura de la ventana */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el contenedor */
+}
+
+.bann img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Cubre el contenedor manteniendo la proporción */
+}
+
+@media (max-width: 768px) {
+  .bann {
+      max-height: 40vh; /* Ajustar altura para pantallas más pequeñas */
+  }
+}
+
+.bann{
+  cursor: pointer; 
+}
+
+.modal-dialog {
+  max-width: 800px; /* Ajusta este valor según tus necesidades */
+}
+
+.modal-content {
+  width: 100%; /* Asegúrate de que el contenido ocupe el 100% del ancho del diálogo */
+}
+
