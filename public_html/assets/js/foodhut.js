@@ -179,3 +179,11 @@ document.querySelectorAll('.logo').forEach(logo => {
     this.style.backgroundImage = '';
   });
 });
+
+function changeBackground(image) {
+  document.querySelector('.container').style.backgroundImage = `url('${image}')`;
+}
+
+function resetBackground() {
+  document.querySelector('.container').style.backgroundImage = "url('assets/imgs/Header3.jpeg')";
+}

@@ -12592,6 +12592,7 @@ body {
   justify-content: center;
   cursor: pointer;
   transition: transform 0.3s ease;
+  animation: onda 1.7s infinite;
 }
 
 .social-button img {
@@ -12858,27 +12859,64 @@ body {
   z-index: 1000;
 }
 
+.whatsapp-button:before, .btn-whatsapp:after {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366; 
+    color: white;
+    border: none; 
+    border-radius: 25px;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-decoration: none; 
+    transition: background-color 0.3s, transform 0.2s; 
+    cursor: pointer; 
+}
+
+@keyframes onda {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
 .whatsapp-button {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #25D366;
-  border-radius: 50%;
-  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
   cursor: pointer;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  position: relative;
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: onda 1.7s infinite; /* Añade la animación */
 }
 
 .whatsapp-button:hover {
-  transform: scale(1.1);
+  background-color: #128C7E;
+}
+
+.whatsapp-button:active {
+  transform: scale(0.95);
 }
 
 .whatsapp-icon {
-  font-size: 32px;
-  color: #fff;
+  margin-right: 8px;
 }
+
 
 .social-icons-container {
   position: absolute;
@@ -13218,5 +13256,79 @@ font-family: 'LAGINCHY';
 
 .modal-content {
   width: 100%; /* Asegúrate de que el contenido ocupe el 100% del ancho del diálogo */
+}
+/* Contenedor principal */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Usar min-height para asegurar que ocupe toda la altura de la pantalla */
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease;
+}
+
+/* Servicios */
+.services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en filas automáticamente */
+  gap: 20px; /* Añade un espacio entre los elementos */
+  width: 100%;
+  padding: 20px; /* Espacio alrededor de todos los servicios */
+  box-sizing: border-box; /* Incluye el padding en el ancho */
+}
+
+.service {
+  flex: 1 1 18%; /* Control de tamaño más flexible */
+  max-width: 200px; /* Ancho máximo para evitar que se expandan demasiado en pantallas grandes */
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Añade una transición para el efecto hover */
+}
+
+.service:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05); /* Efecto de escala en hover */
+}
+
+.service h2 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.service p {
+  font-size: 0.9em;
+}
+
+.service img {
+  width: 80%; /* Ajusta el ancho de la imagen a un 80% del contenedor */
+  max-width: 150px; /* Establece un ancho máximo para limitar el tamaño en pantallas grandes */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-bottom: 10px; /* Añade un pequeño espacio debajo de la imagen */
+}
+
+
+/* Media queries para pantallas medianas */
+@media (max-width: 992px) {
+  .service {
+      flex: 1 1 45%; /* Ajuste para pantallas medianas */
+      max-width: none; /* Elimina el ancho máximo para que el elemento use el ancho disponible */
+  }
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 600px) {
+  .services {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .service {
+      width: 80%; /* Ocupan el 80% del ancho en pantallas pequeñas */
+  }
 }
 
