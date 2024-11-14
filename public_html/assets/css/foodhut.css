@@ -13553,7 +13553,7 @@ body {
 .card__header {
   display: flex;
   align-items: center;
-  gap: 1em;
+  justify-content: center;
 }
 
 .card__arc path {
@@ -13585,6 +13585,8 @@ body {
 .card__title {
   font-size: 1.1em;
   margin: 0;
+  text-align: center !important;  
+  font-family: 'LAGINCHY';
 }
 
 .card__tagline,
@@ -13597,12 +13599,12 @@ body {
 .card__description {
   padding: 0 2em 2em;
   margin: 0;
-  color: #D7BDCA;
-  font-family: "MockFlowFont";   
+  color: #f9f7f8f0;  
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
+  text-align: center;
 }
 
 .cards {
@@ -13657,3 +13659,191 @@ body {
     padding: 0 1em 1em;
   }
 }
+
+.card__overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* Ejemplo de superposición */
+  padding: 20px;
+  color: #fff;
+}
+
+
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.product-container {
+  display: flex;
+  gap: 20px;
+  max-width: 900px;
+  align-items: flex-start;
+}
+
+.product-gallery {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+}
+
+.main-image img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+.thumbnail-gallery {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.thumbnail-gallery img {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: transform 0.2s;
+}
+
+.thumbnail-gallery img:hover {
+  transform: scale(1.1);
+}
+
+.product-details {
+  flex: 2;
+}
+
+.product-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 24px;
+  color: #E67E22;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.note {
+  color: red;
+  font-weight: bold;
+}
+
+
+/* Modal estilo */
+/* Modal estilo */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente */
+  overflow: auto; /* Permitir desplazamiento si es necesario */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+  object-fit: contain; /* Ajusta la imagen dentro del espacio sin deformarse */
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hover-button {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  background: #8d2929;
+  font-size: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+}
+
+.hover-button::after,
+.hover-button::before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 0px solid #fff;
+  transition: all 1s;
+}
+
+.hover-button::after {
+  top: -1px;
+  left: -1px;
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+}
+
+.hover-button::before {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 5px 5px solid #f5efef;
+  border-right: 5px solid 5px solid #f5efef;
+}
+
+.hover-button:hover {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.hover-button:hover::before,
+.hover-button:hover::after {
+  width: 100%;
+  height: 100%;
+  /* Puedes descomentar y ajustar el color si lo necesitas */
+  /* border-color: white; */
+}
+
+.data-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

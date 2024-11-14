@@ -187,3 +187,32 @@ function changeBackground(image) {
 function resetBackground() {
   document.querySelector('.container').style.backgroundImage = "url('assets/imgs/Header3.jpeg')";
 }
+
+
+function changeImage(imageSrc) {
+  document.getElementById("mainImage").src = imageSrc;
+}
+
+function openModal() {
+  var modal = document.getElementById("imageModal");
+  var modalImage = document.getElementById("modalImage");
+  var mainImage = document.getElementById("mainImage");
+
+  modal.style.display = "block";
+  modalImage.src = mainImage.src; // Usa la imagen principal en el modal
+}
+
+function closeModal() {
+  var modal = document.getElementById("imageModal");
+  modal.style.display = "none";
+}
+
+// Función para ir atrás en el historial del navegador
+function goBack() {
+  window.history.back(); // Navega a la página anterior en el historial
+}
+
+// Función para ir adelante en el historial del navegador
+function goForward() {
+  window.history.forward(); // Navega hacia la siguiente página en el historial
+}

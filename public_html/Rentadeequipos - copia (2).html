@@ -65,91 +65,55 @@
 
 
     <div id="gallary" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
-        <lag class="section-title">RENTA DE EQUIPOS </lag>
+        <lag class="section-title">Equipos de CINE </lag>
     </div>
-    <!--  carousel  -->
-    <ul class="cards">
-        <li>
-          <a href="#" class="card">
-            <img src="assets/imgs/Renta equipos/Cine.png" class="card__image" alt="Imagen de Jessica Parker" />
-            <div class="card__overlay">
-              <div class="card__header">
-                <div class="card__header-icon">
-                </div>
-                <div class="card__header mb-3">
-                  <h3 class="card__title">CINE</h3>
-                </div>
-              </div> 
-              <p class="card__description">Aquí encontrarás cámaras de alta gama con un rendimiento excepcional.</p>
-            </div>
-            
-          </a>
-        </li>
-      
-        <li>
-          <a href="#" class="card">
-            <img src="assets/imgs/Renta equipos/ILUMINACIÓN.png" class="card__image" alt="Imagen de Kim Cattrall" />
-            <div class="card__overlay">
-              <div class="card__header">
-                <div class="card__header-icon">
-                </div>
-                <div class="card__header mb-3">
-                  <h3 class="card__title">ILUMINACIÓN</h3>
-                </div>
-              </div>
-              <p class="card__description cent pad">Aquí encontrarás iluminación cinematográfica alta gama con un rendimiento excepcional.</p>
-            </div>
-          </a>
-        </li>
-      
-        <li>
-          <a href="#" class="card">
-            <img src="assets/imgs/Renta equipos/FOTOGRAFIA.png" class="card__image" alt="Imagen de Jessica Parker" />
-            <div class="card__overlay">
-              <div class="card__header">
-                <div class="card__header-icon">
-                </div>
-                <div class="card__header mb-3">
-                  <h3 class="card__title">FOTOGRAFIA</h3>
-                </div>
-              </div>
-              <p class="card__description cent pad">Aquí encontrarás fotografia alta gama con un rendimiento excepcional.</p>
-            </div>
-          </a>
-        </li>
-      
-        <li>
-          <a href="#" class="card">
-            <img src="assets/imgs/Renta equipos/Dron.png" class="card__image" alt="Imagen de Kim Cattrall" />
-            <div class="card__overlay">
-              <div class="card__header">
-                <div class="card__header-icon">
-                </div>
-                <div class="card__header mb-3">
-                  <h3 class="card__title">DRONES</h3>
-                </div>
-              </div>
-              <p class="card__description cent pad">Aquí encontrarás drones alta gama con un rendimiento excepcional.</p>
-            </div>
-          </a>
-        </li>
 
-        <li>
-            <a href="#" class="card">
-              <img src="assets/imgs/Renta equipos/SONIDO.png" class="card__image" alt="Imagen de Kim Cattrall" />
-              <div class="card__overlay">
-                <div class="card__header">
-                  <div class="card__header-icon">
-                  </div>
-                  <div class="card__header mb-3">
-                    <h3 class="card__title">SONIDO</h3>
-                  </div>
-                </div>
-                <p class="card__description cent pad">Aquí encontrarás sonido de alta gama con un rendimiento excepcional.</p>
-              </div>
-            </a>
-          </li>          
-      </ul>
+    <div class="container">
+      <div class="product-container">
+        <!-- Galería de producto -->
+        <div class="product-gallery">
+          <div class="main-image">
+            <img id="mainImage" src="assets/imgs/Renta equipos/Cine.png" alt="Teleprompter Pro-D15" onclick="openModal()">
+          </div>
+          <div class="thumbnail-gallery">
+            <img src="assets/imgs/Renta equipos/Cine.png" alt="Image 1" onclick="changeImage('assets/imgs/Renta equipos/Cine.png')">
+            <img src="assets/imgs/Renta equipos/Dron.png" alt="Image 2" onclick="changeImage('assets/imgs/Renta equipos/Dron.png')">
+            <img src="assets/imgs/Renta equipos/FOTOGRAFIA.png" alt="Image 3" onclick="changeImage('assets/imgs/Renta equipos/FOTOGRAFIA.png')">
+            <img src="assets/imgs/Renta equipos/ILUMINACIÓN.png" alt="Image 4" onclick="changeImage('assets/imgs/Renta equipos/ILUMINACIÓN.png')">
+            <img src="assets/imgs/Renta equipos/Cine.png" alt="Image 5" onclick="changeImage('assets/imgs/Renta equipos/Cine.png')">
+          </div>
+        </div>
+    
+        <!-- Detalles del producto -->
+        <div class="product-details">
+          <h2>CINE</h2>
+          <p class="price">$200.000 – $600.000</p>
+          <p class="description">
+            <strong>CÁMARA RED ONE DIGITAL CINEMA X- DRAGON 5K</strong> cuenta con...
+          </p>
+          <p><strong>Ofrecemos varios paquetes que se ajustan a tus requerimientos:</strong></p>
+          <ul>
+            <li><p class="description"><strong>CÁMARA RED ONE DIGITAL CINEMA X- DRAGON 5K</strong> cuenta con...</p></li>
+            <li><p class="description"><strong>PAQUETE A</strong> incluye ......</p></li>
+            <li><p class="description"><strong>PAQUETE B</strong> incluye ...</p></li>
+            <li><p class="description"><strong>PAQUETE C</strong> incluye...</p></li>
+          </ul>
+        </div>  
+      </div>
+    </div>
+
+    <div class="data-container">
+      <span class="hover-button">Atras</span>
+      <span class="hover-button ">Siguiente</span>
+    </div>
+    
+    
+    <!-- Modal -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+    
       
 
     
