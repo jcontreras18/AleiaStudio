@@ -13,7 +13,6 @@
     <link href="https://fonts.cdnfonts.com/css/laginchy" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-
     <!-- Bootstrap + FoodHut main styles -->
     <link rel="stylesheet" href="assets/css/foodhut.css">
 </head>
@@ -32,7 +31,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-hover" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-hover" href="#blog">Inicio<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
@@ -59,165 +58,66 @@
 
     <!-- header -->
     <div class="header">
-        <video autoplay muted loop id="background-video">
-            <source src="assets/imgs/banner_1.mp4" type="video/mp4">
-        </video>
-        <div class="overlay">
-        </div>
+        <!-- Imagen como fondo -->
+        <img src="assets/imgs/Renta.png" alt="Imagen de fondo" class="background-image">
+        <div class="overlay"></div>
     </div>
 
-
-    <div></div>
 
     <div id="gallary" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
-        <lag class="section-title">Marketing</lag>
+        <lag class="section-title">RENTA DE EQUIPOS </lag>
     </div>
-
-    <!-- Imagen 1 -->
-    <div class="container-fluid my-5">
-        <div class="bann imagen-combinada">
-            <img src="assets/imgs/Header1.jpeg" alt="Imagen 1" class="img-fluid hover-effect" data-toggle="modal"
-                data-target="#imageModal1">
+    <!--  carousel  -->
+    <div class="product-gallery">
+        <div class="product-card">
+            <img src="assets/imgs/Renta equipos/Kit-de-Lentes-Canon-300x225.jpg" alt="DJI Inspire 2">
+            <p class="category">Drone</p>
+            <h3>DJI Inspire 2</h3>
+            <button>Ver mas</button>
         </div>
-    </div>
-
-    <!-- Modal 1 -->
-    <div class="modal fade" id="imageModal1" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel1"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content d-flex">
-                <div class="modal-body d-flex align-items-center">
-                    <img src="assets/imgs/Header1.jpeg" alt="Imagen 1" class="img-fluid mr-3"
-                        style="max-width: 50%; height: auto;">
-                    <div>
-                        <h5 id="imageModalLabel1" class="lagnmodal">Proyectos</h5>
-                        <p class="Gotmodal">
-                            Los beneficios de tu producto o servicio, llama a la acción, o proporciona información
-                            relevante que atraiga la atención del usuario.
-                        </p>
-                    </div>
-                </div>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
+        <div class="product-card">
+            <img src="assets/imgs/Renta equipos/Kit-de-Lentes-Canon-300x225.jpg" alt="Kit de Lentes Carl Zeiss">
+            <p class="category">Carl Zeiss, Óptica</p>
+            <h3>Kit de Lentes Carl Zeiss</h3>
+            <button>Ver mas</button>
+        </div>
+        <div class="product-card">
+            <img src="assets/imgs/Renta equipos/Kit-de-Lentes-Canon-300x225.jpg" alt="Kit de Lentes Canon EF">
+            <p class="category">Canon, Óptica</p>
+            <h3>Kit de Lentes Canon EF</h3>
+            <button>Ver mas</button>
         </div>
     </div>
 
-    <!-- Imagen 2 -->
-    <div class="container-fluid my-5">
-        <div class="bann imagen-combinada">
-            <img src="assets/imgs/Header2.jpeg" alt="Imagen 2" class="img-fluid hover-effect" data-toggle="modal"
-                data-target="#imageModal2">
+    <div class="product-gallery">
+        <div class="product-card">
+            <img src="assets/imgs/Renta equipos/Prompter-People-300x225.jpg" alt="DJI Inspire 2">
+            <p class="category">Drone</p>
+            <h3>DJI Inspire 2</h3>
+            <p class="price">$600.000 – $1.000.000</p>
+            <button>Cotizar</button>
+        </div>
+        <div class="product-card">
+            <img src="assets/imgs/Renta equipos/Lentes-Zeiss-300x225.jpg" alt="Kit de Lentes Carl Zeiss">
+            <p class="category">Carl Zeiss, Óptica</p>
+            <h3>Kit de Lentes Carl Zeiss</h3>
+            <p class="price">$490.000 – $690.000</p>
+            <button>Cotizar</button>
+        </div>
+        <div class="product-card">
+            <img src="assets/imgs/Renta equipos/Kit-de-Lentes-Canon-300x225.jpg" alt="Kit de Lentes Canon EF">
+            <p class="category">Canon, Óptica</p>
+            <h3>Kit de Lentes Canon EF</h3>
+            <p class="price">$490.000 – $690.000</p>
+            <button>Cotizar</button>
         </div>
     </div>
+    <!-- Galería de productos -->
+   
+    <!-- end carousel  -->
 
-    <!-- Modal 2 -->
-    <div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel2"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content d-flex">
-                <div class="modal-body d-flex align-items-center">
-                    <img src="assets/imgs/Header2.jpeg" alt="Imagen 2" class="img-fluid mr-3"
-                        style="max-width: 50%; height: auto;">
-                    <div>
-                        <h5 id="imageModalLabel2" class="lagnmodal">Servicios</h5>
-                        <p class="Gotmodal">
-                            Aquí puedes detallar los servicios que ofreces y las ventajas que brindas a tus clientes.
-                        </p>
-                    </div>
-                </div>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-        </div>
-    </div>
 
-    <!-- Imagen 3 -->
-    <div class="container-fluid my-5">
-        <div class="bann imagen-combinada">
-            <img src="assets/imgs/Header3.jpeg" alt="Imagen 3" class="img-fluid hover-effect" data-toggle="modal"
-                data-target="#imageModal3">
-        </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div class="modal fade" id="imageModal3" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel3"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content d-flex">
-                <div class="modal-body d-flex align-items-center">
-                    <img src="assets/imgs/Header3.jpeg" alt="Imagen 3" class="img-fluid mr-3"
-                        style="max-width: 50%; height: auto;">
-                    <div>
-                        <h5 id="imageModalLabel3" class="lagnmodal">Innovación</h5>
-                        <p class="Gotmodal">
-                            Promueve la innovación y destaca las novedades que ofreces para mantenerte a la vanguardia.
-                        </p>
-                    </div>
-                </div>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Imagen 4 -->
-    <div class="container-fluid my-5">
-        <div class="bann imagen-combinada">
-            <img src="assets/imgs/Header3.jpeg" alt="Imagen 4" class="img-fluid hover-effect" data-toggle="modal"
-                data-target="#imageModal4">
-        </div>
-    </div>
-
-    <!-- Modal 4 -->
-    <div class="modal fade" id="imageModal4" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel4"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content d-flex">
-                <div class="modal-body d-flex align-items-center">
-                    <img src="assets/imgs/Header3.jpeg" alt="Imagen 4" class="img-fluid mr-3"
-                        style="max-width: 50%; height: auto;">
-                    <div>
-                        <h5 id="imageModalLabel4" class="lagnmodal">Calidad</h5>
-                        <p class="Gotmodal">
-                            Enfócate en la calidad de tus productos o servicios y cómo aportan valor a tus clientes.
-                        </p>
-                    </div>
-                </div>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-<div class="container contal">
-    <div class="services">
-        <div class="service" onmouseover="changeBackground('assets/imgs/Header3.jpeg')" onmouseout="resetBackground()">
-            <h2>Videos Corporativos</h2>
-            <p>Realizamos la producción de video institucional.</p>
-        </div>
-        <div class="service" onmouseover="changeBackground('assets/imgs/Header2.jpeg')" onmouseout="resetBackground()">
-            <h2>Contenido Digital</h2>
-            <p>Producimos contenido para los usuarios.</p>
-        </div>
-        <div class="service" onmouseover="changeBackground('assets/imgs/Header1.jpeg')" onmouseout="resetBackground()">
-            <h2>Eventos</h2>
-            <p>Realizamos cobertura de eventos.</p>
-        </div>
-        <div class="service" onmouseover="changeBackground('assets/imgs/Header1.jpeg')" onmouseout="resetBackground()">
-            <h2>Productos</h2>
-            <p>Creación de experiencias visuales.</p>
-        </div>
-        <div class="service" onmouseover="changeBackground('assets/imgs/Header2.jpeg')" onmouseout="resetBackground()">
-            <h2>Post Producción</h2>
-            <p>Realizamos la post producción completa.</p>
-        </div>
-    </div>
-</div>
+    <!-- Controles de logos -->
 
     <div class="container lag text-center bg-dark text-light has-height-md wow fadeIn colornegro">
         <div id="gallary" class="py-2 my-4">
@@ -232,6 +132,7 @@
         </div>
     </div>
 
+    <!-- Controles del whatsapp -->
     <div class="social-widget" id="socialWidget">
         <div class="social-button" onclick="toggleMenu()">
             <img id="whatsappIcon" src="assets/imgs/Redes/whatsapp_b.png" alt="WhatsApp">
@@ -251,7 +152,7 @@
             </a>
         </div>
     </div>
-
+    
     <!-- page footer -->
     <footer class="footer fot py-4">
         <div class="container">
