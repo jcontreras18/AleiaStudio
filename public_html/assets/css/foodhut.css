@@ -7220,13 +7220,9 @@ a.close.disabled {
   color: #f8f9fa;
 }
 
+/* Estilos generales para los carruseles */
 .carousel {
   position: relative;
-}
-
-.carousel.pointer-event {
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
 }
 
 .carousel-inner {
@@ -7235,207 +7231,63 @@ a.close.disabled {
   overflow: hidden;
 }
 
-.carousel-inner::after {
-  display: block;
-  clear: both;
-  content: "";
-}
-
 .carousel-item {
   position: relative;
   display: none;
-  float: left;
   width: 100%;
-  margin-right: -100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 0.6s ease-in-out;
-  transition: -webkit-transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .carousel-item {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
-.carousel-item.active,
-.carousel-item-next,
-.carousel-item-prev {
+.carousel-item.active {
   display: block;
 }
 
-.carousel-item-next:not(.carousel-item-left),
-.active.carousel-item-right {
-  -webkit-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  transform: translateX(100%);
-}
-
-.carousel-item-prev:not(.carousel-item-right),
-.active.carousel-item-left {
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-
-.carousel-fade .carousel-item {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-}
-
-.carousel-fade .carousel-item.active,
-.carousel-fade .carousel-item-next.carousel-item-left,
-.carousel-fade .carousel-item-prev.carousel-item-right {
-  z-index: 1;
-  opacity: 1;
-}
-
-.carousel-fade .active.carousel-item-left,
-.carousel-fade .active.carousel-item-right {
-  z-index: 0;
-  opacity: 0;
-  -webkit-transition: 0s 0.6s opacity;
-  transition: 0s 0.6s opacity;
-}
-
-@media (prefers-reduced-motion: reduce) {
-
-  .carousel-fade .active.carousel-item-left,
-  .carousel-fade .active.carousel-item-right {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 15%;
-  color: #fff;
-  text-align: center;
-  opacity: 0.5;
-  -webkit-transition: opacity 0.15s ease;
-  transition: opacity 0.15s ease;
-}
-
-@media (prefers-reduced-motion: reduce) {
-
-  .carousel-control-prev,
-  .carousel-control-next {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
-.carousel-control-prev:hover,
-.carousel-control-prev:focus,
-.carousel-control-next:hover,
-.carousel-control-next:focus {
-  color: #fff;
-  text-decoration: none;
-  outline: 0;
-  opacity: 0.9;
-}
-
-.carousel-control-prev {
-  left: 0;
-}
-
-.carousel-control-next {
-  right: 0;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: no-repeat 50% / 100% 100%;
-}
-
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
-}
-
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
-}
-
+/* Estilos para los indicadores */
 .carousel-indicators {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 15;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
   padding-left: 0;
-  margin-right: 15%;
-  margin-left: 15%;
+  margin: 0;
+  list-style: none;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin: 0;
   list-style: none;
 }
 
 .carousel-indicators li {
   box-sizing: content-box;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
   flex: 0 1 auto;
   width: 30px;
   height: 3px;
-  margin-right: 3px;
-  margin-left: 3px;
+  margin: 0 2px;
   text-indent: -999px;
   cursor: pointer;
   background-color: #fff;
   background-clip: padding-box;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  opacity: .5;
-  -webkit-transition: opacity 0.6s ease;
+  opacity: 0.5;
   transition: opacity 0.6s ease;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .carousel-indicators li {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
-.carousel-indicators .active {
+.carousel-indicators li.active {
   opacity: 1;
 }
 
+/* Estilos para los textos del carrusel */
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -7446,6 +7298,74 @@ a.close.disabled {
   padding-bottom: 20px;
   color: #fff;
   text-align: center;
+}
+
+/* Ajustes para tablets */
+@media (max-width: 992px) {
+  .carousel-indicators {
+      bottom: 5px; /* Ajusta la posición vertical en tablets */
+  }
+
+  .carousel-indicators li {
+      width: 20px;
+      height: 2px;
+      margin: 0 1.5px;
+  }
+
+  .carousel-caption {
+      right: 10%;
+      left: 10%;
+      bottom: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+  }
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+  .carousel-indicators li {
+      width: 15px; /* Reduce el ancho en móviles */
+      height: 2px;
+      margin: 0 1px; /* Reduce el margen en móviles */
+  }
+
+  .carousel-caption {
+      right: 5%;
+      left: 5%;
+      bottom: 5px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 14px; /* Reduce el tamaño del texto en móviles */
+  }
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+  .carousel-indicators {
+      bottom: 5px;
+  }
+
+  .carousel-indicators li {
+      width: 15px;
+      height: 2px;
+      margin: 0 1px;
+  }
+
+  .carousel-caption {
+      right: 5%;
+      left: 5%;
+      bottom: 5px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  .carousel-caption h3 {
+      font-size: 1.25rem;
+  }
+
+  .carousel-caption p {
+      font-size: 0.9rem;
+  }
 }
 
 @-webkit-keyframes spinner-border {
@@ -12194,10 +12114,12 @@ pre {
 
 .header {
   position: relative;
-  height: 100vh;
-  max-height: 900px;
-  min-height: 750px;
-  overflow: hidden;
+    width: 100%;
+    height: 100vh; /* Ocupa el 100% del alto de la pantalla */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .video-background-container {
@@ -12231,15 +12153,6 @@ pre {
   text-align: center;
   padding: 20px;
 }
-
-.overlay {
-  position: relative;
-  z-index: 1;
-  /* Agrega más estilos para el contenido superpuesto aquí */
-}
-
-
-
 
 
 .header .overlay {
@@ -12369,7 +12282,7 @@ pre {
 }
 
 .has-height-md {
-  min-height: 200px;
+  min-height: 100px;
 }
 
 .has-height-lg {
@@ -12470,11 +12383,17 @@ video {
 
 .carousel-item img {
   width: 100%;
-  height: 400px;
-  /* Ajusta esta altura según tus necesidades */
-  object-fit: cover;
+  height: auto; /* Ajusta la altura automáticamente */
+  max-height: 60vh; /* Limita la altura máxima */
+  object-fit: contain; /* Cambia a "contain" para mantener la forma */
 }
 
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .carousel-item img {
+      max-height: 50vh; /* Reduce la altura máxima en dispositivos móviles */
+  }
+}
 /* Asegura que el contenedor esté centrado */
 .carousel-container1 {
   width: 900px;
@@ -13188,16 +13107,11 @@ body {
 
 .lag {
   font-family: 'Laginchy', sans-serif;
-  font-weight: normal;
   /* Especificar el peso si es necesario */
-  font-size: 2.5rem;
+
   /* Ajusta el tamaño del título según tus necesidades */
   color: #d6d8db;
-  /* Color del texto del título */
-  letter-spacing: 0.1rem;
   /* Espaciado entre letras */
-  text-indent: 4rem;
-  /* Ajusta la sangría según tus necesidades */
 }
 
 .lagnmodal {
@@ -13423,14 +13337,15 @@ body {
 
 .background-image {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* Asegura que la imagen cubra todo el área sin distorsión */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
   z-index: -1;
-  /* Coloca la imagen detrás del contenido */
+  object-fit: cover; /* Hace que el video cubra el área sin deformarse */
 }
 
 .overlay {
@@ -13439,6 +13354,26 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Overlay semitransparente */
+  z-index: 1; /* Coloca el overlay encima del video */
+}
+
+@media (max-width: 768px) {
+  .header {
+      height: 50vh; /* Ajusta la altura para dispositivos móviles */
+  }
+
+  #background-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Mantiene el video cubriendo todo el espacio */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+      height: 30vh; /* Ajusta la altura para pantallas más pequeñas */
+  }
 }
 
 .product-gallery {
@@ -13683,6 +13618,13 @@ body {
   align-items: flex-start;
 }
 
+#gallery {
+  min-height: 300px; /* Ajusta este valor según tus necesidades */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .product-gallery {
   flex: 1;
   max-width: 300px;
@@ -13845,5 +13787,21 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Estilos para la imagen */
+.custom-image {
+  width: 100%; /* Hace que la imagen sea responsive */
+  max-width: 500px; /* Limita el ancho máximo a 500px */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Asegura que la imagen no tenga espacio extra debajo */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Margen superior solo en vista responsive */
+@media (max-width: 992px) {
+  .responsive-margin {
+      margin-top: 3rem; /* Ajusta el valor según el espacio que desees */
+  }
 }
 

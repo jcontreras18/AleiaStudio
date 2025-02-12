@@ -21,13 +21,18 @@
 
     <!-- Navbar -->
     <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
+        <!-- Logo -->
         <a class="navbar-brand" href="#">
             <img src="assets/imgs/Logo_4.png" class="brand-img" alt="Logo">
         </a>
+    
+        <!-- Botón de menú para móviles -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+    
+        <!-- Menú colapsable -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -36,7 +41,7 @@
                 <li class="nav-item">
                     <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
                 </li>
-                <!-- Dropdown Menu -->
+                <!-- Menú desplegable -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -49,6 +54,7 @@
                         <a class="dropdown-item" href="#service3">Renta de equipos</a>
                     </div>
                 </li>
+                <!-- Botón de contacto -->
                 <li class="nav-item">
                     <a href="components.html" class="nav-link btn btn-primary ml-xl-4">Contáctanos</a>
                 </li>
@@ -67,13 +73,17 @@
 
     <!--  About Section  -->
     <div id="about" class="container-fluid wow fadeIn" data-wow-duration="1.5s">
-        <div class="row colornegro">
-            <div class="col-lg-6 has-img-bg">
+        <div class="row colornegro align-items-center">
+            <!-- Imagen de 500x500 responsive -->
+            <div class="col-lg-6 mt-5 mt-lg-0 mb-4 mb-lg-0"> <!-- mb-4 en móvil -->
+                <img src="assets/imgs/Header3.jpeg" alt="Descripción de la imagen" class="img-fluid custom-image">
             </div>
+    
+            <!-- Texto al lado derecho -->
             <section class="col-lg-6">
                 <div class="row justify-content-center">
                     <article class="col-sm-8 py-5 my-5">
-                        <p class=" pad text-justify">
+                        <p class="pad text-justify">
                             Arktis representa creatividad e innovación para todo tipo de empresa, enfocándose en
                             marketing digital de la mano
                             de herramientas gráficas de última tecnología.
@@ -83,202 +93,126 @@
             </section>
         </div>
     </div>
-    <div>
-    </div>
 
-    <div id="gallary" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
-        <lag class="section-title">SERVICIOS</lag>
-    </div>
-    <!--  carousel  -->
-    <div class="container-fluid my-5">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicadores -->
-            <ul class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ul>
-            <!-- Imágenes del carrusel -->
-            <div class="carousel-inner imagen-combinada">
-                <div class="carousel-item active">
-                    <img src="assets/imgs/1a.png" alt="Imagen 1">
-                    <div class="carousel-caption">
-                        <h3>Imagen 1</h3>
-                        <p>Descripción de la imagen 1</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/imgs/Header2.jpeg" alt="Imagen 2">
-                    <div class="carousel-caption">
-                        <h3>Imagen 2</h3>
-                        <p>Descripción de la imagen 2</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/imgs/Header3.jpeg" alt="Imagen 3">
-                    <div class="carousel-caption">
-                        <h3>Imagen 3</h3>
-                        <p>Descripción de la imagen 3</p>
-                    </div>
-                </div>
+<!-- Sección de servicios -->
+<div id="gallary" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
+    <lag class="section-title">SERVICIOS</lag>
+</div>
+
+<!-- Carrusel 1 -->
+<div class="container-fluid my-5">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicadores -->
+        <ul class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ul>
+
+        <!-- Imágenes del carrusel -->
+        <div class="carousel-inner imagen-combinada">
+            <div class="carousel-item active">
+                <img src="assets/imgs/1a.png" alt="Imagen 1">               
             </div>
-
-            <!-- Controles del carrusel -->
-            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
+            <!-- <div class="carousel-item">
+                <img src="assets/imgs/Header2.jpeg" alt="Imagen 2" class="d-block w-100">             
+            </div>
+            <div class="carousel-item">
+                <img src="assets/imgs/Header3.jpeg" alt="Imagen 3" class="d-block w-100">
+              
+            </div> -->
         </div>
     </div>
-    <!-- end carousel  -->
+</div>
+<!-- Fin Carrusel 1 -->
 
+<!-- Carrusel 2 -->
+<div class="container-fluid my-5">
+    <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+        <!-- Indicadores -->
+        <ul class="carousel-indicators">
+            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel2" data-slide-to="1"></li>
+            <li data-target="#myCarousel2" data-slide-to="2"></li>
+        </ul>
 
-    <!-- Carousel 2 -->
-    <div class="container-fluid my-5">
-        <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-            <!-- Indicadores -->
-            <ul class="carousel-indicators">
-                <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel2" data-slide-to="1"></li>
-                <li data-target="#myCarousel2" data-slide-to="2"></li>
-            </ul>
-
-            <!-- Imágenes del carrusel -->
-            <div class="carousel-inner imagen-combinada">
-                <div class="carousel-item active">
-                    <img src="assets/imgs/2a.png" alt="Imagen 1">
-                    <div class="carousel-caption">
-                        <h3>Imagen 1</h3>
-                        <p>Descripción de la imagen 1</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/imgs/Header2.jpeg" alt="Imagen 2">
-                    <div class="carousel-caption">
-                        <h3>Imagen 2</h3>
-                        <p>Descripción de la imagen 2</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/imgs/Header3.jpeg" alt="Imagen 3">
-                    <div class="carousel-caption">
-                        <h3>Imagen 3</h3>
-                        <p>Descripción de la imagen 3</p>
-                    </div>
-                </div>
+        <!-- Imágenes del carrusel -->
+        <div class="carousel-inner imagen-combinada">
+            <div class="carousel-item active">
+                <img src="assets/imgs/2a.png" alt="Imagen 1" class="d-block w-100">              
             </div>
-
-            <!-- Controles del carrusel -->
-            <a class="carousel-control-prev" href="#myCarousel2" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel2" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
+            <!-- <div class="carousel-item">
+                <img src="assets/imgs/Header2.jpeg" alt="Imagen 2" class="d-block w-100">              
+            </div>
+            <div class="carousel-item">
+                <img src="assets/imgs/Header3.jpeg" alt="Imagen 3" class="d-block w-100">              
+            </div> -->
         </div>
     </div>
-    <!-- end carousel 2-->
+</div>
+<!-- Fin Carrusel 2 -->
 
-    <!-- Carousel 3 -->
-    <div class="container-fluid my-5">
-        <div id="myCarousel3" class="carousel slide" data-ride="carousel">
-            <!-- Indicadores -->
-            <ul class="carousel-indicators">
-                <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel3" data-slide-to="1"></li>
-                <li data-target="#myCarousel3" data-slide-to="2"></li>
-            </ul>
+<!-- Carrusel 3 -->
+<div class="container-fluid my-5">
+    <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+        <!-- Indicadores -->
+        <ul class="carousel-indicators">
+            <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel3" data-slide-to="1"></li>
+            <li data-target="#myCarousel3" data-slide-to="2"></li>
+        </ul>
 
-            <!-- Imágenes del carrusel -->
-            <div class="carousel-inner imagen-combinada">
-                <div class="carousel-item active">
-                    <img src="assets/imgs/3a.png" alt="Imagen 1">
-                    <div class="carousel-caption">
-                        <h3>Imagen 1</h3>
-                        <p>Descripción de la imagen 1</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/imgs/Header2.jpeg" alt="Imagen 2">
-                    <div class="carousel-caption">
-                        <h3>Imagen 2</h3>
-                        <p>Descripción de la imagen 2</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/imgs/Header3.jpeg" alt="Imagen 3">
-                    <div class="carousel-caption">
-                        <h3>Imagen 3</h3>
-                        <p>Descripción de la imagen 3</p>
-                    </div>
-                </div>
+        <!-- Imágenes del carrusel -->
+        <div class="carousel-inner imagen-combinada">
+            <div class="carousel-item active">
+                <img src="assets/imgs/3a.png" alt="Imagen 1" class="d-block w-100">             
             </div>
-
-            <!-- Controles del carrusel -->
-            <a class="carousel-control-prev" href="#myCarousel3" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel3" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
+            <!-- <div class="carousel-item">
+                <img src="assets/imgs/Header2.jpeg" alt="Imagen 2" class="d-block w-100">               
+            </div>
+            <div class="carousel-item">
+                <img src="assets/imgs/Header3.jpeg" alt="Imagen 3" class="d-block w-100">              
+            </div> -->
         </div>
     </div>
-    <!-- end carousel 3-->
+</div>
+<!-- Fin Carrusel 3 -->
 
-    <!-- Carousel 4 -->
-    <div class="container-fluid my-5">
-        <div id="myCarousel4" class="carousel slide" data-ride="carousel">
-            <!-- Indicadores -->
-            <ul class="carousel-indicators">
-                <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel4" data-slide-to="1"></li>
-                <li data-target="#myCarousel4" data-slide-to="2"></li>
-            </ul>
+<!-- Carrusel 4 -->
+<div class="container-fluid my-5">
+    <div id="myCarousel4" class="carousel slide" data-ride="carousel">
+        <!-- Indicadores -->
+        <ul class="carousel-indicators">
+            <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel4" data-slide-to="1"></li>
+            <li data-target="#myCarousel4" data-slide-to="2"></li>
+        </ul>
 
-            <!-- Imágenes del carrusel -->
-            <div class="carousel-inner imagen-combinada">
-                <div class="carousel-item active">
-                    <img src="assets/imgs/4a.png" alt="Imagen 1">
-                    <div class="carousel-caption">
-                        <h3>Imagen 1</h3>
-                        <p>Descripción de la imagen 1</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/imgs/Header2.jpeg" alt="Imagen 2">
-                    <div class="carousel-caption">
-                        <h3>Imagen 2</h3>
-                        <p>Descripción de la imagen 2</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/imgs/Header3.jpeg" alt="Imagen 3">
-                    <div class="carousel-caption">
-                        <h3>Imagen 3</h3>
-                        <p>Descripción de la imagen 3</p>
-                    </div>
-                </div>
+        <!-- Imágenes del carrusel -->
+        <div class="carousel-inner imagen-combinada">
+            <div class="carousel-item active">
+                <img src="assets/imgs/4a.png" alt="Imagen 1" class="d-block w-100">                
             </div>
-
-            <!-- Controles del carrusel -->
-            <a class="carousel-control-prev" href="#myCarousel4" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel4" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
+            <!-- <div class="carousel-item">
+                <img src="assets/imgs/Header2.jpeg" alt="Imagen 2" class="d-block w-100">              
+            </div>
+            <div class="carousel-item">
+                <img src="assets/imgs/Header3.jpeg" alt="Imagen 3" class="d-block w-100">             
+            </div> -->
         </div>
     </div>
-    <!-- end carousel 4-->
+</div>
+<!-- Fin Carrusel 4 -->
+
+
 
     <!-- Controles de logos -->
 
-    <div class="container lag text-center bg-dark text-light has-height-md wow fadeIn colornegro">
-        <div id="gallary" class="py-2 my-4">
-            <p class="section-title">ALIADOS</p>
-        </div>
+    <!-- Sección de Aliados -->
+    <div id="gallary" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
+        <lag class="section-title">Aliados</lag>
+    </div>
+
         <div class="py-5 my-4 logo-container">
             <img src="assets/Marcas/kw.png" alt="Logo 2" class="logo">
             <img src="assets/Marcas/corona.png" alt="Logo 3" class="logo">
