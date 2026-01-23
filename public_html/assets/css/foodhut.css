@@ -614,7 +614,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1440px;
   }
 }
 
@@ -13249,18 +13249,19 @@ body {
 
 /* Servicios */
 .services {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  /* Permite que los elementos se ajusten en filas automáticamente */
-  gap: 20px;
-  /* Añade un espacio entre los elementos */
   width: 100%;
   padding: 20px;
-  /* Espacio alrededor de todos los servicios */
   box-sizing: border-box;
-  /* Incluye el padding en el ancho total */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+
+  overflow: visible; /* evita cortes */
 }
+
+
 
 .service {
   flex: 1 1 18%;
