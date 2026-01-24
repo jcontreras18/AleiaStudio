@@ -63,80 +63,72 @@
     </nav>
 
     <!-- header -->
-    <div class="header">
-        <video autoplay muted loop id="background-video">
-            <source src="assets/imgs/banner_1.mp4" type="video/mp4">
-        </video>
-        <div class="overlay">
-        </div>
+   <!-- Hero Video Mejorado -->
+<div class="hero-video">
+    <video autoplay muted loop playsinline class="hero-video__media">
+        <source src="assets/imgs/banner_1.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+    </video>
+    <div class="hero-video__overlay"></div>
+    <div class="hero-video__content">
+        <h1>Explora Nuestro Mundo</h1>
+        <p>EInteracción en cada detalle</p>
+        <a href="#servicios" class="hero-video__btn">Ver más</a>
     </div>
+</div>
+
 
     <!--  About Section  -->
-    <div id="about" class="container-fluid wow fadeIn" data-wow-duration="1.5s">
-        <div class="row colornegro align-items-center">
-            <!-- Imagen de 500x500 responsive -->
-            <div class="col-lg-6 mt-5 mt-lg-0 mb-4 mb-lg-0"> <!-- mb-4 en móvil -->
-                <img src="assets/imgs/Header3.jpeg" alt="Descripción de la imagen" class="img-fluid custom-image">
-            </div>
-    
-            <!-- Texto al lado derecho -->
-            <section class="col-lg-6">
-                <div class="row justify-content-center">
-                    <article class="col-sm-8 py-5 my-5">
-                        <p class="pad text-justify">
-                            Arktis representa creatividad e innovación para todo tipo de empresa, enfocándose en
-                            marketing digital de la mano
-                            de herramientas gráficas de última tecnología.
-                        </p>
-                    </article>
-                </div>
-            </section>
+   <div id="about" class="container-fluid wow fadeIn" data-wow-duration="1.5s">
+    <div class="row align-items-center text-dark">
+        <!-- Imagen responsiva -->
+        <div class="col-lg-6 mt-5 mt-lg-0 mb-4 mb-lg-0">
+            <img src="assets/imgs/Header3.jpeg" alt="Equipo creativo de Arktis trabajando en marketing digital" class="img-fluid rounded custom-image">
         </div>
+
+        <!-- Texto al lado derecho -->
+        <section class="col-lg-6">
+            <div class="row justify-content-center">
+                <article class="col-sm-10 py-5 my-5">
+                    <h2 class="mb-4">Creatividad e Innovación para tu Empresa</h2>
+                    <p class="text-justify">
+                        En <strong>Arktis</strong> combinamos creatividad e innovación para impulsar todo tipo de empresas. 
+                        Nos especializamos en <strong>marketing digital</strong> y soluciones gráficas de última generación, 
+                        utilizando herramientas tecnológicas avanzadas que garantizan resultados impactantes y medibles.
+                    </p>
+                </article>
+            </div>
+        </section>
     </div>
+</div>
 
 <!-- Sección de servicios -->
 <div id="gallary" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
     <lag class="section-title">SERVICIOS</lag>
 </div>
 
-<!-- Carrusel 1 -->
+<!-- Carrusel 2 -->
 <div class="container-fluid my-5">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicadores -->
-        <ul class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ul>
-
-        <!-- Imágenes del carrusel -->
+    <div id="myCarousel2" class="d-block w-100" data-ride="carousel">  
+      <!-- Imágenes del carrusel -->
         <div class="carousel-inner imagen-combinada">
-            <div class=img-fluid">
-                <img src="assets/imgs/1a.png" alt="Imagen 1">
+            <div class="img-fluid">
+                <img src="assets/imgs/1a.png" alt="Imagen 1" class="d-block w-100">              
             </div>
             <!-- <div class="carousel-item">
-                <img src="assets/imgs/Header2.jpeg" alt="Imagen 2" class="d-block w-100">             
+                <img src="assets/imgs/Header2.jpeg" alt="Imagen 2" class="d-block w-100">              
             </div>
             <div class="carousel-item">
-                <img src="assets/imgs/Header3.jpeg" alt="Imagen 3" class="d-block w-100">
-              
+                <img src="assets/imgs/Header3.jpeg" alt="Imagen 3" class="d-block w-100">              
             </div> -->
         </div>
     </div>
 </div>
-<!-- Fin Carrusel 1 -->
 
-<!-- Carrusel 2 -->
 <div class="container-fluid my-5">
-    <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel2" class="d-block w-100" data-ride="carousel">
         <!-- Indicadores -->
-        <ul class="carousel-indicators">
-            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel2" data-slide-to="1"></li>
-            <li data-target="#myCarousel2" data-slide-to="2"></li>
-        </ul>
-
-        <!-- Imágenes del carrusel -->
+       <!-- Imágenes del carrusel -->
         <div class="carousel-inner imagen-combinada">
             <div class="img-fluid">
                 <img src="assets/imgs/2a.png" alt="Imagen 1" class="d-block w-100">              
@@ -156,13 +148,7 @@
 <div class="container-fluid my-5">
     <div id="myCarousel3" class="carousel slide" data-ride="carousel">
         <!-- Indicadores -->
-        <ul class="carousel-indicators">
-            <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel3" data-slide-to="1"></li>
-            <li data-target="#myCarousel3" data-slide-to="2"></li>
-        </ul>
-
-        <!-- Imágenes del carrusel -->
+      <!-- Imágenes del carrusel -->
         <div class="carousel-inner imagen-combinada">
             <div class="img-fluid">
                 <img src="assets/imgs/3a.png" alt="Imagen 1" class="d-block w-100">
@@ -182,13 +168,7 @@
 <div class="container-fluid my-5">
     <div id="myCarousel4" class="carousel slide" data-ride="carousel">
         <!-- Indicadores -->
-        <ul class="carousel-indicators">
-            <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel4" data-slide-to="1"></li>
-            <li data-target="#myCarousel4" data-slide-to="2"></li>
-        </ul>
-
-        <!-- Imágenes del carrusel -->
+         <!-- Imágenes del carrusel -->
         <div class="carousel-inner imagen-combinada">
             <div class="img-fluid">
                 <img src="assets/imgs/4a.png" alt="Imagen 1" class="d-block w-100">                
@@ -207,7 +187,6 @@
 
 
     <!-- Controles de logos -->
-
     <!-- Sección de Aliados -->
     <div id="gallary" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
         <lag class="section-title">Aliados</lag>
