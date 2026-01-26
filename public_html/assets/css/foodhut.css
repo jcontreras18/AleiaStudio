@@ -12018,7 +12018,7 @@ pre {
   .custom-navbar {
     min-height: auto !important;
     padding: 1rem;
-   background-color: rgb(98 110 123 / 27%); /* 0.5 = 50% de transparencia */
+   background-color: rgb(98 110 123 / 27%); x/* 0.5 = 50% de transparencia */
 
   }
 
@@ -12432,7 +12432,7 @@ video {
 
 /* Pseudo-elemento que aparecerá al pasar el mouse */
 .imagen-combinada::after {
-  content: "🤚";           /* Emoji de manito, puedes cambiarlo por otro icono */
+  
   position: absolute;
   top: 50%;
   left: 50%;
