@@ -19,48 +19,101 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" style="background-color: #030303;">
 
-    <!-- Navbar -->
-    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
-        <!-- Logo -->
+
+<nav class="custom-navbar navbar navbar-dark fixed-top d-lg-none"
+     data-spy="affix" data-offset-top="10">
+    <div class="container">
+
+        <!-- Icono izquierdo (visible en móvil) -->
+        <a href="#" class="mr-2">
+            <img src="assets/imgs/Logo_4.png" alt="Icono" style="height: 120px;">
+        </a>
+
+        <!-- Botón menú -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#mobileMenu" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú móvil -->
+        <div class="collapse navbar-collapse" id="mobileMenu">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item nb">
+                    <a class="nav-link text-hover" href="#index.html">Inicio</a>
+                </li>
+
+                <li class="nav-item nb">
+                    <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
+                </li>
+  <li class="nav-item dropdown nb">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                    Servicios
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
+                    <a class="dropdown-item" href="#service3">Fotografía</a>
+                    <a class="dropdown-item" href="#service3">Producción audiovisual</a>
+                    <a class="dropdown-item" href="#service3">Renta de equipos</a>
+                </div>
+            </li>
+
+            <li class="nav-item nb">
+                <a href="components.html" class="nav-link text-hover">
+                    Contáctanos
+                </a>
+            </li>
+             
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-flex"
+     data-spy="affix" data-offset-top="10">
+    <div class="container">
+
+        <!-- Logo escritorio -->
         <a class="navbar-brand" href="#">
             <img src="assets/imgs/Logo_4.png" class="brand-img" alt="Logo">
         </a>
-    
-        <!-- Botón de menú para móviles -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <!-- Menú colapsable -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-hover" href="#blog">Inicio<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
-                </li>
-                <!-- Menú desplegable -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Servicios
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
-                        <a class="dropdown-item" href="#service3">Fotografía</a>
-                        <a class="dropdown-item" href="#service3">Producción audiovisual</a>
-                        <a class="dropdown-item" href="#service3">Renta de equipos</a>
-                    </div>
-                </li>
-                <!-- Botón de contacto -->
-                <li class="nav-item">
-                    <a href="components.html" class="nav-link btn btn-primary ml-xl-4">Contáctanos</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+
+        <!-- Menú escritorio -->
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+                <a class="nav-link text-hover" href="#index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                    Servicios
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
+                    <a class="dropdown-item" href="#service3">Fotografía</a>
+                    <a class="dropdown-item" href="#service3">Producción audiovisual</a>
+                    <a class="dropdown-item" href="#service3">Renta de equipos</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a href="components.html" class="nav-link btn btn-primary ml-xl-4">
+                    Contáctanos
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+
 
     <!-- header -->
    <!-- Hero Video Mejorado -->
@@ -72,8 +125,8 @@
     <div class="hero-video__overlay"></div>
     <div class="hero-video__content">
         <h1>Explora Nuestro Mundo</h1>
-        <p>EInteracción en cada detalle</p>
-        <a href="#servicios" class="hero-video__btn">Ver más</a>
+        <p>Interacción en cada detalle</p>
+        <a href="#gallary" class="hero-video__btn">Ver más</a>
     </div>
 </div>
 

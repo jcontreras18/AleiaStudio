@@ -13,23 +13,7 @@
 */
 
 // smooth scroll
-$(document).ready(function () {
-  $(".navbar .nav-link").on('click', function (event) {
 
-    if (this.hash !== "") {
-
-      event.preventDefault();
-
-      var hash = this.hash;
-
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 700, function () {
-        window.location.hash = hash;
-      });
-    }
-  });
-});
 
 new WOW().init();
 
@@ -216,3 +200,33 @@ function goBack() {
 function goForward() {
   window.history.forward(); // Navega hacia la siguiente página en el historial
 }
+
+const toggle = document.querySelector('.modern-toggle');
+const menu = document.querySelector('.modern-menu');
+const body = document.body;
+
+// Abrir/cerrar menú
+toggle.addEventListener('click', () => {
+    toggle.classList.toggle('active');
+    menu.classList.toggle('show');
+    body.classList.toggle('no-scroll');
+});
+
+// Cerrar menú al hacer clic en un enlace
+document.querySelectorAll('.modern-nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        toggle.classList.remove('active');
+        menu.classList.remove('show');
+        body.classList.remove('no-scroll');
+    });
+});
+
+// Cerrar menú al hacer clic fuera
+document.addEventListener('click', (e) => {
+    if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+        toggle.classList.remove('active');
+        menu.classList.remove('show');
+        body.classList.remove('no-scroll');
+    }
+});
+

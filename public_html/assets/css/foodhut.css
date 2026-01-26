@@ -4864,25 +4864,6 @@ input[type="button"].btn-block {
   display: block;
 }
 
-.navbar {
-  position: fixed;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 1rem 1rem;
-}
 
 .navbar>.container,
 .navbar>.container-fluid {
@@ -5320,6 +5301,15 @@ input[type="button"].btn-block {
 
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
+      text-align: center;
+    
+}
+
+.nb {
+  color: #fff;
+      text-align: center;
+      font-size: 23px ;
+    
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -12028,7 +12018,8 @@ pre {
   .custom-navbar {
     min-height: auto !important;
     padding: 1rem;
-    background-color: #343a40;
+   background-color: rgb(98 110 123 / 27%); /* 0.5 = 50% de transparencia */
+
   }
 
   .custom-navbar .navbar-brand {
@@ -12036,11 +12027,7 @@ pre {
   }
 }
 
-.custom-navbar .collapse {
-  -webkit-flex-basis: 0 !important;
-  -ms-flex-preferred-size: 0 !important;
-  flex-basis: 0 !important;
-}
+
 
 .custom-navbar .collapse .navbar-nav,
 .custom-navbar .collapse .navbar-brand {
@@ -12437,10 +12424,30 @@ video {
   /* Oscurecer la imagen */
 }
 
+.imagen-combinada {
+  position: relative;      /* Necesario para posicionar ::after */
+  display: inline-block;   /* Para que el tamaño se ajuste a la imagen */
+  cursor: pointer;         /* Cambia el cursor a manito siempre */
+}
+
+/* Pseudo-elemento que aparecerá al pasar el mouse */
+.imagen-combinada::after {
+  content: "🤚";           /* Emoji de manito, puedes cambiarlo por otro icono */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrar sobre la imagen */
+  font-size: 2rem;
+  opacity: 0;              /* Inicialmente invisible */
+  transition: opacity 0.3s ease; /* Transición suave */
+  pointer-events: none;    /* No interfiere con hover */
+}
+
+/* Al pasar el mouse, hacemos visible la manito */
 .imagen-combinada:hover::after {
   opacity: 1;
-  /* Visible al pasar el ratón */
 }
+
 
 
 body {
@@ -13689,6 +13696,7 @@ ul li {
   color: #333;
 }
 
+
 .note {
   color: red;
   font-weight: bold;
@@ -13865,16 +13873,30 @@ ul li {
 
 /* Botón */
 .hero-video__btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 30px;
-    background: #ff6b6b;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 50px;
-    transition: background 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 14px 34px;
+  background: linear-gradient(135deg, #ff6b6b, #ff3b3b);
+  color: #fff !important;        /* Texto blanco */
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 
+    background 0.3s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  box-shadow: 0 8px 20px rgba(255, 107, 107, 0.35);
 }
 
+/* Hover */
 .hero-video__btn:hover {
-    background: #ff3b3b;
+  background: linear-gradient(135deg, #ff3b3b, #ff1f1f);
+  color: #fff !important;        /* Texto blanco también en hover */
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(255, 59, 59, 0.45);
 }
