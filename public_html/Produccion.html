@@ -20,54 +20,109 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" style="background-color: #030303;">
 
-    <!-- Navbar -->
-    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
-        <a class="navbar-brand" href="#">
-            <img src="assets/imgs/Logo_4.png" class="brand-img" alt="Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<!-- Navbar -->
+<nav class="custom-navbar navbar navbar-dark fixed-top d-lg-none"
+         data-spy="affix" data-offset-top="10">
+        <div class="container">
+
+            <!-- Icono izquierdo (visible en móvil) -->
+            <a href="#" class="mr-2">
+                <img src="assets/imgs/Logo_4.png" alt="Icono" style="height: 120px;">
+            </a>
+
+            <!-- Botón menú -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#mobileMenu" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú móvil -->
+            <div class="collapse navbar-collapse" id="mobileMenu">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item nb">
+                        <a class="nav-link text-hover" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item nb">
+                        <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown nb">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                            Servicios
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
+                            <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
+                            <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
+                            <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item nb">
+                        <a href="components.html" class="nav-link text-hover">
+                            Contáctanos
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+</nav>
+
+
+    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-flex"
+         data-spy="affix" data-offset-top="10">
+        <div class="container">
+
+            <!-- Logo escritorio -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/Logo_4.png" class="brand-img" alt="Logo">
+            </a>
+
+            <!-- Menú escritorio -->
             <ul class="navbar-nav ml-auto">
+
                 <li class="nav-item">
-                    <a class="nav-link text-hover" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-hover" href="index.html">Inicio</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
                 </li>
-                <!-- Dropdown Menu -->
+
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                         Servicios
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu">
                         <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
-                        <a class="dropdown-item" href="#service3">Fotografía</a>
-                        <a class="dropdown-item" href="#service3">Producción audiovisual</a>
-                        <a class="dropdown-item" href="#service3">Renta de equipos</a>
+                        <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
+                        <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
+                        <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
                     </div>
                 </li>
+
                 <li class="nav-item">
-                    <a href="components.html" class="nav-link btn btn-primary ml-xl-4">Contáctanos</a>
+                    <a href="components.html" class="nav-link btn btn-primary ml-xl-4">
+                        Contáctanos
+                    </a>
                 </li>
+
             </ul>
         </div>
     </nav>
 
+
     <!-- header -->
-    <div class="header">
-        <video autoplay muted loop id="carousel slide">
-            <source src="assets/imgs/produccion_1 hd.mp4" type="video/mp4">
+    <div class="hero-video">
+        <video autoplay muted loop playsinline class="hero-video__media">
+            <source src="assets/imgs/produccion/produccion.mp4" type="video/mp4">
+
         </video>
-        <div class="overlay">
-        </div>
     </div>
 
-
-    <div></div>
 
     <div id="gallary" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
         <lag class="section-title">Servicios</lag>
@@ -76,29 +131,96 @@
 
 <div class="container contal">
     <div class="services">
-        <div class="service" onmouseover="changeBackground('assets/imgs/Header3.jpeg')" onmouseout="resetBackground()">
+        <div class="service" onmouseover="changeBackground('assets/imgs/Produccion/corporativo.png')" onmouseout="resetBackground()">
             <h2>Videos Corporativos</h2>
-            <p>Realizamos la producción de video institucional.</p>
+            <h2>Realizamos la producción de video institucional.</h2>
         </div>
-        <div class="service" onmouseover="changeBackground('assets/imgs/Header2.jpeg')" onmouseout="resetBackground()">
+        <div class="service" onmouseover="changeBackground('assets/imgs/Produccion/digital.png')" onmouseout="resetBackground()">
             <h2>Contenido Digital</h2>
-            <p>Producimos contenido para los usuarios.</p>
+            <h2>Producimos contenido para los usuarios.</h2>
         </div>
-        <div class="service" onmouseover="changeBackground('assets/imgs/Header1.jpeg')" onmouseout="resetBackground()">
+        <div class="service" onmouseover="changeBackground('assets/imgs/Produccion/eventos.png')" onmouseout="resetBackground()">
             <h2>Eventos</h2>
-            <p>Realizamos cobertura de eventos.</p>
+            <h2>Realizamos cobertura de eventos.</h2>
         </div>
-        <div class="service" onmouseover="changeBackground('assets/imgs/Header1.jpeg')" onmouseout="resetBackground()">
+        <div class="service" onmouseover="changeBackground('assets/imgs/Produccion/productos.png')" onmouseout="resetBackground()">
             <h2>Productos</h2>
-            <p>Creación de experiencias visuales.</p>
+            <h2>Creación de experiencias visuales.</h2>
         </div>
-        <div class="service" onmouseover="changeBackground('assets/imgs/Header2.jpeg')" onmouseout="resetBackground()">
+        <div class="service" onmouseover="changeBackground('assets/imgs/Produccion/pos_produccion.png')" onmouseout="resetBackground()">
             <h2>Post Producción</h2>
-            <p>Realizamos la post producción completa.</p>
+            <h2>Realizamos la post producción completa.</h2>
         </div>
     </div>
 </div>
 
+
+<!--Sección preguntas frecuentes-->
+
+<div id="gallary" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
+    <lag class="section-title">PREGUNTAS FRECUENTES</lag>
+</div>
+
+<div class="faq">
+
+    <div class="faq-item active">
+        <div class="faq-question">
+            <span class="icon">?</span>
+            <span class="text">¿En qué se diferencia Arktis de otras productoras audiovisuales?</span>
+            <span class="arrow">⌄</span>
+        </div>
+        <div class="faq-answer">
+            <p>
+                A partir de la concepción del audiovisual como una respuesta artística a las necesidades empresariales y personales de la sociedad, entendemos que el cliente es la fuente
+                de inspiración y principal motor para la realización de cada producto, así mismo la culminación de proyectos en base a la satisfacción de quien los solicita nos convierte
+                en pilar de garantía innovadora y profesional.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            <span class="icon">?</span>
+            <span class="text">¿Qué sucede si mi presupuesto no se ajusta a la cotización recibida?</span>
+            <span class="arrow">⌄</span>
+        </div>
+        <div class="faq-answer">
+            <p>
+                Entendemos que las necesidades de publicitar nuestra marca o empresa no deben ser un privilegio solamente de algunos, gracias a esto contamos con un espacio personalizado
+                para cada cliente donde puede explicar su proyecto y sin intermediarios poder llegar a un acuerdo en el cual podamos trabajar juntos.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            <span class="icon">?</span>
+            <span class="text">¿Qué tipo de producciones audiovisuales realizan?</span>
+            <span class="arrow">⌄</span>
+        </div>
+        <div class="faq-answer">
+            <p>
+                Gracias a la experiencia de nuestro equipo realizador, podemos decir con total certeza que realizamos todo tipo de producciones audiovisuales, pasando por producción de
+                redes sociales y marketing, cubrimiento de eventos, y videos musicales, hasta comerciales de producto, realización de documentales o productos audiovisuales con infraestructura para Cine.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            <span class="icon">?</span>
+            <span class="text">¿Cómo puedo comunicarme con ustedes de manera personalizada y exponer mi proyecto?</span>
+            <span class="arrow">⌄</span>
+        </div>
+        <div class="faq-answer">
+            <p>
+                Contamos con las redes sociales en donde estamos siempre atentos a responder cualquier inquietud o al WhatsApp (+57) 320 373 4871 o (+57) 342 3085.
+            </p>
+        </div>
+    </div>
+
+</div>
+<!--Sección preguntas frecuentes-->
 
 
     <div class="social-widget" id="socialWidget">
@@ -195,6 +317,44 @@
 
     <!-- FoodHut js -->
     <script src="assets/js/foodhut.js"></script>
+
+
+<!--JS paralos servicios-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const contenedor = document.querySelector(".contal");
+
+          // imagen inicial al cargar
+          contenedor.style.backgroundImage =
+            "url('assets/imgs/Header3.jpeg')";
+        });
+
+        function changeBackground(imagen) {
+          document.querySelector(".contal").style.backgroundImage =
+            `url('${imagen}')`;
+        }
+    </script>
+
+<!--JS abrir y cerrar sección preguntas-->
+
+<script>
+    const items = document.querySelectorAll(".faq-item");
+
+    items.forEach(item => {
+      item.querySelector(".faq-question").addEventListener("click", () => {
+
+        // Cierra las demás
+        items.forEach(i => {
+          if (i !== item) i.classList.remove("active");
+        });
+
+        // Abre / cierra la actual
+        item.classList.toggle("active");
+      });
+    });
+</script>
+
+
 
 </body>
 

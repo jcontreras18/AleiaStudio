@@ -13249,15 +13249,15 @@ body {
   width: 100%;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   transition: background-image 0.5s ease;
-  object-fit: cover;
-  /* Asegura que la imagen de fondo cubra todo el contenedor */
+  padding: 40px 0;
 }
+
 
 /* Servicios */
 .services {
   width: 100%;
-  padding: 20px;
   box-sizing: border-box;
 
   display: flex;
@@ -13265,22 +13265,29 @@ body {
   justify-content: space-around;
   gap: 20px;
 
-  overflow: visible; /* evita cortes */
+  padding: 0; /* ❌ elimina el desplazamiento vertical */
 }
-
-
 
 .service {
   flex: 1 1 18%;
-  /* Control de tamaño flexible */
-  max-width: 200px;
-  /* Ancho máximo para evitar que se expandan demasiado en pantallas grandes */
+  min-height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   padding: 20px;
   text-align: center;
+
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
+
   transition: background-color 0.3s ease, transform 0.3s ease;
-  /* Transiciones para hover */
+}
+
+p {
+  font-weight: bold;
 }
 
 .service:hover {
@@ -13292,6 +13299,7 @@ body {
 .service h2 {
   margin-bottom: 10px;
   font-size: 1.2em;
+  font-weight:500;
   /* Tamaño del título */
 }
 
@@ -13619,6 +13627,14 @@ body {
   padding: 20px;
 }
 
+.container.contal {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
 .product-container {
   display: flex;
   gap: 20px;
@@ -13900,3 +13916,60 @@ ul li {
   transform: translateY(-3px);
   box-shadow: 0 12px 28px rgba(255, 59, 59, 0.45);
 }
+
+/* Sección preguntas frecuentes*/
+.faq {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 25px 0;
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0b5aa6;
+}
+
+.faq-question .text {
+  flex: 1;           /* ocupa todo el espacio */
+  text-align: left;  /* texto a la izquierda */
+  margin-left: 15px; /* separa del ícono */
+}
+
+.faq-question .icon {
+  margin-right: 15px;
+  color: #38a1db;
+  font-weight: bold;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  color: #555;
+  font-size: 17px;
+  line-height: 1.6;
+  padding-left: 35px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+  margin-top: 15px;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .arrow {
+  transform: rotate(180deg);
+}
+
