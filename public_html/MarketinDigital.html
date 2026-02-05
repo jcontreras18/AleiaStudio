@@ -13,61 +13,118 @@
     <link href="https://fonts.cdnfonts.com/css/laginchy" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-
     <!-- Bootstrap + FoodHut main styles -->
     <link rel="stylesheet" href="assets/css/foodhut.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" style="background-color: #030303;">
 
-    <!-- Navbar -->
-    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" style="background-color: #030303;">
+
+
+<nav class="custom-navbar navbar navbar-dark fixed-top d-lg-none"
+     data-spy="affix" data-offset-top="10">
+    <div class="container">
+
+        <!-- Icono izquierdo (visible en móvil) -->
+        <a href="#" class="mr-2">
+            <img src="assets/imgs/Logo_4.png" alt="Icono" style="height: 120px;">
+        </a>
+
+        <!-- Botón menú -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#mobileMenu" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú móvil -->
+        <div class="collapse navbar-collapse" id="mobileMenu">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item nb">
+                    <a class="nav-link text-hover" href="#index.html">Inicio</a>
+                </li>
+
+                <li class="nav-item nb">
+                    <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
+                </li>
+                <li class="nav-item dropdown nb">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        Servicios
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
+                        <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
+                        <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
+                        <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
+                    </div>
+                </li>
+
+                <li class="nav-item nb">
+                    <a href="components.html" class="nav-link text-hover">
+                        Contáctanos
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-flex"
+     data-spy="affix" data-offset-top="10">
+    <div class="container">
+
+        <!-- Logo escritorio -->
         <a class="navbar-brand" href="#">
             <img src="assets/imgs/Logo_4.png" class="brand-img" alt="Logo">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-hover" href="index.html">Inicio|<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
-                </li>
-                <!-- Dropdown Menu -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Servicios
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
-                        <a class="dropdown-item" href="#service3">Fotografía</a>
-                        <a class="dropdown-item" href="#service3">Producción audiovisual</a>
-                        <a class="dropdown-item" href="#service3">Renta de equipos</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="components.html" class="nav-link btn btn-primary ml-xl-4">Contáctanos</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- header -->
-    <div class="header">
-        <video autoplay muted loop id="background-video">
-            <source src="assets/imgs/produccion_1 hd.mp4" type="video/mp4">
-        </video>
-        <div class="overlay">
-        </div>
+        <!-- Menú escritorio -->
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+                <a class="nav-link text-hover" href="#index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                    Servicios
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
+                    <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
+                    <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
+                    <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a href="components.html" class="nav-link btn btn-primary ml-xl-4">
+                    Contáctanos
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+<!-- header -->
+
+    <div class="slide active">
+        <a>
+            <img src="assets/imgs/Marketing/Imagen_marketing.png" alt="Imagen 1">
+        </a>
     </div>
 
-
-    <div></div>
 
     <div id="gallary" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
         <lag class="section-title">Marketing</lag>
