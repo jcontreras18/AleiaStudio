@@ -128,31 +128,56 @@
         <lag class="section-title">Servicios</lag>
     </div>
 
+<section class="services-hero">
 
-<div class="container contal">
-    <div class="services">
-        <div class="service" onmouseover="changeBackground('assets/imgs/Produccion/corporativo.png')" onmouseout="resetBackground()">
-            <h2>Videos Corporativos</h2>
-            <h2>Realizamos la producción de video institucional.</h2>
-        </div>
-        <div class="service" onmouseover="changeBackground('assets/imgs/Produccion/digital.png')" onmouseout="resetBackground()">
-            <h2>Contenido Digital</h2>
-            <h2>Producimos contenido para los usuarios.</h2>
-        </div>
-        <div class="service" onmouseover="changeBackground('assets/imgs/Produccion/eventos.png')" onmouseout="resetBackground()">
-            <h2>Eventos</h2>
-            <h2>Realizamos cobertura de eventos.</h2>
-        </div>
-        <div class="service" onmouseover="changeBackground('assets/imgs/Produccion/productos.png')" onmouseout="resetBackground()">
-            <h2>Productos</h2>
-            <h2>Creación de experiencias visuales.</h2>
-        </div>
-        <div class="service" onmouseover="changeBackground('assets/imgs/Produccion/pos_produccion.png')" onmouseout="resetBackground()">
-            <h2>Post Producción</h2>
-            <h2>Realizamos la post producción completa.</h2>
-        </div>
+  <!-- FONDO -->
+  <div class="bg" id="bg"></div>
+
+  <div class="cards">
+
+    <div class="card" data-img="assets/imgs/Produccion/corporativo.png">
+      <h3>Videos Corporativos</h3>
+      <p>Producción institucional.</p>
     </div>
-</div>
+
+    <div class="card" data-img="assets/imgs/Produccion/digital.png">
+      <h3>Contenido Digital</h3>
+      <p>Contenido para usuarios.</p>
+    </div>
+
+    <div class="card" data-img="assets/imgs/Produccion/eventos.png">
+      <h3>Eventos</h3>
+      <p>Cobertura de eventos.</p>
+    </div>
+
+    <div class="card" data-img="assets/imgs/Produccion/pos_produccion.png">
+      <h3>Productos</h3>
+      <p>Experiencias visuales.</p>
+    </div>
+
+     <div class="card" data-img="assets/imgs/Produccion/pos_produccion.png">
+      <h3>Productos</h3>
+      <p>Experiencias visuales.</p>
+    </div>
+  </div>
+</section>
+<script>
+const cards = document.querySelectorAll(".card");
+const bg = document.getElementById("bg");
+
+cards.forEach(card => {
+  card.addEventListener("mouseenter", () => {
+    
+    // Cambiar fondo
+    const img = card.getAttribute("data-img");
+    bg.style.backgroundImage = `url(${img})`;
+
+    // Activar expansión
+    cards.forEach(c => c.classList.remove("active"));
+    card.classList.add("active");
+  });
+});
+</script>
 
 
 <!--Sección preguntas frecuentes-->
