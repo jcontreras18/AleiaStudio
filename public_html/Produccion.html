@@ -2,367 +2,391 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with FoodHut landing page.">
-    <meta name="author" content="Devcrud">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with FoodHut landing page.">
+  <meta name="author" content="Devcrud">
 
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/vendors/animate/animate.css">
-    <link href="https://fonts.cdnfonts.com/css/laginchy" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- font icons -->
+  <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="assets/vendors/animate/animate.css">
+  <link href="https://fonts.cdnfonts.com/css/laginchy" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
-    <!-- Bootstrap + FoodHut main styles -->
-    <link rel="stylesheet" href="assets/css/foodhut.css">
+  <!-- Bootstrap + FoodHut main styles -->
+  <link rel="stylesheet" href="assets/css/foodhut.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" style="background-color: #030303;">
 
-<!-- Navbar -->
-<nav class="custom-navbar navbar navbar-dark fixed-top d-lg-none"
-         data-spy="affix" data-offset-top="10">
-        <div class="container">
+  <!-- Navbar -->
+  <nav class="custom-navbar navbar navbar-dark fixed-top d-lg-none" data-spy="affix" data-offset-top="10">
+    <div class="container">
 
-            <!-- Icono izquierdo (visible en móvil) -->
-            <a href="#" class="mr-2">
-                <img src="assets/imgs/Logo_4.png" alt="Icono" style="height: 120px;">
+      <!-- Icono izquierdo (visible en móvil) -->
+      <a href="#" class="mr-2">
+        <img src="assets/imgs/Logo_4.png" alt="Icono" style="height: 120px;">
+      </a>
+
+      <!-- Botón menú -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu"
+        aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú móvil -->
+      <div class="collapse navbar-collapse" id="mobileMenu">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item nb">
+            <a class="nav-link text-hover" href="index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item nb">
+            <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
+          </li>
+          <li class="nav-item dropdown nb">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+              Servicios
             </a>
-
-            <!-- Botón menú -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#mobileMenu" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Menú móvil -->
-            <div class="collapse navbar-collapse" id="mobileMenu">
-                <ul class="navbar-nav ml-auto">
-
-                    <li class="nav-item nb">
-                        <a class="nav-link text-hover" href="index.html">Inicio</a>
-                    </li>
-
-                    <li class="nav-item nb">
-                        <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
-                    </li>
-                    <li class="nav-item dropdown nb">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-                            Servicios
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
-                            <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
-                            <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
-                            <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item nb">
-                        <a href="components.html" class="nav-link text-hover">
-                            Contáctanos
-                        </a>
-                    </li>
-
-
-                </ul>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
+              <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
+              <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
+              <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
             </div>
-        </div>
-</nav>
+          </li>
 
-
-    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-flex"
-         data-spy="affix" data-offset-top="10">
-        <div class="container">
-
-            <!-- Logo escritorio -->
-            <a class="navbar-brand" href="#">
-                <img src="assets/imgs/Logo_4.png" class="brand-img" alt="Logo">
+          <li class="nav-item nb">
+            <a href="components.html" class="nav-link text-hover">
+              Contáctanos
             </a>
-
-            <!-- Menú escritorio -->
-            <ul class="navbar-nav ml-auto">
-
-                <li class="nav-item">
-                    <a class="nav-link text-hover" href="index.html">Inicio</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-                        Servicios
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
-                        <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
-                        <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
-                        <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a href="components.html" class="nav-link btn btn-primary ml-xl-4">
-                        Contáctanos
-                    </a>
-                </li>
-
-            </ul>
-        </div>
-    </nav>
+          </li>
 
 
-    <!-- header -->
-    <div class="hero-video">
-        <video autoplay muted loop playsinline class="hero-video__media">
-            <source src="assets/imgs/produccion/produccion.mp4" type="video/mp4">
-
-        </video>
+        </ul>
+      </div>
     </div>
+  </nav>
 
 
-    <div id="gallary" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
-        <lag class="section-title">Servicios</lag>
+  <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-flex" data-spy="affix"
+    data-offset-top="10">
+    <div class="container">
+
+      <!-- Logo escritorio -->
+      <a class="navbar-brand" href="#">
+        <img src="assets/imgs/Logo_4.png" class="brand-img" alt="Logo">
+      </a>
+
+      <!-- Menú escritorio -->
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+          <a class="nav-link text-hover" href="index.html">Inicio</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+            Servicios
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
+            <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
+            <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
+            <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="components.html" class="nav-link btn btn-primary ml-xl-4">
+            Contáctanos
+          </a>
+        </li>
+
+      </ul>
     </div>
+  </nav>
 
-<section class="services-hero">
 
-  <!-- FONDO -->
-  <div class="bg" id="bg"></div>
+  <!-- header -->
+  <div class="hero-video">
+    <video autoplay muted loop playsinline class="hero-video__media">
+      <source src="assets/imgs/produccion/produccion.mp4" type="video/mp4">
 
-  <div class="cards">
-
-    <div class="card" data-img="assets/imgs/Produccion/corporativo.png">
-      <h3>Videos Corporativos</h3>
-      <p>Producción institucional.</p>
-    </div>
-
-    <div class="card" data-img="assets/imgs/Produccion/digital.png">
-      <h3>Contenido Digital</h3>
-      <p>Contenido para usuarios.</p>
-    </div>
-
-    <div class="card" data-img="assets/imgs/Produccion/eventos.png">
-      <h3>Eventos</h3>
-      <p>Cobertura de eventos.</p>
-    </div>
-
-    <div class="card" data-img="assets/imgs/Produccion/pos_produccion.png">
-      <h3>Productos</h3>
-      <p>Experiencias visuales.</p>
-    </div>
-
-     <div class="card" data-img="assets/imgs/Produccion/pos_produccion.png">
-      <h3>Productos</h3>
-      <p>Experiencias visuales.</p>
-    </div>
+    </video>
   </div>
-</section>
-<script>
-const cards = document.querySelectorAll(".card");
-const bg = document.getElementById("bg");
 
-cards.forEach(card => {
-  card.addEventListener("mouseenter", () => {
-    
-    // Cambiar fondo
-    const img = card.getAttribute("data-img");
-    bg.style.backgroundImage = `url(${img})`;
+  <section id="gallery" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
+    <div class="container text-center">
+      <h2 class="section-title">Servicios</h2>
+    </div>
+  </section>
 
-    // Activar expansión
-    cards.forEach(c => c.classList.remove("active"));
-    card.classList.add("active");
-  });
-});
-</script>
+  <section class="services-hero">
+
+    <!-- FONDO -->
+    <div class="bg" id="bg"></div>
+    <div class="cards">
+
+      <div class="card active" data-img="assets/imgs/Produccion/corporativo.png">
+        <h3>Videos Corporativos</h3>
+        <p>Producción institucional.</p>
+      </div>
+
+      <div class="card" data-img="assets/imgs/Produccion/digital.png">
+        <h3>Contenido Digital</h3>
+        <p>Contenido para usuarios.</p>
+      </div>
+
+      <div class="card" data-img="assets/imgs/Produccion/eventos.png">
+        <h3>Eventos</h3>
+        <p>Cobertura de eventos.</p>
+      </div>
+
+      <div class="card" data-img="assets/imgs/Produccion/pos_produccion.png">
+        <h3>Productos</h3>
+        <p>Experiencias visuales.</p>
+      </div>
+
+      <div class="card" data-img="assets/imgs/Produccion/pos_produccion.png">
+        <h3>Productos</h3>
+        <p>Experiencias visuales.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const bg = document.querySelector(".bg");
+      const cards = document.querySelectorAll(".card");
+
+      // 1. CARGA INICIAL → primera card
+      if (cards.length > 0) {
+        bg.style.backgroundImage = `url(${cards[0].dataset.img})`;
+        cards[0].classList.add("active");
+      }
+
+      // 2. CAMBIO AL PASAR MOUSE
+      cards.forEach(card => {
+        card.addEventListener("mouseenter", function () {
+
+          cards.forEach(c => c.classList.remove("active"));
+          this.classList.add("active");
+
+          bg.style.backgroundImage = `url(${this.dataset.img})`;
+        });
+      });
+
+    });
+  </script>
 
 
-<!--Sección preguntas frecuentes-->
 
-<div id="gallary" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
-    <lag class="section-title">PREGUNTAS FRECUENTES</lag>
-</div>
+  <!--Sección preguntas frecuentes-->
 
-<div class="faq">
+  <section id="faq" class="faq-section">
 
-    <div class="faq-item active">
-        <div class="faq-question">
+    <div class="faq-container">
+
+      <header class="faq-header">
+        <h2 class="faq-title">Preguntas Frecuentes</h2>
+        <p class="faq-subtitle">Resolvemos tus dudas antes de iniciar tu proyecto</p>
+      </header>
+
+      <div class="faq" role="accordion">
+
+        <!-- ITEM 1 -->
+        <article class="faq-item active">
+          <button class="faq-question" aria-expanded="true">
             <span class="icon">?</span>
             <span class="text">¿En qué se diferencia Arktis de otras productoras audiovisuales?</span>
             <span class="arrow">⌄</span>
-        </div>
-        <div class="faq-answer">
+          </button>
+          <div class="faq-answer">
             <p>
-                A partir de la concepción del audiovisual como una respuesta artística a las necesidades empresariales y personales de la sociedad, entendemos que el cliente es la fuente
-                de inspiración y principal motor para la realización de cada producto, así mismo la culminación de proyectos en base a la satisfacción de quien los solicita nos convierte
-                en pilar de garantía innovadora y profesional.
+              Concebimos el audiovisual como una respuesta artística a necesidades empresariales y personales.
+              El cliente es nuestra principal fuente de inspiración y motor de cada proyecto.
             </p>
-        </div>
-    </div>
+          </div>
+        </article>
 
-    <div class="faq-item">
-        <div class="faq-question">
+        <!-- ITEM 2 -->
+        <article class="faq-item">
+          <button class="faq-question" aria-expanded="false">
             <span class="icon">?</span>
-            <span class="text">¿Qué sucede si mi presupuesto no se ajusta a la cotización recibida?</span>
+            <span class="text">¿Qué sucede si mi presupuesto no se ajusta?</span>
             <span class="arrow">⌄</span>
-        </div>
-        <div class="faq-answer">
+          </button>
+          <div class="faq-answer">
             <p>
-                Entendemos que las necesidades de publicitar nuestra marca o empresa no deben ser un privilegio solamente de algunos, gracias a esto contamos con un espacio personalizado
-                para cada cliente donde puede explicar su proyecto y sin intermediarios poder llegar a un acuerdo en el cual podamos trabajar juntos.
+              Ofrecemos un espacio personalizado para entender tu proyecto y encontrar un acuerdo de trabajo
+              que se adapte a tus posibilidades.
             </p>
-        </div>
-    </div>
+          </div>
+        </article>
 
-    <div class="faq-item">
-        <div class="faq-question">
+        <!-- ITEM 3 -->
+        <article class="faq-item">
+          <button class="faq-question" aria-expanded="false">
             <span class="icon">?</span>
-            <span class="text">¿Qué tipo de producciones audiovisuales realizan?</span>
+            <span class="text">¿Qué tipo de producciones realizan?</span>
             <span class="arrow">⌄</span>
-        </div>
-        <div class="faq-answer">
+          </button>
+          <div class="faq-answer">
             <p>
-                Gracias a la experiencia de nuestro equipo realizador, podemos decir con total certeza que realizamos todo tipo de producciones audiovisuales, pasando por producción de
-                redes sociales y marketing, cubrimiento de eventos, y videos musicales, hasta comerciales de producto, realización de documentales o productos audiovisuales con infraestructura para Cine.
+              Realizamos producción para redes sociales, eventos, comerciales, documentales
+              y productos audiovisuales para cine.
             </p>
-        </div>
-    </div>
+          </div>
+        </article>
 
-    <div class="faq-item">
-        <div class="faq-question">
+        <!-- ITEM 4 -->
+        <article class="faq-item">
+          <button class="faq-question" aria-expanded="false">
             <span class="icon">?</span>
-            <span class="text">¿Cómo puedo comunicarme con ustedes de manera personalizada y exponer mi proyecto?</span>
+            <span class="text">¿Cómo puedo comunicarme con ustedes?</span>
             <span class="arrow">⌄</span>
-        </div>
-        <div class="faq-answer">
+          </button>
+          <div class="faq-answer">
             <p>
-                Contamos con las redes sociales en donde estamos siempre atentos a responder cualquier inquietud o al WhatsApp (+57) 320 373 4871 o (+57) 342 3085.
+              Puedes escribirnos por redes sociales o WhatsApp al
+              <strong>+57 320 373 4871</strong>.
             </p>
-        </div>
+          </div>
+        </article>
+
+      </div>
+
     </div>
 
-</div>
-<!--Sección preguntas frecuentes-->
+  </section>
 
 
-    <div class="social-widget" id="socialWidget">
-        <div class="social-button" onclick="toggleMenu()">
-            <img id="whatsappIcon" src="assets/imgs/Redes/whatsapp_b.png" alt="WhatsApp">
+  <!--Sección preguntas frecuentes-->
+
+
+  <div class="social-widget" id="socialWidget">
+    <div class="social-button" onclick="toggleMenu()">
+      <img id="whatsappIcon" src="assets/imgs/Redes/whatsapp_b.png" alt="WhatsApp">
+    </div>
+    <div class="social-menu" id="socialMenu">
+      <a href="https://x.com/" target="_blank" class="social-icon">
+        <img src="assets/imgs/Redes/X1_b.png" alt="LinkedIn">
+      </a>
+      <a href="https://facebook.com" target="_blank" class="social-icon">
+        <img src="assets/imgs/Redes/facebook_b.png" alt="Twitter">
+      </a>
+      <a href="https://instagram.com" target="_blank" class="social-icon">
+        <img src="assets/imgs/Redes/instagram_b.png" alt="Twitter">
+      </a>
+      <a href="https://instagram.com" target="_blank" class="social-icon">
+        <img src="assets/imgs/Redes/whatsapp_b.png" alt="Instagram">
+      </a>
+    </div>
+  </div>
+
+  <!-- page footer -->
+  <footer class="footer fot py-4">
+    <div class="container">
+      <div class="row text-center text-md-left">
+        <!-- Columna 1 -->
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5>Sobre Nosotros</h5>
+          <p class="text-muted">
+            Somos una empresa dedicada a brindar soluciones innovadoras en tecnología. Nuestro objetivo es
+            mejorar la vida de las personas a través de la tecnología.
+          </p>
         </div>
-        <div class="social-menu" id="socialMenu">
-            <a href="https://x.com/" target="_blank" class="social-icon">
-                <img src="assets/imgs/Redes/X1_b.png" alt="LinkedIn">
-            </a>
+        <!-- Columna 2 -->
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5>Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="#inicio" class="text-hover">Inicio</a></li>
+            <li><a href="#nosotros" class="text-hover">Nosotros</a></li>
+            <li><a href="#proyectos" class="text-hover">Proyectos</a></li>
+            <li><a href="#contacto" class="text-hover">Contáctanos</a></li>
+          </ul>
+        </div>
+        <!-- Columna 3 -->
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5>Contacto</h5>
+          <p class="text-muted">
+            Dirección: Calle Falsa 123<br>
+            Teléfono: (123) 456-7890<br>
+            Email: info@ejemplo.com
+          </p>
+          <!-- Redes Sociales -->
+          <div class="social-mt-3 e-">
             <a href="https://facebook.com" target="_blank" class="social-icon">
-                <img src="assets/imgs/Redes/facebook_b.png" alt="Twitter">
+              <img src="assets/imgs/Redes/facebook_b.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-icon">
+              <img src="assets/imgs/Redes/instagram_b.png" alt="Twitter">
             </a>
             <a href="https://instagram.com" target="_blank" class="social-icon">
-                <img src="assets/imgs/Redes/instagram_b.png" alt="Twitter">
+              <img src="assets/imgs/Redes/X_b.png" alt="Instagram">
             </a>
-            <a href="https://instagram.com" target="_blank" class="social-icon">
-                <img src="assets/imgs/Redes/whatsapp_b.png" alt="Instagram">
+            <a href="https://linkedin.com" target="_blank" class="social-icon">
+              <img src="assets/imgs/Redes/whatsapp_b.png" alt="LinkedIn">
             </a>
+          </div>
         </div>
+      </div>
     </div>
+  </footer>
 
-    <!-- page footer -->
-    <footer class="footer fot py-4">
-        <div class="container">
-            <div class="row text-center text-md-left">
-                <!-- Columna 1 -->
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h5>Sobre Nosotros</h5>
-                    <p class="text-muted">
-                        Somos una empresa dedicada a brindar soluciones innovadoras en tecnología. Nuestro objetivo es
-                        mejorar la vida de las personas a través de la tecnología.
-                    </p>
-                </div>
-                <!-- Columna 2 -->
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h5>Enlaces</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#inicio" class="text-hover">Inicio</a></li>
-                        <li><a href="#nosotros" class="text-hover">Nosotros</a></li>
-                        <li><a href="#proyectos" class="text-hover">Proyectos</a></li>
-                        <li><a href="#contacto" class="text-hover">Contáctanos</a></li>
-                    </ul>
-                </div>
-                <!-- Columna 3 -->
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h5>Contacto</h5>
-                    <p class="text-muted">
-                        Dirección: Calle Falsa 123<br>
-                        Teléfono: (123) 456-7890<br>
-                        Email: info@ejemplo.com
-                    </p>
-                    <!-- Redes Sociales -->
-                    <div class="social-mt-3 e-">
-                        <a href="https://facebook.com" target="_blank" class="social-icon">
-                            <img src="assets/imgs/Redes/facebook_b.png" alt="Facebook">
-                        </a>
-                        <a href="https://twitter.com" target="_blank" class="social-icon">
-                            <img src="assets/imgs/Redes/instagram_b.png" alt="Twitter">
-                        </a>
-                        <a href="https://instagram.com" target="_blank" class="social-icon">
-                            <img src="assets/imgs/Redes/X_b.png" alt="Instagram">
-                        </a>
-                        <a href="https://linkedin.com" target="_blank" class="social-icon">
-                            <img src="assets/imgs/Redes/whatsapp_b.png" alt="LinkedIn">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <div class="bg-dark text-light text-center border-top wow fadeIn">
+    <p class="mb-0 py-3 text-muted small">&copy; Copyright
+      <script>document.write(new Date().getFullYear())</script> AleiaStudio
+      <a href=""></a>
+    </p>
+  </div>
+  <!-- end of page footer -->
 
-    <div class="bg-dark text-light text-center border-top wow fadeIn">
-        <p class="mb-0 py-3 text-muted small">&copy; Copyright
-            <script>document.write(new Date().getFullYear())</script> AleiaStudio
-            <a href=""></a>
-        </p>
-    </div>
-    <!-- end of page footer -->
+  <!-- core  -->
+  <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+  <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
-    <!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+  <!-- bootstrap affix -->
+  <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
-    <!-- bootstrap affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+  <!-- wow.js -->
+  <script src="assets/vendors/wow/wow.js"></script>
 
-    <!-- wow.js -->
-    <script src="assets/vendors/wow/wow.js"></script>
+  <!-- google maps -->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
 
-    <!-- google maps -->
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
-
-    <!-- FoodHut js -->
-    <script src="assets/js/foodhut.js"></script>
+  <!-- FoodHut js -->
+  <script src="assets/js/foodhut.js"></script>
 
 
-<!--JS paralos servicios-->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const contenedor = document.querySelector(".contal");
+  <!--JS paralos servicios-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const contenedor = document.querySelector(".contal");
 
-          // imagen inicial al cargar
-          contenedor.style.backgroundImage =
-            "url('assets/imgs/Header3.jpeg')";
-        });
+      // imagen inicial al cargar
+      contenedor.style.backgroundImage =
+        "url('assets/imgs/Header3.jpeg')";
+    });
 
-        function changeBackground(imagen) {
-          document.querySelector(".contal").style.backgroundImage =
-            `url('${imagen}')`;
-        }
-    </script>
+    function changeBackground(imagen) {
+      document.querySelector(".contal").style.backgroundImage =
+        `url('${imagen}')`;
+    }
+  </script>
 
-<!--JS abrir y cerrar sección preguntas-->
+  <!--JS abrir y cerrar sección preguntas-->
 
-<script>
+  <script>
     const items = document.querySelectorAll(".faq-item");
 
     items.forEach(item => {
@@ -377,7 +401,7 @@ cards.forEach(card => {
         item.classList.toggle("active");
       });
     });
-</script>
+  </script>
 
 
 
