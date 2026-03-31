@@ -19,139 +19,168 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" style="background-color: #030303;">
 
-    <!-- Navbar -->
-    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
-        <a class="navbar-brand" href="#">
-            <img src="assets/imgs/Logo_4.png" class="brand-img" alt="Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-hover" href="#blog">Inicio<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
-                </li>
-                <!-- Dropdown Menu -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Servicios
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
-                        <a class="dropdown-item" href="#service3">Fotografía</a>
-                        <a class="dropdown-item" href="#service3">Producción audiovisual</a>
-                        <a class="dropdown-item" href="#service3">Renta de equipos</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="components.html" class="nav-link btn btn-primary ml-xl-4">Contáctanos</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
-   
+   <!-- Navbar -->
+  <nav class="custom-navbar navbar navbar-dark fixed-top d-lg-none" data-spy="affix" data-offset-top="10">
+    <div class="container">
 
-    <div id="gallary" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
-        <lag class="section-title">SERVICIOS</lag>
+      <!-- Icono izquierdo (visible en móvil) -->
+      <a href="#" class="mr-2">
+        <img src="assets/imgs/Logo_4.png" alt="Icono" style="height: 120px;">
+      </a>
+
+      <!-- Botón menú -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu"
+        aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú móvil -->
+      <div class="collapse navbar-collapse" id="mobileMenu">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item nb">
+            <a class="nav-link text-hover" href="index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item nb">
+            <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
+          </li>
+          <li class="nav-item dropdown nb">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+              Servicios
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
+              <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
+              <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
+              <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
+            </div>
+          </li>
+
+          <li class="nav-item nb">
+            <a href="contact.html" class="nav-link text-hover">
+              Contáctanos
+            </a>
+          </li>
+
+
+        </ul>
+      </div>
     </div>
+  </nav>
+
+
+  <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-flex" data-spy="affix"
+    data-offset-top="10">
+    <div class="container">
+
+      <!-- Logo escritorio -->
+      <a class="navbar-brand" href="#">
+        <img src="assets/imgs/Logo_4.png" class="brand-img" alt="Logo">
+      </a>
+
+      <!-- Menú escritorio -->
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+          <a class="nav-link text-hover" href="index.html">Inicio</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+            Servicios
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
+            <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
+            <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
+            <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link btn btn-primary ml-xl-4">
+            Contáctanos
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+
+
     <!-- ======= Contact Section ======= -->
-<section id="contact" class="contact">
-    <div class="container" data-aos="fade-up">
-        <div class="section-title">
-            <h2>Contáctanos</h2>
-        </div>
+<section id="contact">
 
-        <div class="row">
-            <!-- Información de contacto -->
-            <div class="col-lg-5 d-flex align-items-stretch">
-                <div class="info">
-                    <div class="address">
-                        <i class="icon">
-                            <lord-icon src="https://cdn.lordicon.com/oaflahpk.json" trigger="loop"></lord-icon>
-                        </i>
-                        <h4>Ubicación:</h4>
-                        <p>Cra. 72r #40C-45</p>
-                    </div>
+<div class="container contact-card">
 
-                    <div class="email">
-                        <i class="icon">
-                            <lord-icon src="https://cdn.lordicon.com/iepbfivp.json" trigger="loop"></lord-icon>
-                        </i>
-                        <h4>Email:</h4>
-                        <p>contact@jevsdata.com</p>
-                    </div>
+<div class="row align-items-center">
 
-                    <div class="phone">
-                        <i class="icon">
-                            <lord-icon src="https://cdn.lordicon.com/jnlncdtk.json" trigger="loop"></lord-icon>
-                        </i>
-                        <h4>Teléfono:</h4>
-                        <p>+57 3243425419</p>
-                    </div>
+<!-- ILUSTRACION EMAIL -->
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3976.8967273329945!2d-74.1523429!3d4.6125!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e941481eec3%3A0x3f97b6d770ba4de3!2sCra.%2072r%20%2340C-45%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1657138744455!5m2!1ses-419!2sco"
-                        frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-                </div>
-            </div>
+<div class="col-lg-5 contact-illustration">
 
-            <!-- Formulario de contacto -->
-            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <label for="name">Nombre</label>
-                            <input type="text" name="name" class="form-control" id="name" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="email">Correo electrónico</label>
-                            <input type="email" class="form-control" name="email" id="email" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="subject">Asunto</label>
-                            <input type="text" class="form-control" name="subject" id="subject" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="phone">Teléfono</label>
-                            <input type="text" class="form-control" name="phone" id="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea class="form-control" name="message" rows="10" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <div id="divRecaptcha"></div> <!-- Placeholder for reCAPTCHA -->
-                        </div>
-                    </div>
+<div class="mail-box">
 
-                    <!-- Mensajes de éxito y error -->
-                    <div class="my-3">
-                        <div class="loading">Cargando...</div>
-                        <div id="success-message" class="toast align-items-center text-white bg-success border-0 tost" role="alert" aria-live="assertive" aria-atomic="true">
-                            <div class="d-flex">
-                                <div class="toast-body text-center">
-                                    El mensaje ha sido enviado. ¡Gracias! Nos pondremos en contacto lo antes posible.
-                                </div>
-                                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-                            </div>
-                        </div>
-                        <div class="error-message"></div>
-                    </div>
+<div class="mail-envelope">
+<div class="mail-flap"></div>
+<div class="mail-lines"></div>
+</div>
 
-                    <!-- Botón de envío -->
-                    <div class="text-center">
-                        <button class="buten" type="submit">Enviar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+</div>
+
+</div>
+
+<!-- FORMULARIO -->
+
+<div class="col-lg-7">
+
+<h2 class="contact-title text-center mb-4">Contáctanos</h2>
+
+<form action="forms/contact.php" method="post">
+
+<div class="row">
+
+<div class="col-md-6">
+<input type="text" name="name" class="form-control modern-input" placeholder="Nombre">
+</div>
+
+<div class="col-md-6">
+<input type="email" name="email" class="form-control modern-input" placeholder="Correo electrónico">
+</div>
+
+<div class="col-md-6">
+<input type="text" name="subject" class="form-control modern-input" placeholder="Asunto">
+</div>
+
+<div class="col-md-6">
+<input type="text" name="phone" class="form-control modern-input" placeholder="Teléfono">
+</div>
+
+<div class="col-md-12">
+<textarea name="message" class="form-control modern-input textarea-modern" rows="6" placeholder="Escribe tu mensaje"></textarea>
+</div>
+
+</div>
+
+<div class="text-center mt-4">
+<button class="modern-btn">Enviar mensaje</button>
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 <!-- End Contact Section -->
 

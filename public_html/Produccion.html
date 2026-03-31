@@ -20,7 +20,7 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" style="background-color: #030303;">
 
-  <!-- Navbar -->
+    <!-- Navbar -->
   <nav class="custom-navbar navbar navbar-dark fixed-top d-lg-none" data-spy="affix" data-offset-top="10">
     <div class="container">
 
@@ -59,7 +59,7 @@
           </li>
 
           <li class="nav-item nb">
-            <a href="components.html" class="nav-link text-hover">
+            <a href="contact.html" class="nav-link text-hover">
               Contáctanos
             </a>
           </li>
@@ -69,8 +69,7 @@
       </div>
     </div>
   </nav>
-
-
+ 
   <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-flex" data-spy="affix"
     data-offset-top="10">
     <div class="container">
@@ -104,7 +103,7 @@
         </li>
 
         <li class="nav-item">
-          <a href="components.html" class="nav-link btn btn-primary ml-xl-4">
+          <a href="contact.html" class="nav-link btn btn-primary ml-xl-4">
             Contáctanos
           </a>
         </li>
@@ -114,13 +113,21 @@
   </nav>
 
 
-  <!-- header -->
-  <div class="hero-video">
-    <video autoplay muted loop playsinline class="hero-video__media">
-      <source src="assets/imgs/produccion/produccion.mp4" type="video/mp4">
 
+  <!-- header -->
+ <section class="mk-hero">
+    <video autoplay muted loop playsinline preload="none" class="mk-hero-video">
+        <source src="assets/imgs/banner_1.mp4" type="video/mp4">
     </video>
-  </div>
+
+    <div class="mk-hero-overlay"></div>
+
+    <div class="mk-hero-content">
+        <h1>Nuestros servicios</h1>
+        <p>Impulsamos tu marca con estrategia, tecnología y resultados</p>
+        <a href="#servicios" class="btn-comprar">Ver servicios</a>
+    </div>
+</section>
 
   <section id="gallery" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
     <div class="container text-center">
