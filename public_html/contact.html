@@ -17,174 +17,165 @@
     <link rel="stylesheet" href="assets/css/foodhut.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" style="background-color: #030303;">
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
 
-   <!-- Navbar -->
-  <nav class="custom-navbar navbar navbar-dark fixed-top d-lg-none" data-spy="affix" data-offset-top="10">
-    <div class="container">
+    <!-- Navbar -->
+    <nav class="custom-navbar navbar navbar-dark fixed-top d-lg-none" data-spy="affix" data-offset-top="10">
+        <div class="container">
 
-      <!-- Icono izquierdo (visible en móvil) -->
-      <a href="#" class="mr-2">
-        <img src="assets/imgs/Logo_4.png" alt="Icono" style="height: 120px;">
-      </a>
-
-      <!-- Botón menú -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu"
-        aria-expanded="false">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Menú móvil -->
-      <div class="collapse navbar-collapse" id="mobileMenu">
-        <ul class="navbar-nav ml-auto">
-
-          <li class="nav-item nb">
-            <a class="nav-link text-hover" href="index.html">Inicio</a>
-          </li>
-
-          <li class="nav-item nb">
-            <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
-          </li>
-          <li class="nav-item dropdown nb">
-            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-              Servicios
+            <!-- Icono izquierdo (visible en móvil) -->
+            <a href="#" class="mr-2">
+                <img src="assets/imgs/Logo_4.png" alt="Icono" style="height: 120px;">
             </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
-              <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
-              <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
-              <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
+
+            <!-- Botón menú -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu"
+                aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú móvil -->
+            <div class="collapse navbar-collapse" id="mobileMenu">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item nb">
+                        <a class="nav-link text-hover" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item nb">
+                        <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown nb">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                            Servicios
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
+                            <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
+                            <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
+                            <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item nb">
+                        <a href="contact.html" class="nav-link text-hover">
+                            Contáctanos
+                        </a>
+                    </li>
+
+
+                </ul>
             </div>
-          </li>
+        </div>
+    </nav>
 
-          <li class="nav-item nb">
-            <a href="contact.html" class="nav-link text-hover">
-              Contáctanos
+
+    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-flex" data-spy="affix"
+        data-offset-top="10">
+        <div class="container">
+
+            <!-- Logo escritorio -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/Logo_4.png" class="brand-img" alt="Logo">
             </a>
-          </li>
 
+            <!-- Menú escritorio -->
+            <ul class="navbar-nav ml-auto">
 
-        </ul>
-      </div>
-    </div>
-  </nav>
+                <li class="nav-item">
+                    <a class="nav-link text-hover" href="index.html">Inicio</a>
+                </li>
 
+                <li class="nav-item">
+                    <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
+                </li>
 
-  <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-flex" data-spy="affix"
-    data-offset-top="10">
-    <div class="container">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        Servicios
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
+                        <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
+                        <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
+                        <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
+                    </div>
+                </li>
 
-      <!-- Logo escritorio -->
-      <a class="navbar-brand" href="#">
-        <img src="assets/imgs/Logo_4.png" class="brand-img" alt="Logo">
-      </a>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link btn btn-primary ml-xl-4">
+                        Contáctanos
+                    </a>
+                </li>
 
-      <!-- Menú escritorio -->
-      <ul class="navbar-nav ml-auto">
+            </ul>
+        </div>
+    </nav>
 
-        <li class="nav-item">
-          <a class="nav-link text-hover" href="index.html">Inicio</a>
-        </li>
+<section id="contact" class="contact-section">
 
-        <li class="nav-item">
-          <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
-        </li>
+  <div class="container">
+    <div class="contact-card row align-items-center justify-content-center">
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-            Servicios
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
-            <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
-            <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
-            <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
+      <!-- ILUSTRACIÓN -->
+      <div class="col-lg-5 contact-illustration text-center mb-4 mb-lg-0">
+        <div class="mail-box">
+          <div class="mail-envelope">
+            <div class="mail-flap"></div>
+            <div class="mail-lines"></div>
           </div>
-        </li>
+        </div>
+      </div>
 
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link btn btn-primary ml-xl-4">
-            Contáctanos
-          </a>
-        </li>
+      <!-- FORMULARIO -->
+      <div class="col-lg-6">
 
-      </ul>
+        <div class="text-center mb-4">
+          <h2 class="contact-title">Contáctanos</h2>
+          <p class="contact-subtitle">Cuéntanos tu idea y te ayudamos a hacerla realidad</p>
+        </div>
+
+        <form action="forms/contact.php" method="post" class="contact-form">
+
+          <div class="row g-3">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control modern-input" placeholder="Nombre" required>
+            </div>
+
+            <div class="col-md-6">
+              <input type="email" name="email" class="form-control modern-input" placeholder="Correo electrónico" required>
+            </div>
+
+            <div class="col-md-6">
+              <input type="text" name="subject" class="form-control modern-input" placeholder="Asunto">
+            </div>
+
+            <div class="col-md-6">
+              <input type="tel" name="phone" class="form-control modern-input" placeholder="Teléfono">
+            </div>
+
+            <div class="col-12">
+              <textarea name="message" class="form-control modern-input textarea-modern" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+            </div>
+
+          </div>
+
+          <div class="text-center mt-4">
+            <button type="submit" class="modern-btn w-100">
+              Enviar mensaje
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+
     </div>
-  </nav>
-
-
-
-    <!-- ======= Contact Section ======= -->
-<section id="contact">
-
-<div class="container contact-card">
-
-<div class="row align-items-center">
-
-<!-- ILUSTRACION EMAIL -->
-
-<div class="col-lg-5 contact-illustration">
-
-<div class="mail-box">
-
-<div class="mail-envelope">
-<div class="mail-flap"></div>
-<div class="mail-lines"></div>
-</div>
-
-</div>
-
-</div>
-
-<!-- FORMULARIO -->
-
-<div class="col-lg-7">
-
-<h2 class="contact-title text-center mb-4">Contáctanos</h2>
-
-<form action="forms/contact.php" method="post">
-
-<div class="row">
-
-<div class="col-md-6">
-<input type="text" name="name" class="form-control modern-input" placeholder="Nombre">
-</div>
-
-<div class="col-md-6">
-<input type="email" name="email" class="form-control modern-input" placeholder="Correo electrónico">
-</div>
-
-<div class="col-md-6">
-<input type="text" name="subject" class="form-control modern-input" placeholder="Asunto">
-</div>
-
-<div class="col-md-6">
-<input type="text" name="phone" class="form-control modern-input" placeholder="Teléfono">
-</div>
-
-<div class="col-md-12">
-<textarea name="message" class="form-control modern-input textarea-modern" rows="6" placeholder="Escribe tu mensaje"></textarea>
-</div>
-
-</div>
-
-<div class="text-center mt-4">
-<button class="modern-btn">Enviar mensaje</button>
-</div>
-
-</form>
-
-</div>
-
-</div>
-
-</div>
+  </div>
 
 </section>
-<!-- End Contact Section -->
-
-   
 
     <!-- Controles del whatsapp -->
     <div class="social-widget" id="socialWidget">
