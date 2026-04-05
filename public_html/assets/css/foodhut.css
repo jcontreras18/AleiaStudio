@@ -14036,6 +14036,8 @@ border-right: 5px solid #f5efef;
   transform: rotate(180deg);
 }
 
+
+
 /* MOBILE */
 @media (max-width: 768px) {
   .faq-title { 
@@ -15284,4 +15286,9 @@ body{
 
 .project-card:hover{
     transform:translateY(-8px);
+}
+
+* {
+  outline: none !important;
+  box-shadow: none !important;
 }

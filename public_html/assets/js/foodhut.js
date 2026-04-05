@@ -230,4 +230,28 @@ document.addEventListener('click', (e) => {
     }
 });
 
+// ABRIR
+function abrirModal(id) {
+  document.getElementById(id).classList.add("activo");
+}
+
+// CERRAR
+function cerrarModal(id) {
+  document.getElementById(id).classList.remove("activo");
+}
+
+// CAMBIAR IMAGEN
+function cambiarImagen(img, idDestino) {
+  document.getElementById(idDestino).src = img.src;
+}
+
+// CERRAR AL HACER CLICK AFUERA
+window.addEventListener("click", function (e) {
+  document.querySelectorAll(".modal").forEach(modal => {
+    if (e.target === modal) {
+      modal.classList.remove("activo");
+    }
+  });
+});
+
 
