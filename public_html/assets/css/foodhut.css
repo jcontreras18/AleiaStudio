@@ -12600,6 +12600,34 @@ body {
   }
 }
 
+/* Logo móvil */
+.logo-mobile{
+    height:70px;
+}
+
+/* Logo escritorio */
+.brand-img{
+    height:90px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width:768px){
+
+    .logo-mobile{
+        height:50px;
+    }
+
+    .navbar{
+        padding:8px 15px;
+    }
+
+    .navbar-toggler{
+        padding:5px 8px;
+        font-size:18px;
+    }
+
+}
+
 /* Contenedor de redes sociales */
 .social-container {
   position: fixed;
@@ -12658,7 +12686,73 @@ body {
   /* Mantener la opacidad completamente visible al hacer clic */
 }
 
-/* Estilos del popup */
+
+/* CONTENEDOR GENERAL */
+.gallery {
+  width: 100%;
+  padding: 80px 60px;
+}
+
+/* TÍTULO */
+.gallery-title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+/* GRID EDITORIAL */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* ITEMS */
+.gallery-item {
+  display: block;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* HOVER ELEGANTE */
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery {
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    padding: 40px 20px;
+  }
+
+  .gallery-title {
+    font-size: 36px;
+  }
+}
+
+.titulo-seccion {
+  padding: 120px 0 40px;
+}
 
 
 /* Estilos para el modal de redes sociales */
@@ -13544,11 +13638,14 @@ p {
 }
 
 .cards {
-  display: grid;
   grid-template-columns: repeat(3, 1fr); /* 👈 SOLO 3 */
   gap: 2rem;
   padding: 2rem;
   list-style: none;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  height: 100%;
 }
 
 /* Media queries para mejorar la responsividad */
@@ -13649,6 +13746,7 @@ p {
   max-width: 300px;
   text-align: center;
 }
+
 
 .main-image img {
   width: 100%;
@@ -14129,11 +14227,14 @@ border-right: 5px solid #f5efef;
 
 /* Fondo dinámico */
 .bg {
-  position: absolute;
-  inset: 0;
-  background: url("assets/imgs/1.jpg") center/cover no-repeat;
-  transition: 0.5s ease;
-  filter: brightness(0.6);
+position: absolute;
+width: 100%;
+height: 100%;
+background: url("assets/imgs/1.jpg") center/cover no-repeat;
+background-size: cover;
+background-position: center;
+transition: 0.5s ease;
+filter: brightness(0.6);
 }
 
 /* Contenedor tarjetas */
@@ -14147,16 +14248,16 @@ border-right: 5px solid #f5efef;
 /* Tarjetas */
 .card {
   flex: 1;
-  color: #fff;
+  padding: 20px;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
-  background: rgba(0,0,0,0.25);
-  backdrop-filter: blur(2px);
-  transition: 0.4s ease;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  transition: all 0.4s ease;
   cursor: pointer;
-  border-right: 1px solid rgba(255,255,255,0.2);
 }
 
 .card h3 {
@@ -14169,18 +14270,37 @@ border-right: 5px solid #f5efef;
 
 /* EXPANSIÓN */
 .card.active {
-  flex: 3;
-  background: rgba(0,0,0,0.45);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .cards {
-    flex-direction: column;
+  flex: 2;
+  background: rgba(255, 255, 255, 0.2);
   }
 
+@media (max-width: 768px) {
+  /* 🔥 rompe el layout tipo hero */
+  .services-hero {
+    height: auto;
+    overflow: visible;
+  }
+  /* 🔥 cards en columna */
+  .cards {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+  }
+  /* 🔥 cada card ocupa todo el ancho */
+  .card {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+  }
+  /* 🔥 evita expansión en mobile */
   .card.active {
-    flex: 2;
+    flex: none;
+  }
+  /* 🔥 opcional: mejora visual */
+  .bg {
+    position: absolute;
+    height: 100%;
   }
 }
 

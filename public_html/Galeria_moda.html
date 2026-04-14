@@ -19,58 +19,137 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" style="background-color: #030303;">
 
-    <!-- Navbar -->
-    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
-        <a class="navbar-brand" href="#">
-            <img src="assets/imgs/Logo_4.png" class="brand-img" alt="Logo">
+
+<nav class="custom-navbar navbar navbar-dark fixed-top d-lg-none"
+     data-spy="affix" data-offset-top="10">
+    <div class="container">
+
+        <!-- Icono izquierdo (visible en móvil) -->
+        <a href="#" class="mr-2">
+            <img src="assets/imgs/Logo_4.png" alt="Icono" style="height: 120px;">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+        <!-- Botón menú -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#mobileMenu" aria-expanded="false">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Menú móvil -->
+        <div class="collapse navbar-collapse" id="mobileMenu">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-hover" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+
+                <li class="nav-item nb">
+                    <a class="nav-link text-hover" href="index.html">Inicio</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
-                </li>
-                <!-- Dropdown Menu -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                <li class="nav-item dropdown nb">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                         Servicios
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu">
                         <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
-                        <a class="dropdown-item" href="#service3">Fotografía</a>
-                        <a class="dropdown-item" href="#service3">Producción audiovisual</a>
-                        <a class="dropdown-item" href="#service3">Renta de equipos</a>
+                        <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
+                        <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
+                        <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a href="components.html" class="nav-link btn btn-primary ml-xl-4">Contáctanos</a>
+
+                <li class="nav-item nb">
+                    <a href="components.html" class="nav-link text-hover">
+                        Contáctanos
+                    </a>
                 </li>
             </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Galería</title>
-        <link rel="stylesheet" href="galeria.css">
-    </head>
-    <body>
+
+<nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-flex"
+     data-spy="affix" data-offset-top="10">
+    <div class="container">
+
+        <!-- Logo escritorio -->
+        <a class="navbar-brand" href="#">
+            <img src="assets/imgs/Logo_4.png" class="brand-img" alt="Logo">
+        </a>
+
+        <!-- Menú escritorio -->
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+                <a class="nav-link text-hover" href="index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                    Servicios
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
+                    <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
+                    <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
+                    <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a href="components.html" class="nav-link btn btn-primary ml-xl-4">
+                    Contáctanos
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+<nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-flex"
+     data-spy="affix" data-offset-top="10">
+    <div class="container">
+
+        <!-- Logo escritorio -->
+        <a class="navbar-brand" href="#">
+            <img src="assets/imgs/Logo_4.png" class="brand-img" alt="Logo">
+        </a>
+
+        <!-- Menú escritorio -->
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+                <a class="nav-link text-hover" href="index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                    Servicios
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
+                    <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
+                    <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
+                    <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a href="components.html" class="nav-link btn btn-primary ml-xl-4">
+                    Contáctanos
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
 
     <section class="gallery">
 
-
-        <div id="gallary" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
+        <div class="text-center lag text-light">
             <lag class="section-title">MODA</lag>
         </div>
+
+
         <div class="gallery-grid">
 
             <a class="gallery-item">
@@ -112,8 +191,6 @@
 
     </section>
 
-    </body>
-    </html>
 
     <!-- Controles del whatsapp -->
     <div class="social-widget" id="socialWidget">
@@ -153,7 +230,6 @@
                     <h5>Enlaces</h5>
                     <ul class="list-unstyled">
                         <li><a href="#inicio" class="text-hover">Inicio</a></li>
-                        <li><a href="#nosotros" class="text-hover">Nosotros</a></li>
                         <li><a href="#proyectos" class="text-hover">Proyectos</a></li>
                         <li><a href="#contacto" class="text-hover">Contáctanos</a></li>
                     </ul>

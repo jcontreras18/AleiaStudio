@@ -42,10 +42,6 @@
           <li class="nav-item nb">
             <a class="nav-link text-hover" href="index.html">Inicio</a>
           </li>
-
-          <li class="nav-item nb">
-            <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
-          </li>
           <li class="nav-item dropdown nb">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
               Servicios
@@ -166,31 +162,30 @@
     </div>
   </section>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
 
-      const bg = document.querySelector(".bg");
-      const cards = document.querySelectorAll(".card");
+          const bg = document.getElementById("bg");
+          const cards = document.querySelectorAll(".card");
 
-      // 1. CARGA INICIAL → primera card
-      if (cards.length > 0) {
-        bg.style.backgroundImage = `url(${cards[0].dataset.img})`;
-        cards[0].classList.add("active");
-      }
+          // Fondo inicial
+          if (cards.length > 0) {
+            bg.style.backgroundImage = `url(${cards[0].dataset.img})`;
+          }
 
-      // 2. CAMBIO AL PASAR MOUSE
-      cards.forEach(card => {
-        card.addEventListener("mouseenter", function () {
+          // Hover
+          cards.forEach(card => {
+            card.addEventListener("mouseenter", function () {
 
-          cards.forEach(c => c.classList.remove("active"));
-          this.classList.add("active");
+              cards.forEach(c => c.classList.remove("active"));
+              this.classList.add("active");
 
-          bg.style.backgroundImage = `url(${this.dataset.img})`;
+              bg.style.backgroundImage = `url(${this.dataset.img})`;
+            });
+          });
+
         });
-      });
-
-    });
-  </script>
+    </script>
 
 
 
@@ -292,7 +287,6 @@
           <h5>Enlaces</h5>
           <ul class="list-unstyled">
             <li><a href="#inicio" class="text-hover">Inicio</a></li>
-            <li><a href="#nosotros" class="text-hover">Nosotros</a></li>
             <li><a href="#proyectos" class="text-hover">Proyectos</a></li>
             <li><a href="#contacto" class="text-hover">Contáctanos</a></li>
           </ul>
