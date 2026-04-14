@@ -14221,23 +14221,20 @@ border-right: 5px solid #f5efef;
 
 .services-hero {
   position: relative;
-  height: 450px;
+  height: 270px;
   overflow: hidden;
 }
 
-/* Fondo dinámico */
+/* Fondo */
 .bg {
-position: absolute;
-width: 100%;
-height: 100%;
-background: url("assets/imgs/1.jpg") center/cover no-repeat;
-background-size: cover;
-background-position: center;
-transition: 0.5s ease;
-filter: brightness(0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("assets/imgs/1.jpg") center/cover no-repeat;
+  
 }
 
-/* Contenedor tarjetas */
+/* Contenedor */
 .cards {
   position: relative;
   z-index: 2;
@@ -14245,21 +14242,39 @@ filter: brightness(0.6);
   height: 100%;
 }
 
-/* Tarjetas */
+/* TARJETAS (todas iguales) */
 .card {
-  flex: 1;
+  flex: 1; /* todas ocupan lo mismo */
   padding: 20px;
   color: white;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
-  transition: all 0.4s ease;
-  cursor: pointer;
+
+  border-radius: 16px;
+
+  /* estilo vidrio */
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.35);
+  cursor: default; /* ya no es interactivo */
 }
 
+/* quitar completamente efectos */
+.card:hover {
+  transform: none;
+  background: rgba(255,255,255,0.15);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.20);
+}
+
+.card.active {
+  flex: 1; /* igual que todas */
+  background: rgba(255,255,255,0.15);
+}
+
+/* TEXTOS */
 .card h3 {
   font-size: 22px;
 }
@@ -14268,179 +14283,27 @@ filter: brightness(0.6);
   font-size: 14px;
 }
 
-/* EXPANSIÓN */
-.card.active {
-  flex: 2;
-  background: rgba(255, 255, 255, 0.2);
-  }
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
 
 @media (max-width: 768px) {
-  /* 🔥 rompe el layout tipo hero */
+
   .services-hero {
     height: auto;
     overflow: visible;
   }
-  /* 🔥 cards en columna */
+
   .cards {
     flex-direction: column;
-    height: auto;
     gap: 15px;
   }
-  /* 🔥 cada card ocupa todo el ancho */
+
   .card {
-    flex: none;
     width: 100%;
-    max-width: 100%;
-    position: relative;
-  }
-  /* 🔥 evita expansión en mobile */
-  .card.active {
-    flex: none;
-  }
-  /* 🔥 opcional: mejora visual */
-  .bg {
-    position: absolute;
-    height: 100%;
+    min-height: 160px; /* 🔥 mismo tamaño */
   }
 }
-
-.card {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 26px;
-  cursor: pointer;
-  transition: all 0.35s ease;
-  border-radius: 16px;
-
-  /* vidrio suave transparente */
-  background: rgba(255,255,255,0.15);
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(255,255,255,0.35);
-
-  /* texto blanco */
-  color: #ffffff;
-
-  /* profundidad ligera */
-  box-shadow: 0 10px 30px rgba(0,0,0,0.20);
-}
-
-/* hover */
-.card:hover {
-  transform: translateY(-6px);
-  background: rgba(255,255,255,0.25);
-  box-shadow: 0 18px 45px rgba(0,0,0,0.30);
-}
-
-/* activa */
-.card.active {
-  flex: 2.5;
-  background: rgba(255,255,255,0.30);
-  box-shadow: 0 22px 55px rgba(0,0,0,0.35);
-}
-
-/* ===================== */
-/* RESPONSIVE */
-/* ===================== */
-@media (max-width: 768px) {
-
-  .cards {
-    flex-direction: column; /* se apilan */
-  }
-
-  .card {
-    padding: 20px;
-    min-height: 160px;
-  }
-
-  .card h3 {
-    font-size: 20px;
-  }
-
-  .card p {
-    font-size: 15px;
-  }
-
-  .card.active {
-    flex: none; /* evita que se estire raro */
-  }
-}
-
-@media (max-width: 768px) {
-
-  .cards {
-    display: flex;
-    flex-direction: row;       /* NO columna */
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 12px;
-    padding: 10px;
-  }
-
-  .cards::-webkit-scrollbar {
-    display: none;
-  }
-
-  .card {
-    min-width: 85%;
-    flex: none;
-    scroll-snap-align: center;
-  }
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertical */
-  align-items: center;     /* horizontal */
-  text-align: center;
-}
-
-.reels-section{
-    padding:80px 5%;
-    background:#0f1117;
-}
-
-.reels-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-}
-
-.reel-column{
-    display:flex;
-    flex-direction:column;
-    gap:25px;
-}
-
-.reel-column video{
-    width:100%;
-    border-radius:14px;
-    object-fit:cover;
-    box-shadow:0 10px 30px rgba(0,0,0,0.5);
-    transition:transform .3s ease;
-}
-
-.reel-column video:hover{
-    transform:scale(1.03);
-}
-
-/* RESPONSIVE */
-
-@media(max-width:900px){
-.reels-grid{
-    grid-template-columns:1fr 1fr;
-}
-}
-
-@media(max-width:600px){
-.reels-grid{
-    grid-template-columns:1fr;
-}
-}
-
-
 
 /* FONDO NEGRO */
 html, body{
@@ -14776,7 +14639,7 @@ transform: translateY(-3px);
 
 /* CARD */
 .card{
-  background:#161616;
+  
   border-radius:18px;
   overflow:hidden;
   display:flex;
