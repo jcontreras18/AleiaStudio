@@ -39,7 +39,7 @@
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --font-family: 'Gotham-Thin';
-  font-family: 'Laginchy', sans-serif;
+  font-family: 'PlayfairDisplay', sans-serif;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -13183,35 +13183,15 @@ body {
 
 
 
-/* Fuente LAGINCHY  */
 @font-face {
-  font-family: 'LAGINCHY';
-  src: url('fonts/Laginchy.woff') format('woff'),
-    url('fonts/LAGINCHY.woff') format('woff');
-
+  font-family: 'PlayfairDisplay';
+  src: url('../vendors/themify-icons/fonts/PlayfairDisplay-Bold.woff') format('woff');
+  font-weight: bold;
 }
 
 .lag {
-  font-family: 'Laginchy', sans-serif;
-  /* Especificar el peso si es necesario */
-
-  /* Ajusta el tamaño del título según tus necesidades */
-  color: #d6d8db;
-  /* Espaciado entre letras */
-}
-
-.lagnmodal {
-  font-family: 'Laginchy', sans-serif;
-  font-weight: normal;
-  /* Especificar el peso si es necesario */
-  font-size: 2.5rem;
-  /* Ajusta el tamaño del título según tus necesidades */
-  color: #343a40;
-  /* Color del texto del título */
-  letter-spacing: 0.1rem;
-  /* Espaciado entre letras */
-  text-indent: 4rem;
-  /* Ajusta la sangría según tus necesidades */
+  font-family: 'PlayfairDisplay', sans-serif;
+  font-weight: bold;
 }
 
 /* Fuente Gotham-Thin  */
@@ -13616,7 +13596,7 @@ p {
   font-size: 1.1em;
   margin: 0;
   text-align: center !important;  
-  font-family: 'LAGINCHY';
+  font-family: 'PlayfairDisplay';
 }
 
 .card__tagline,
