@@ -12434,11 +12434,6 @@ video {
 }
 
 
-
-body {
-  font-family: Arial, sans-serif;
-}
-
 .whatsapp-widget {
   position: fixed;
   bottom: 20px;
@@ -13194,6 +13189,18 @@ body {
   font-weight: bold;
 }
 
+
+@font-face {
+  font-family: 'PlayfairDisplay-Italic';
+  src: url('../vendors/themify-icons/fonts/PlayfairDisplay-Italic.woff') format('woff');
+  font-weight: bold;
+}
+
+.Ital {
+  font-family: 'PlayfairDisplay', sans-serif;
+  font-weight: bold;
+}
+
 /* Fuente Gotham-Thin  */
 @font-face {
   font-family: 'Gotham-Thin';
@@ -13693,7 +13700,7 @@ p {
 
 /* Contenedor principal */
 .container {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   padding: 20px;
@@ -15255,3 +15262,5 @@ body{
   outline: none !important;
   box-shadow: none !important;
 }
+
+
