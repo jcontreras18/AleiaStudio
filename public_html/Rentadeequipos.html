@@ -20,7 +20,6 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-  <!-- Navbar -->
   <nav class="custom-navbar navbar navbar-dark fixed-top d-lg-none" data-spy="affix" data-offset-top="10">
     <div class="container">
 
@@ -40,22 +39,22 @@
         <ul class="navbar-nav ml-auto">
 
           <li class="nav-item nb">
-            <a class="nav-link text-hover" href="index.html">Inicio</a>
+            <a class="nav-link text-hover lag" href="index.html">Inicio</a>
           </li>
           <li class="nav-item dropdown nb">
-            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+            <a class="nav-link dropdown-toggle lag" href="#" data-toggle="dropdown">
               Servicios
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
-              <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
-              <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
-              <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
+              <a class="dropdown-item lag" href="MarketinDigital.html">Marketing digital</a>
+              <a class="dropdown-item lag" href="Fotografia.html">Fotografía</a>
+              <a class="dropdown-item lag" href="Produccion.html">Producción audiovisual</a>
+              <a class="dropdown-item lag" href="Rentadeequipos.html">Renta de equipos</a>
             </div>
           </li>
 
           <li class="nav-item nb">
-            <a href="contact.html" class="nav-link text-hover">
+            <a href="contact.html" class="lag text-hover">
               Contáctanos
             </a>
           </li>
@@ -65,6 +64,7 @@
       </div>
     </div>
   </nav>
+
 
   <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-flex" data-spy="affix"
     data-offset-top="10">
@@ -79,38 +79,35 @@
       <ul class="navbar-nav ml-auto">
 
         <li class="nav-item">
-          <a class="nav-link text-hover" href="index.html">Inicio</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
+          <a class="nav-link text-hover lag" href="index.html">Inicio</a>
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+          <a class="nav-link dropdown-toggle lag" href="#" data-toggle="dropdown">
             Servicios
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
-            <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
-            <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
-            <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
+            <a class="dropdown-item lag" href="MarketinDigital.html">Marketing digital</a>
+            <a class="dropdown-item lag" href="Fotografia.html">Fotografía</a>
+            <a class="dropdown-item lag" href="Produccion.html">Producción audiovisual</a>
+            <a class="dropdown-item lag" href="Rentadeequipos.html">Renta de equipos</a>
           </div>
         </li>
 
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link btn btn-primary ml-xl-4">
-            Contáctanos
+        <li class="btn-custom">
+          <a href="contact.html">
+            <button class="btn-custom">
+              <span class="text lag">Contáctanos</span>
+            </button>
           </a>
         </li>
-
       </ul>
     </div>
   </nav>
 
   <!-- TITULO -->
   <section class="renta-equipos">
-    <h2 class="titulo-renta">Renta de Equipos</h2>
+    <h2 class="titulo-renta lag">Renta de Equipos</h2>
     <div class="reels-grid">
 
       <!-- ITEM 1 -->
@@ -120,7 +117,7 @@
             <source src="assets/Reals/Reel Black Magic 3.mp4" type="video/mp4">
           </video>
         </article>
-        <p class="reel-descripcion">Blackmagic Cinema Camera <br> Cámara profesional para cine digital.</p>
+        <p class="reel-descripcion Ital">Blackmagic Cinema Camera <br> Cámara profesional para cine digital.</p>
       </div>
 
       <!-- ITEM 2 -->
@@ -130,7 +127,7 @@
             <source src="assets/Reals/Reel Red 3.mp4" type="video/mp4">
           </video>
         </article>
-        <p class="reel-descripcion">RED Cinema Camera <br> Alta resolución y color cinematográfico.</p>
+        <p class="reel-descripcion Ital">RED Cinema Camera <br> Alta resolución y color cinematográfico.</p>
       </div>
 
       <!-- ITEM 3 -->
@@ -140,7 +137,7 @@
             <source src="assets/Reals/Reel Sony.mp4" type="video/mp4">
           </video>
         </article>
-        <p class="reel-descripcion">Sony Cinema Line <br> Ideal para producciones profesionales.</p>
+        <p class="reel-descripcion Ital">Sony Cinema Line <br> Ideal para producciones profesionales.</p>
       </div>
 
     </div>
@@ -151,7 +148,7 @@
 
   <section class="ventas-equipos">
 
-    <h2 class="titulo">Venta de Equipos</h2>
+    <h2 class="titulo lag">Venta de Equipos</h2>
 
     <div class="grid-equipos">
 
@@ -159,60 +156,71 @@
       <div class="card">
         <img src="assets/imgs/equipos/c1.png" alt="Equipo 1">
         <div class="contenido">
-          <h3>Producción Audiovisual</h3>
-          <p>Equipos profesionales para cine, video y producción de contenido.</p>
-          <button class="btn-comprar" onclick="abrirModal('modalProducto1')">Ver producto</button>
+          <h3 class="lag">RED KOMODO</h3>
         </div>
+        <button class="btn-custom">
+          <span class="text lag" onclick="abrirModal('modalProducto1')">Ver producto</span>
+        </button>
       </div>
 
       <!-- CARD 2 -->
       <div class="card">
         <img src="assets/imgs/equipos/Luces 1.png" alt="Equipo 2">
         <div class="contenido">
-          <h3>Audio Profesional</h3>
-          <p>Sistemas de sonido, micrófonos y equipos de alta fidelidad.</p>
-          <button class="btn-comprar" onclick="abrirModal('modalProducto2')">Ver producto</button>
+          <h3 class="lag">LUCES PARA
+            CINEMATOGRAFÍA ETC
+            FOS/4 FRESNEL</h3>
         </div>
+        <button class="btn-custom">
+          <span class="text lag" onclick="abrirModal('modalProducto2')">Ver producto</span>
+        </button>
       </div>
 
       <!-- CARD 3 -->
       <div class="card">
         <img src="assets/imgs/equipos/luz ft 1.png" alt="Equipo 3">
         <div class="contenido">
-          <h3>Iluminación</h3>
-          <p>Luces LED, paneles y equipos para fotografía y video.</p>
-          <button class="btn-comprar" onclick="abrirModal('modalProducto3')">Ver producto</button>
+          <h3 class="lag"> LUCES LED GODOX
+            SL150II</h3>
         </div>
+        <button class="btn-custom">
+          <span class="text lag" onclick="abrirModal('modalProducto3')">Ver producto</span>
+        </button>
       </div>
 
       <!-- CARD 4 -->
       <div class="card">
         <img src="assets/imgs/equipos/O1.png" alt="Equipo 4">
         <div class="contenido">
-          <h3>Streaming</h3>
-          <p>Equipos para transmisión en vivo y producción digital.</p>
-          <button class="btn-comprar" onclick="abrirModal('modalProducto4')">Ver producto</button>
+          <h3 class="lag">ÓPTICAS DE FOTOGRAFÍA Y
+            CINE (ROKINON XEEN /
+            CANON EF)</h3>
         </div>
+        <button class="btn-custom">
+          <span class="text lag" onclick="abrirModal('modalProducto4')">Ver producto</span>
+        </button>
       </div>
 
       <!-- CARD 5 -->
       <div class="card">
         <img src="assets/imgs/equipos/sony 1.png" alt="Equipo 5">
         <div class="contenido">
-          <h3>Iluminación Pro</h3>
-          <p>Soluciones avanzadas para producción profesional.</p>
-          <button class="btn-comprar" onclick="abrirModal('modalProducto5')">Ver producto</button>
+          <h3 class="lag">SONY FX3</h3>
         </div>
+        <button class="btn-custom">
+          <span class="text lag" onclick="abrirModal('modalProducto5')">Ver producto</span>
+        </button>
       </div>
 
       <!-- CARD 6 -->
       <div class="card">
         <img src="assets/imgs/equipos/t1.png" alt="Equipo 6">
         <div class="contenido">
-          <h3>Producción Digital</h3>
-          <p>Equipos para contenido multimedia y streaming.</p>
-          <button class="btn-comprar" onclick="abrirModal('modalProducto6')">Ver producto</button>
+          <h3 class="lag">TASCAM DR-40X</h3>
         </div>
+        <button class="btn-custom">
+          <span class="text lag" onclick="abrirModal('modalProducto6')">Ver producto</span>
+        </button>
       </div>
 
     </div>
@@ -246,33 +254,22 @@
           <!-- INFO -->
           <div class="producto-info">
 
-            <h2 class="categoria">CINE</h2>
-
-            <p class="price">$200.000 – $600.000</p>
-
-            <p class="description">
-              <strong>Coru</strong> ideal para producciones profesionales.
+            <h2 class="categoria">RED KOMODO</h2>
+            <p class="description Ital">
+              Cámara de cine digital compacta
+              con sensor Super 35 y grabación
+              en resolución 6K. Destaca por su
+              calidad cinematográfica, rango
+              dinámico y versatilidad en
+              producciones profesionales.
             </p>
-
-            <h3 class="subtitulo">Paquetes disponibles</h3>
-
-            <ul class="lista-paquetes">
-              <li><strong>Base:</strong> Configuración profesional.</li>
-              <li><strong>A:</strong> Accesorios esenciales.</li>
-              <li><strong>B:</strong> Lentes + estabilización.</li>
-              <li><strong>C:</strong> Kit completo.</li>
-            </ul>
-
-            <button class="btn-comprar">Comprar ahora</button>
-
+            <a href="https://wa.me/573227082993" target="_blank" class="btn-custom">
+              <span class="text lag">Más información</span>
+            </a>
           </div>
-
         </div>
-
       </section>
-
     </div>
-
   </div>
 
   <!-- MODAL 2 -->
@@ -301,25 +298,19 @@
           <!-- INFO -->
           <div class="producto-info">
 
-            <h2 class="categoria">CINE</h2>
-
-            <p class="price">$200.000 – $600.000</p>
-
-            <p class="description">
-              <strong>Coru</strong> ideal para producciones profesionales.
+            <h2 class="categoria">LUCES PARA
+              CINEMATOGRAFÍA ETC
+              FOS/4 FRESNEL</h2>
+            <p class="description Ital">
+              Iluminación profesional tipo Fresnel
+              diseñada para cine y teatro, con
+              control preciso del haz de luz, ideal
+              para crear ambientes dramáticos y
+              bien definidos en producciones.
             </p>
-
-            <h3 class="subtitulo">Paquetes disponibles</h3>
-
-            <ul class="lista-paquetes">
-              <li><strong>Base:</strong> Configuración profesional.</li>
-              <li><strong>A:</strong> Accesorios esenciales.</li>
-              <li><strong>B:</strong> Lentes + estabilización.</li>
-              <li><strong>C:</strong> Kit completo.</li>
-            </ul>
-
-            <button class="btn-comprar">Comprar ahora</button>
-
+            <a href="https://wa.me/573227082993" target="_blank" class="btn-custom">
+              <span class="text lag">Más información</span>
+            </a>
           </div>
 
         </div>
@@ -356,27 +347,19 @@
           <!-- INFO -->
           <div class="producto-info">
 
-            <h2 class="categoria">CINE</h2>
-
-            <p class="price">$200.000 – $600.000</p>
-
-            <p class="description">
-              <strong>Coru</strong> ideal para producciones profesionales.
+            <h2 class="categoria">LUCES LED GODOX
+              SL150II</h2>
+            <p class="description Ital">
+              Luz continua LED de alta potencia, perfecta
+              para fotografía y video. Brinda iluminación
+              uniforme, temperatura de color estable y es
+              fácil de controlar, ideal para estudios y
+              producciones digitales.
             </p>
-
-            <h3 class="subtitulo">Paquetes disponibles</h3>
-
-            <ul class="lista-paquetes">
-              <li><strong>Base:</strong> Configuración profesional.</li>
-              <li><strong>A:</strong> Accesorios esenciales.</li>
-              <li><strong>B:</strong> Lentes + estabilización.</li>
-              <li><strong>C:</strong> Kit completo.</li>
-            </ul>
-
-            <button class="btn-comprar">Comprar ahora</button>
-
+            <a href="https://wa.me/573227082993" target="_blank" class="btn-custom">
+              <span class="text lag">Más información</span>
+            </a>
           </div>
-
         </div>
 
       </section>
@@ -411,27 +394,21 @@
           <!-- INFO -->
           <div class="producto-info">
 
-            <h2 class="categoria">CINE</h2>
-
-            <p class="price">$200.000 – $600.000</p>
-
-            <p class="description">
-              <strong>Coru</strong> ideal para producciones profesionales.
+            <h2 class="categoria">ÓPTICAS DE FOTOGRAFÍA Y
+              CINE (ROKINON XEEN /
+              CANON EF)</h2>
+            <p class="description Ital">
+              Lentes profesionales diseñados para lograr
+              imágenes nítidas y cinematográficas. Las
+              XEEN de Rokinon ofrecen control manual
+              preciso para cine, mientras que los Canon EF
+              70-200mm y 24-70mm brindan versatilidad
+              y calidad en fotografía y video.
             </p>
-
-            <h3 class="subtitulo">Paquetes disponibles</h3>
-
-            <ul class="lista-paquetes">
-              <li><strong>Base:</strong> Configuración profesional.</li>
-              <li><strong>A:</strong> Accesorios esenciales.</li>
-              <li><strong>B:</strong> Lentes + estabilización.</li>
-              <li><strong>C:</strong> Kit completo.</li>
-            </ul>
-
-            <button class="btn-comprar">Comprar ahora</button>
-
+            <a href="https://wa.me/573227082993" target="_blank" class="btn-custom">
+              <span class="text lag">Más información</span>
+            </a>
           </div>
-
         </div>
 
       </section>
@@ -467,25 +444,18 @@
           <!-- INFO -->
           <div class="producto-info">
 
-            <h2 class="categoria">CINE</h2>
-
-            <p class="price">$200.000 – $600.000</p>
-
-            <p class="description">
-              <strong>Coru</strong> ideal para producciones profesionales.
+            <h2 class="categoria">SONY FX3</h2>
+            <p class="description Ital">
+              Cámara de cine compacta de la línea
+              Cinema Line de Sony, ideal para
+              producciones audiovisuales de alta
+              calidad. Ofrece grabación en 4K,
+              excelente rendimiento en baja luz y
+              enfoque automático preciso.
             </p>
-
-            <h3 class="subtitulo">Paquetes disponibles</h3>
-
-            <ul class="lista-paquetes">
-              <li><strong>Base:</strong> Configuración profesional.</li>
-              <li><strong>A:</strong> Accesorios esenciales.</li>
-              <li><strong>B:</strong> Lentes + estabilización.</li>
-              <li><strong>C:</strong> Kit completo.</li>
-            </ul>
-
-            <button class="btn-comprar">Comprar ahora</button>
-
+            <a href="https://wa.me/573227082993" target="_blank" class="btn-custom">
+              <span class="text lag">Más información</span>
+            </a>
           </div>
 
         </div>
@@ -522,27 +492,18 @@
           <!-- INFO -->
           <div class="producto-info">
 
-            <h2 class="categoria">CINE</h2>
-
-            <p class="price">$200.000 – $600.000</p>
-
-            <p class="description">
-              <strong>Coru</strong> ideal para producciones profesionales.
+            <h2 class="categoria">TASCAM DR-40X</h2>
+            <p class="description Ital">
+              Grabadora de audio portátil de alta calidad,
+              ideal para capturar sonido limpio en
+              campo. Cuenta con micrófonos
+              integrados ajustables y múltiples opciones
+              de grabación.
             </p>
-
-            <h3 class="subtitulo">Paquetes disponibles</h3>
-
-            <ul class="lista-paquetes">
-              <li><strong>Base:</strong> Configuración profesional.</li>
-              <li><strong>A:</strong> Accesorios esenciales.</li>
-              <li><strong>B:</strong> Lentes + estabilización.</li>
-              <li><strong>C:</strong> Kit completo.</li>
-            </ul>
-
-            <button class="btn-comprar">Comprar ahora</button>
-
+            <a href="https://wa.me/573227082993" target="_blank" class="btn-custom">
+              <span class="text lag">Más información</span>
+            </a>
           </div>
-
         </div>
 
       </section>
@@ -578,51 +539,49 @@
   <footer class="footer fot py-4">
     <div class="container">
       <div class="row text-center text-md-left">
-        <!-- Columna 1 -->
+
+        <!-- Columna 1 - Redes Sociales -->
         <div class="col-md-4 mb-4 mb-md-0">
-          <h5>Sobre Nosotros</h5>
-          <p class="text-muted">
-            Somos una empresa dedicada a brindar soluciones innovadoras en tecnología. Nuestro objetivo es
-            mejorar la vida de las personas a través de la tecnología.
-          </p>
-        </div>
-        <!-- Columna 2 -->
-        <div class="col-md-4 mb-4 mb-md-0">
-          <h5>Enlaces</h5>
-          <ul class="list-unstyled">
-            <li><a href="#inicio" class="text-hover">Inicio</a></li>
-            <li><a href="#nosotros" class="text-hover">Nosotros</a></li>
-            <li><a href="#proyectos" class="text-hover">Proyectos</a></li>
-            <li><a href="#contacto" class="text-hover">Contáctanos</a></li>
-          </ul>
-        </div>
-        <!-- Columna 3 -->
-        <div class="col-md-4 mb-4 mb-md-0">
-          <h5>Contacto</h5>
-          <p class="text-muted">
-            Dirección: Calle Falsa 123<br>
-            Teléfono: (123) 456-7890<br>
-            Email: info@ejemplo.com
-          </p>
-          <!-- Redes Sociales -->
-          <div class="social-mt-3 e-">
-            <a href="https://facebook.com" target="_blank" class="social-icon">
+          <h5 class="lag">Síguenos</h5>
+          <div class="social-icons mt-3">
+            <a href="https://www.facebook.com/share/1GQqTXHZRy/" target="_blank" class="social-icon">
               <img src="assets/imgs/Redes/facebook_b.png" alt="Facebook">
             </a>
-            <a href="https://twitter.com" target="_blank" class="social-icon">
-              <img src="assets/imgs/Redes/instagram_b.png" alt="Twitter">
+            <a href="https://www.instagram.com/arktis.produccion?igsh=MTFhejBlZTc3NzhtdQ==" target="_blank"
+              class="social-icon">
+              <img src="assets/imgs/Redes/instagram_b.png" alt="Instagram">
             </a>
-            <a href="https://instagram.com" target="_blank" class="social-icon">
-              <img src="assets/imgs/Redes/X_b.png" alt="Instagram">
+            <a href="https://youtube.com/@arktisproduccion?si=oGbIfO6TEfUMSN9V" target="_blank" class="social-icon">
+              <img src="assets/imgs/Redes/youtube_b.png" alt="Youtube">
             </a>
-            <a href="https://linkedin.com" target="_blank" class="social-icon">
-              <img src="assets/imgs/Redes/whatsapp_b.png" alt="LinkedIn">
+            <a href="https://wa.me/573227082993" target="_blank" class="social-icon">
+              <img src="assets/imgs/Redes/whatsapp_b.png" alt="WhatsApp">
             </a>
           </div>
         </div>
+
+        <!-- Columna 2 - Enlaces -->
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5 class="lag">Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-hover lag">Inicio</a></li>
+            <li><a href="contact.html" class="text-hover lag">Contáctanos</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3 - Contacto -->
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5 class="lag">Contacto</h5>
+          <p class="text-muted lag">
+            Teléfono: (57) 3227082993<br>
+            Email:arktisproduccion@gmail.com
+          </p>
+        </div>
+
       </div>
     </div>
   </footer>
+
 
   <div class="bg-dark text-light text-center border-top wow fadeIn">
     <p class="mb-0 py-3 text-muted small">&copy; Copyright

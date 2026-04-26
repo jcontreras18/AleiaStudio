@@ -12539,89 +12539,37 @@ video {
   color: #004705;
 }
 
+
+
 /* Contenedor de los logos */
 .logo-container {
   display: flex;
   flex-wrap: wrap;
-  /* Para que los logos se ajusten en múltiples filas si es necesario */
   justify-content: center;
-  /* Centra los logos en la página */
   gap: 28px;
-  /* Espacio entre logos */
 }
 
-/* Estilo de cada logo */
+/* Logos */
 .logo {
   width: 120px;
-  /* Tamaño inicial del logo */
   height: auto;
-  /* Mantiene la proporción del logo */
-  opacity: 0.5;
-  /* Opacidad por defecto para los logos */
-  transition: opacity 0.3s, background-color 0.3s;
-  /* Transiciones para efectos suaves */
   display: block;
-  /* Hace que las imágenes se comporten como bloques */
-  background-size: cover;
-  /* Asegura que la imagen de fondo cubra el logo */
-  background-position: center;
-  /* Centra la imagen de fondo */
   cursor: pointer;
-  /* Cambia el cursor al pasar sobre el logo */
+
+  /* EFECTO BLANCO */
+  filter: grayscale(100%) brightness(1.8);
+  opacity: 0.7;
+
+  transition: all 0.4s ease;
 }
 
-/* Efecto al pasar el ratón sobre el logo */
+/* HOVER: vuelve al color */
 .logo:hover {
+  filter: grayscale(0%) brightness(1);
   opacity: 1;
-  /* Hace el logo completamente visible al pasar el ratón */
-  background-image: url("hover1.png");
-  /* Cambia la imagen de fondo */
-  background-blend-mode: lighten;
-  /* Mezcla la imagen de fondo con el color de fondo */
+  transform: scale(1.05);
 }
 
-/* Media query para pantallas pequeñas */
-@media (max-width: 600px) {
-  .logo {
-    width: 80px;
-    /* Tamaño del logo más pequeño en pantallas pequeñas */
-  }
-}
-
-@media (max-width: 400px) {
-  .logo {
-    width: 60px;
-    /* Tamaño del logo aún más pequeño en pantallas muy pequeñas */
-  }
-}
-
-/* Logo móvil */
-.logo-mobile{
-    height:70px;
-}
-
-/* Logo escritorio */
-.brand-img{
-    height:90px;
-}
-
-/* Ajustes para pantallas pequeñas */
-@media (max-width:768px){
-
-    .logo-mobile{
-        height:50px;
-    }
-
-    .navbar{
-        padding:8px 15px;
-    }
-
-    .navbar-toggler{
-        padding:5px 8px;
-        font-size:18px;
-    }
-
-}
 
 /* Contenedor de redes sociales */
 .social-container {
@@ -14071,11 +14019,10 @@ border-right: 5px solid #f5efef;
   font-weight: 600;
 }
 
-/* ICONO AZUL */
 .icon {
   font-weight: bold;
   font-size: 16px;
-  color: #e1be54;
+  color: #2ea3d6;
   padding: 5px 9px;
   border-radius: 6px;
   min-width: 28px;
@@ -15349,4 +15296,43 @@ body{
   .content p {
     font-size: 14px;
   }
+
+.btn-custom {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  padding: 0;
+}
+
+/* Parte izquierda (icono) */
+.btn-custom .icon {
+  background: #4a4a4a;
+  color: white;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+/* Parte derecha (texto) */
+.btn-custom .text {
+  background: #2ea3d6;
+  color: white;
+  padding: 12px 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Hover */
+.btn-custom:hover .text {
+  background: #2493c3;
+}
+
+.btn-custom:hover .icon {
+  background: #3a3a3a;
 }
