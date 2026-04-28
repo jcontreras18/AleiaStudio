@@ -182,7 +182,7 @@ a {
 }
 
 a:hover {
-  color: #d4002c;
+  color: white;
   text-decoration: none;
 }
 
@@ -13125,7 +13125,6 @@ video {
 
 
 
-
 @font-face {
   font-family: 'PlayfairDisplay';
   src: url('../vendors/themify-icons/fonts/PlayfairDisplay-Bold.woff') format('woff');
@@ -13246,12 +13245,10 @@ video {
 
 .modal-dialog {
   max-width: 800px;
-  /* Ajusta este valor según tus necesidades */
 }
 
 .modal-content {
   width: 100%;
-  /* Asegúrate de que el contenido ocupe el 100% del ancho del diálogo */
 }
 
 
@@ -13660,7 +13657,6 @@ p {
   padding-right: 0;
 }
 
-
 .product-container {
   display: flex;
   gap: 20px;
@@ -13668,8 +13664,32 @@ p {
   align-items: flex-start;
 }
 
+/* Logo móvil */
+.logo-mobile{
+    height:70px;
+}
+
+/* Logo escritorio */
+.brand-img{
+    height:90px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width:768px){
+    .logo-mobile{
+        height:50px;
+    }
+    .navbar{
+        padding:8px 15px;
+    }
+    .navbar-toggler{
+        padding:5px 8px;
+        font-size:18px;
+    }
+}
+
 #gallery {
-  min-height: 150px; /* Ajusta este valor según tus necesidades */
+  min-height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15008,7 +15028,7 @@ transform: translateY(-3px);
 /* ============================= */
 .mk-hero{
   position:relative;
-  height:100vh;
+  height:85vh;
   overflow:hidden;
   display:flex;
   align-items:center;
@@ -15173,6 +15193,13 @@ body{
     object-fit:cover;
 }
 
+@media(max-width:900px){
+
+    .projects-container{
+        grid-template-columns:1fr;
+    }
+
+}
 .card-content{
     padding:30px;
 }
@@ -15213,12 +15240,11 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  height: 400px;
+  min-height: 400px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-
   position: relative;
   margin-top: 40px;
 }
@@ -15343,20 +15369,29 @@ body{
   margin:0;
 }
 
-.videos-grid{
-  display:grid;
-  gap:30px;
-  max-width:1473px;
-  margin:auto;
-  padding:60px 0;
+.videos-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 100%;
+  margin: auto;
+  padding: 60px 20px;
 }
 
-
-
 .video-card{
-  position:relative;
-  overflow:hidden;
-  height:528px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .videos-grid {
+    padding: 20px 10px;
+  }
+  .video-card {
+    aspect-ratio: 16/9;
+  }
+
 }
 
 .video-card iframe{
@@ -15380,8 +15415,7 @@ body{
 
 /* imagen inicial helpfi*/
 .proyecto-detalle{
-    background:#f1f1f1;
-    padding-bottom:80px;
+    background:#000;
 }
 
 /* Imagen */
@@ -15401,12 +15435,11 @@ body{
     }
 }
 
-
-/* Texto */
 .proyecto-info{
     max-width:1400px;
     margin:auto;
     padding:70px 40px;
+    color:#fff;
 }
 
 .proyecto-info h2{
@@ -15417,10 +15450,10 @@ body{
 }
 
 .linea{
-    width:500px;
+    width:700px;
     height:2px;
-    background:#111;
-    margin-bottom:50px;
+    background:#fff;
+    margin-bottom:34px;
 }
 
 /* Grid texto */
@@ -15433,7 +15466,7 @@ body{
 .contenido-grid p{
     font-size:20px;
     line-height:1.8;
-    color:#222;
+    color:#fff;
     margin-bottom:30px;
 }
 
@@ -15444,14 +15477,38 @@ body{
         grid-template-columns:1fr;
     }
     .linea{
-        width:100%;
+    background:#fff;
+    width:100%;
     }
 
 }
 
 /* Imagen final de helpfi */
 .imagen-helpfi {
+  position:relative;
+  padding:300px 20px;
+  background:url("../imgs/helpfi_1.png") center/cover;
+  }
+
+  @media (max-width: 768px) {
+    .imagen-helpfi {
+      padding: 80px 15px; /* menos alto */
+    }
+  }
+
+.contenedor-grande{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
+
+.contenedor-grande img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
