@@ -13138,15 +13138,17 @@ video {
 
 
 @font-face {
-  font-family: 'PlayfairDisplay-Italic';
-  src: url('../vendors/themify-icons/fonts/PlayfairDisplay-Italic.woff') format('woff');
-  font-weight: bold;
+  font-family: 'PlayfairDisplay-Regular';
+  src: url('../vendors/themify-icons/fonts/PlayfairDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .Ital {
-  font-family: 'PlayfairDisplay', sans-serif;
-  font-weight: bold;
+  font-family: 'PlayfairDisplay-Regular', sans-serif;
+  font-weight: normal;
 }
+
 
 /* Fuente Gotham-Thin  */
 @font-face {
@@ -14466,13 +14468,24 @@ margin-bottom:40px;
 .reel-card{
   position: relative;
   width: 100%;
-  max-width: 450px; /* cards más anchos */
-  height: 600px;    /* altura uniforme */
+  max-width: 450px;
+  height: 650px;
   border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
+
+.reel-card iframe{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 177.77%;
+  transform: translate(-50%, -50%);
+  border: none;
+}
+
 
 /* VIDEO WRAPPER */
 .video-wrapper{
@@ -15508,6 +15521,73 @@ body{
     height: auto;
     display: block;
 }
+
+/* Proyectos - información Koreguaje */
+.proyecto-video{
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 50px;
+    align-items: center;
+    padding: 0px 60px;
+    background: #000;
+}
+
+.proyecto-info{
+    color: #fff;
+}
+
+.proyecto-info h2{
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.proyecto-info h3{
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.proyecto-info p{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.proyecto-info ul{
+    padding-left: 20px;
+    line-height: 2;
+}
+
+.proyecto-player{
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.proyecto-player iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+    .proyecto-video{
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+    .proyecto-player{
+        height: 300px;
+    }
+    .proyecto-info h2{
+        font-size: 36px;
+    }
+    .proyecto-info h3{
+        font-size: 24px;
+    }
+}
+
 
 
 
