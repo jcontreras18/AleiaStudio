@@ -13134,6 +13134,7 @@ video {
 .lag {
   font-family: 'PlayfairDisplay', sans-serif;
   font-weight: bold;
+  color: white;
 }
 
 
@@ -13147,6 +13148,8 @@ video {
 .Ital {
   font-family: 'PlayfairDisplay-Regular', sans-serif;
   font-weight: normal;
+  font-size: 16px;
+  color: white;
 }
 
 
@@ -15456,7 +15459,6 @@ body{
 }
 
 .proyecto-info h2{
-    font-size:50px;
     letter-spacing:4px;
     font-weight:300;
     margin-bottom:15px;
@@ -15477,9 +15479,7 @@ body{
 }
 
 .contenido-grid p{
-    font-size:20px;
     line-height:1.8;
-    color:#fff;
     margin-bottom:30px;
 }
 
@@ -15537,18 +15537,15 @@ body{
 }
 
 .proyecto-info h2{
-    font-size: 52px;
     margin-bottom: 20px;
 }
 
 .proyecto-info h3{
-    font-size: 32px;
     margin-bottom: 30px;
     font-weight: 400;
 }
 
 .proyecto-info p{
-    font-size: 18px;
     line-height: 1.8;
     margin-bottom: 30px;
 }
