@@ -231,12 +231,12 @@ document.addEventListener('click', (e) => {
 });
 
 // ABRIR
-function abrirModal(id) {
+function abrirModal1(id) {
   document.getElementById(id).classList.add("activo");
 }
 
 // CERRAR
-function cerrarModal(id) {
+function cerrarModal1(id) {
   document.getElementById(id).classList.remove("activo");
 }
 
