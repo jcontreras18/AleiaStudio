@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with FoodHut landing page.">
+    <meta name="author" content="Devcrud">
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/vendors/animate/animate.css">
+    <link href="https://fonts.cdnfonts.com/css/PlayfairDisplay" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Bootstrap + FoodHut main styles -->
+    <link rel="stylesheet" href="assets/css/foodhut.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+
+    <!-- Navbar -->
+    <nav class="custom-navbar navbar navbar-dark fixed-top d-lg-none" data-spy="affix" data-offset-top="10">
+        <div class="container">
+
+            <!-- Icono izquierdo (visible en móvil) -->
+            <a href="#" class="mr-2">
+                <img src="assets/imgs/Logo_4.png" alt="Icono" class="logo-mobile">
+            </a>
+
+            <!-- Botón menú -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu"
+                aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú móvil -->
+            <div class="collapse navbar-collapse" id="mobileMenu">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item nb">
+                        <a class="nav-link text-hover lag" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown nb">
+                        <a class="nav-link dropdown-toggle lag" href="#" data-toggle="dropdown">
+                            Servicios
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item lag" href="MarketinDigital.html">Marketing digital</a>
+                            <a class="dropdown-item lag" href="Fotografia.html">Fotografía</a>
+                            <a class="dropdown-item lag" href="Producción.html">Producción audiovisual</a>
+                            <a class="dropdown-item lag" href="Rentadeequipos.html">Renta de equipos</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item nb">
+                        <a href="contact.html" class="lag text-hover">
+                            Contáctanos
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-flex" data-spy="affix"
+        data-offset-top="10">
+        <div class="container">
+
+            <!-- Logo escritorio -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/Logo_4.png" class="brand-img" alt="Logo">
+            </a>
+
+            <!-- Menú escritorio -->
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link text-hover lag" href="index.html">Inicio</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle lag" href="#" data-toggle="dropdown">
+                        Servicios
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item lag" href="MarketinDigital.html">Marketing digital</a>
+                        <a class="dropdown-item lag" href="Fotografia.html">Fotografía</a>
+                        <a class="dropdown-item lag" href="Producción.html">Producción audiovisual</a>
+                        <a class="dropdown-item lag" href="Rentadeequipos.html">Renta de equipos</a>
+                    </div>
+                </li>
+
+                <li class="btn-custom">
+                    <a href="contact.html">
+                        <button class="btn-custom">
+                            <span class="text lag">Contáctanos</span>
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <section class="mk-hero">
+        <video autoplay muted loop playsinline preload="none" class="mk-hero-video">
+            <source src="assets/imgs/banner_1.mp4" type="video/mp4">
+        </video>
+
+        <div class="mk-hero-overlay"></div>
+
+    </section>
+
+    <section id="gallery" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
+        <div class="container text-center">
+            <h2 class="section-title lag">Servicios</h2>
+        </div>
+    </section>
+
+    <section class="services-hero">
+
+        <!-- FONDO -->
+        <div class="bg" id="bg"></div>
+        <div class="cards">
+
+            <div class="card active" data-img="assets/imgs/Produccion/corporativo.png">
+                <h3 class="lag">Videos Corporativos</h3>
+                <p class="Ital"> Realizamos la producción audiovisual para dar a conocer tu empresa, sin importar la
+                    antigüedad o presupuesto de la misma.</p>
+            </div>
+
+            <div class="card" data-img="assets/imgs/Produccion/digital.png">
+                <h3 class="lag">Contenido Digital</h3>
+                <p class="Ital">Contamos con un equipo enfocado en la producción audiovisual en formatos para todo tipo
+                    de redes sociales, páginas web y social media.</p>
+            </div>
+
+            <div class="card" data-img="assets/imgs/Produccion/eventos.png">
+                <h3 class="lag">Eventos</h3>
+                <p class="Ital">Ofrecemos una amplia lista de soluciones audiovisuales para la cobertura de eventos
+                    empresariales.</p>
+            </div>
+
+            <div class="card" data-img="assets/imgs/Produccion/productos.png">
+                <h3 class="lag">Productos</h3>
+                <p class="Ital">Creamos experiencias audiovisuales con el fin de mostrar los productos de su empresa.
+                </p>
+            </div>
+
+            <div class="card" data-img="assets/imgs/Produccion/pos_produccion.png">
+                <h3 class="lag">Post producción</h3>
+                <p class="Ital">Contamos con un equipo totalmente capacitado para que el producto tenga todos los
+                    estándares nacionales e internacionales de la industria audiovisual.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const bg = document.getElementById("bg");
+            const cards = document.querySelectorAll(".card");
+
+            // Fondo inicial
+            if (cards.length > 0) {
+                bg.style.backgroundImage = `url(${cards[0].dataset.img})`;
+            }
+
+            // Hover
+            cards.forEach(card => {
+                card.addEventListener("mouseenter", function () {
+
+                    cards.forEach(c => c.classList.remove("active"));
+                    this.classList.add("active");
+
+                    bg.style.backgroundImage = `url(${this.dataset.img})`;
+                });
+            });
+
+        });
+    </script>
+
+    <!--Logos-->
+
+    <div class="py-5 my-4 logo-container">
+        <img src="assets/imgs/Logos_produccion/color/CapCut_Logo_b.png" alt="Logo 2" class="logo">
+        <img src="assets/imgs/Logos_produccion/color/Adobe_Creative_c.png" alt="Logo 3" class="logo">
+        <img src="assets/imgs/Logos_produccion/color/Godox_Logo_c.png" alt="Logo 4" class="logo">
+        <img src="assets/imgs/Logos_produccion/color/logo_black_c.png" alt="Logo 5" class="logo">
+        <img src="assets/imgs/Logos_produccion/color/logo_davinci_c.png" alt="Logo 6" class="logo">
+        <img src="assets/imgs/Logos_produccion/color/logo_midjourney_b.png" alt="Logo 7" class="logo">
+        <img src="assets/imgs/Logos_produccion/color/red_camera_c.jpg" alt="Logo 7" class="logo">
+    </div>
+
+    <section class="proyecto-video">
+
+        <!-- Información Koreguaje -->
+        <!-- Texto izquierda -->
+        <div class="proyecto-info">
+            <h2 class="lag">KOREGÜAJE</h2>
+            <h3 class="Ital">Raíces En Fuego Cruzado</h3>
+
+            <p class="Ital">
+                Durante el año 2022 un equipo de realización viajó a la selva de Caquetá - Colombia
+                con el fin de conocer testimonios de parte de la comunidad indígena Koregüaje.
+                Como resultado se desarrolló un mini documental expuesto en distintas partes del país.
+            </p>
+
+            <ul class="Ital">
+                <li>Director: Michael Rojas Castellanos</li>
+                <li>Categoría: Documental</li>
+                <li>Duración: 22 minutos aprox</li>
+            </ul>
+        </div>
+
+        <!-- VIDEO DERECHA -->
+        <div class="proyecto-player">
+            <iframe src="https://www.youtube.com/embed/gJQjk-UoctY" title="Koregüaje" allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+
+    <!--Sección preguntas frecuentes-->
+
+    <section id="faq" class="faq-section">
+
+        <div class="faq-container">
+
+            <header class="faq-header">
+                <h2 class="faq-title lag">Preguntas Frecuentes</h2>
+                <p class="faq-subtitle Ital">Resolvemos tus dudas antes de iniciar tu proyecto</p>
+            </header>
+
+            <div class="faq" role="accordion">
+
+                <!-- ITEM 1 -->
+                <article class="faq-item active">
+                    <button class="faq-question" aria-expanded="true">
+                        <span class="icon">?</span>
+                        <span class="text lag">¿En qué se diferencia Arktis de otras productoras audiovisuales?</span>
+                        <span class="arrow">⌄</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="Ital">
+                            Concebimos el audiovisual como una respuesta artística a necesidades empresariales y
+                            personales.
+                            El cliente es nuestra principal fuente de inspiración y motor de cada proyecto.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- ITEM 2 -->
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="icon">?</span>
+                        <span class="text lag">¿Qué sucede si mi presupuesto no se ajusta?</span>
+                        <span class="arrow">⌄</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="Ital">
+                            Ofrecemos un espacio personalizado para entender tu proyecto y encontrar un acuerdo de
+                            trabajo
+                            que se adapte a tus posibilidades.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- ITEM 3 -->
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="icon">?</span>
+                        <span class="text lag">¿Qué tipo de producciones realizan?</span>
+                        <span class="arrow">⌄</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Realizamos producción para redes sociales, eventos, comerciales, documentales
+                            y productos audiovisuales para cine.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- ITEM 4 -->
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="icon">?</span>
+                        <span class="text lag">¿Cómo puedo comunicarme con ustedes?</span>
+                        <span class="arrow">⌄</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="Ital">
+                            Puedes escribirnos por redes sociales o WhatsApp al
+                            <strong>+57 320 373 4871</strong>.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Controles del whatsapp -->
+    <div class="social-widget" id="socialWidget">
+        <div class="social-button" onclick="toggleMenu()">
+            <img id="whatsappIcon" src="assets/imgs/Redes/whatsapp_b.png" alt="WhatsApp">
+        </div>
+        <div class="social-menu" id="socialMenu">
+            <a href="https://www.facebook.com/share/1GQqTXHZRy/" target="_blank" class="social-icon">
+                <img src="assets/imgs/Redes/facebook_b.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/arktis.produccion?igsh=MTFhejBlZTc3NzhtdQ==" target="_blank"
+                class="social-icon">
+                <img src="assets/imgs/Redes/instagram_b.png" alt="Instagram">
+            </a>
+            <a href="https://youtube.com/@arktisproduccion?si=oGbIfO6TEfUMSN9V" target="_blank" class="social-icon">
+                <img src="assets/imgs/Redes/youtube_b.png" alt="Youtube">
+            </a>
+            <a href="https://wa.me/573227082993" target="_blank" class="social-icon">
+                <img src="assets/imgs/Redes/whatsapp_b.png" alt="WhatsApp">
+            </a>
+        </div>
+    </div>
+
+    <!-- Controles del whatsapp -->
+    <div class="social-widget" id="socialWidget">
+        <div class="social-button" onclick="toggleMenu()">
+            <img id="whatsappIcon" src="assets/imgs/Redes/whatsapp_b.png" alt="WhatsApp">
+        </div>
+        <div class="social-menu" id="socialMenu">
+            <a href="https://www.facebook.com/share/1GQqTXHZRy/" target="_blank" class="social-icon">
+                <img src="assets/imgs/Redes/facebook_b.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/arktis.produccion?igsh=MTFhejBlZTc3NzhtdQ==" target="_blank"
+                class="social-icon">
+                <img src="assets/imgs/Redes/instagram_b.png" alt="Instagram">
+            </a>
+            <a href="https://youtube.com/@arktisproduccion?si=oGbIfO6TEfUMSN9V" target="_blank" class="social-icon">
+                <img src="assets/imgs/Redes/youtube_b.png" alt="Youtube">
+            </a>
+            <a href="https://wa.me/573227082993" target="_blank" class="social-icon">
+                <img src="assets/imgs/Redes/whatsapp_b.png" alt="WhatsApp">
+            </a>
+        </div>
+    </div>
+
+    <!-- page footer -->
+    <footer class="footer fot py-4">
+        <div class="container">
+            <div class="row text-center text-md-left">
+
+                <!-- Columna 1 - Redes Sociales -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="lag">Síguenos</h5>
+                    <div class="social-icons mt-3">
+                        <a href="https://www.facebook.com/share/1GQqTXHZRy/" target="_blank" class="social-icon">
+                            <img src="assets/imgs/Redes/facebook_b.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/arktis.produccion?igsh=MTFhejBlZTc3NzhtdQ==" target="_blank"
+                            class="social-icon">
+                            <img src="assets/imgs/Redes/instagram_b.png" alt="Instagram">
+                        </a>
+                        <a href="https://youtube.com/@arktisproduccion?si=oGbIfO6TEfUMSN9V" target="_blank"
+                            class="social-icon">
+                            <img src="assets/imgs/Redes/youtube_b.png" alt="Youtube">
+                        </a>
+                        <a href="https://wa.me/573227082993" target="_blank" class="social-icon">
+                            <img src="assets/imgs/Redes/whatsapp_b.png" alt="WhatsApp">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna 2 - Enlaces -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="lag">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-hover lag">Inicio</a></li>
+                        <li><a href="contact.html" class="text-hover lag">Contáctanos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3 - Contacto -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="lag">Contacto</h5>
+                    <p class="text-muted lag">
+                        Teléfono: (57) 3227082993<br>
+                        Email:arktisproduccion@gmail.com
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="bg-dark text-light text-center border-top wow fadeIn">
+        <p class="mb-0 py-3 text-muted small">&copy; Copyright
+            <script>document.write(new Date().getFullYear())</script> AleiaStudio
+            <a href=""></a>
+        </p>
+    </div>
+    <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- wow.js -->
+    <script src="assets/vendors/wow/wow.js"></script>
+
+    <!-- google maps -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- FoodHut js -->
+    <script src="assets/js/foodhut.js"></script>
+
+</body>
+
+</html>
