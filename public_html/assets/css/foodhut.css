@@ -14316,7 +14316,7 @@ border-radius:30px;
 padding:15px 20px;
 font-size:15px;
 margin-bottom:15px;
-color:white;
+color:#0c0b0b;
 transition:0.3s;
 }
 
@@ -14403,6 +14403,37 @@ margin-bottom:40px;
     max-width: 100%;
   }
 }
+.modal-contacto{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-contenido{
+  width: 95%;
+  max-width: 1100px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.cerrar-modal{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10;
+}
+
 
 
 /* ============================= */

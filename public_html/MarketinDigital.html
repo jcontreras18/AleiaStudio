@@ -17,6 +17,72 @@
     <link rel="stylesheet" href="assets/css/foodhut.css">
 </head>
 
+<div id="modalContacto" class="modal-contacto">
+    <div class="modal-contenido">
+
+        <span class="cerrar-modal" onclick="cerrarModal()">&times;</span>
+
+        <section class="contact-section">
+
+            <div class="container">
+                <div class="contact-card row align-items-center">
+
+                    <!-- IMAGEN -->
+                    <div class="col-lg-6">
+                        <div class="contactanos-imagen">
+                            <img src="assets/imgs/4a.png" alt="Contáctanos">
+                        </div>
+                    </div>
+
+                    <!-- FORMULARIO -->
+                    <div class="col-lg-6">
+
+                        <div class="text-center mb-4">
+                            <h2 class="contact-title lag">Contáctanos</h2>
+                         </div>
+
+                        <form class="contact-form">
+
+                            <div class="row g-3">
+
+                                <div class=" Ital col-md-6">
+                                    <input type="text" class="form-control modern-input" placeholder="Nombre" required>
+                                </div>
+
+                                <div class=" Ital col-md-6">
+                                    <input type="email" class="form-control modern-input"
+                                        placeholder="Correo electrónico" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control modern-input" placeholder="Teléfono">
+                                </div>
+
+                                <div class="Ital col-12">
+                                    <textarea class="form-control modern-input textarea-modern" rows="5"
+                                        placeholder="Escribe tu mensaje" required></textarea>
+                                </div>
+
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn-custom">
+                                    <span class="text lag">Enviar mensaje</span>
+                                </button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+</div>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
 
@@ -60,51 +126,51 @@
                     </a>
                 </li>
 
-
             </ul>
         </div>
     </div>
 </nav>
 
 
-<nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-flex" data-spy="affix"
-     data-offset-top="10">
-    <div class="container">
+ <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-flex" data-spy="affix"
+        data-offset-top="10">
+        <div class="container">
 
-        <!-- Logo escritorio -->
-        <a class="navbar-brand" href="#">
-            <img src="assets/imgs/Logo_4.png" class="brand-img" alt="Logo">
-        </a>
+            <!-- Logo escritorio -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/Logo_4.png" class="brand-img" alt="Logo">
+            </a>
 
-        <!-- Menú escritorio -->
-        <ul class="navbar-nav ml-auto">
+            <!-- Menú escritorio -->
+            <ul class="navbar-nav ml-auto">
 
-            <li class="nav-item">
-                <a class="nav-link text-hover lag" href="index.html">Inicio</a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link text-hover lag" href="index.html">Inicio</a>
+                </li>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle lag" href="#" data-toggle="dropdown">
-                    Servicios
-                </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item lag" href="MarketinDigital.html">Marketing digital</a>
-                    <a class="dropdown-item lag" href="Fotografia.html">Fotografía</a>
-                    <a class="dropdown-item lag" href="Producción.html">Producción audiovisual</a>
-                    <a class="dropdown-item lag" href="Rentadeequipos.html">Renta de equipos</a>
-                </div>
-            </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle lag" href="#" data-toggle="dropdown">
+                        Servicios
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item lag" href="MarketinDigital.html">Marketing digital</a>
+                        <a class="dropdown-item lag" href="Fotografia.html">Fotografía</a>
+                        <a class="dropdown-item lag" href="Producción.html">Producción audiovisual</a>
+                        <a class="dropdown-item lag" href="Rentadeequipos.html">Renta de equipos</a>
+                    </div>
+                </li>
 
-            <li class="btn-custom">
-                <a href="contact.html">
-                    <button class="btn-custom">
-                        <span class="text lag">Contáctanos</span>
-                    </button>
-                </a>
-            </li>
-        </ul>
-    </div>
-</nav>
+                <li class="btn-custom">
+                    <a href="#" class="lag text-hover" onclick="abrirModal(); return false;">
+                        <button class="btn-custom">
+                            <span class="text lag">Contáctanos</span>
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
 <!-- ============================= -->
 <!-- HERO PRO -->
 <!-- ============================= -->
