@@ -13126,13 +13126,13 @@ video {
 
 
 @font-face {
-  font-family: 'PlayfairDisplay';
-  src: url('../vendors/themify-icons/fonts/PlayfairDisplay-Bold.woff') format('woff');
+  font-family: 'Anton-Regular';
+  src: url('../vendors/themify-icons/fonts/Anton-Regular.woff') format('woff');
   font-weight: bold;
 }
 
 .lag {
-  font-family: 'PlayfairDisplay', sans-serif;
+  font-family: 'Anton-Regular.woff', sans-serif;
   font-weight: bold;
   color: white;
 }
