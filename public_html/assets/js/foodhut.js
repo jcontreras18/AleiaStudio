@@ -231,12 +231,12 @@ document.addEventListener('click', (e) => {
 });
 
 // ABRIR
-function abrirModal(id) {
+function abrirModal1(id) {
   document.getElementById(id).classList.add("activo");
 }
 
 // CERRAR
-function cerrarModal(id) {
+function cerrarModal1(id) {
   document.getElementById(id).classList.remove("activo");
 }
 
@@ -254,4 +254,53 @@ window.addEventListener("click", function (e) {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function(){
 
+  fetch("../../modal.html") // 🔥 ESTA ES LA CLAVE
+    .then(res => res.text())
+    .then(data => {
+
+      document.body.insertAdjacentHTML("beforeend", data);
+
+      const modal = document.getElementById("modalContacto");
+
+      // cerrar con X
+      document.querySelectorAll(".cerrar-modal").forEach(btn => {
+        btn.addEventListener("click", cerrarModal);
+      });
+
+      // click afuera
+      modal.addEventListener("click", function(e){
+        if(e.target === modal){
+          cerrarModal();
+        }
+      });
+
+      // ESC
+      document.addEventListener("keydown", function(e){
+        if(e.key === "Escape"){
+          cerrarModal();
+        }
+      });
+
+    })
+    .catch(err => console.error("ERROR:", err));
+
+});
+
+function abrirModal(){
+  const modal = document.getElementById("modalContacto");
+
+  if(modal){
+    modal.style.display = "flex";
+  } else {
+    setTimeout(abrirModal, 200);
+  }
+}
+
+function cerrarModal(){
+  const modal = document.getElementById("modalContacto");
+  if(modal){
+    modal.style.display = "none";
+  }
+}

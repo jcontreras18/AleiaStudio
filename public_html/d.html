@@ -10,7 +10,7 @@
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <link rel="stylesheet" href="assets/vendors/animate/animate.css">
-    <link href="https://fonts.cdnfonts.com/css/PlayfairDisplay" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/laginchy" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Bootstrap + FoodHut main styles -->
@@ -26,7 +26,7 @@
 
             <!-- Icono izquierdo (visible en móvil) -->
             <a href="#" class="mr-2">
-                <img src="assets/imgs/Logo_4.png" alt="Icono" class="logo-mobile">
+                <img src="assets/imgs/Logo_4.png" alt="Icono" style="height: 120px;">
             </a>
 
             <!-- Botón menú -->
@@ -40,22 +40,26 @@
                 <ul class="navbar-nav ml-auto">
 
                     <li class="nav-item nb">
-                        <a class="nav-link text-hover lag" href="index.html">Inicio</a>
+                        <a class="nav-link text-hover" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item nb">
+                        <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
                     </li>
                     <li class="nav-item dropdown nb">
-                        <a class="nav-link dropdown-toggle lag" href="#" data-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                             Servicios
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item lag" href="MarketinDigital.html">Marketing digital</a>
-                            <a class="dropdown-item lag" href="Fotografia.html">Fotografía</a>
-                            <a class="dropdown-item lag" href="Producción.html">Producción audiovisual</a>
-                            <a class="dropdown-item lag" href="Rentadeequipos.html">Renta de equipos</a>
+                            <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
+                            <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
+                            <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
+                            <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
                         </div>
                     </li>
 
                     <li class="nav-item nb">
-                        <a href="contact.html" class="lag text-hover">
+                        <a href="contact.html" class="nav-link text-hover">
                             Contáctanos
                         </a>
                     </li>
@@ -80,40 +84,47 @@
             <ul class="navbar-nav ml-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link text-hover lag" href="index.html">Inicio</a>
+                    <a class="nav-link text-hover" href="index.html">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-hover" href="#testmonial">Nosotros</a>
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle lag" href="#" data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                         Servicios
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item lag" href="MarketinDigital.html">Marketing digital</a>
-                        <a class="dropdown-item lag" href="Fotografia.html">Fotografía</a>
-                        <a class="dropdown-item lag" href="Producción.html">Producción audiovisual</a>
-                        <a class="dropdown-item lag" href="Rentadeequipos.html">Renta de equipos</a>
+                        <a class="dropdown-item" href="MarketinDigital.html">Marketing digital</a>
+                        <a class="dropdown-item" href="Fotografia.html">Fotografía</a>
+                        <a class="dropdown-item" href="Produccion.html">Producción audiovisual</a>
+                        <a class="dropdown-item" href="Rentadeequipos.html">Renta de equipos</a>
                     </div>
                 </li>
 
-                <li class="btn-custom">
-                    <a href="contact.html">
-                        <button class="btn-custom">
-                            <span class="text lag">Contáctanos</span>
-                        </button>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link btn btn-primary ml-xl-4">
+                        Contáctanos
                     </a>
                 </li>
+
             </ul>
         </div>
     </nav>
 
- <section id="contact" class="contact-section">
+<section id="contact" class="contact-section">
 
   <div class="container">
-    <div class="contact-card row align-items-center">
+    <div class="contact-card row align-items-center justify-content-center">
 
-      <div class="col-lg-6">
-        <div class="contactanos-imagen">
-          <img src="assets/imgs/4a.png" alt="Contáctanos">
+      <!-- ILUSTRACIÓN -->
+      <div class="col-lg-5 contact-illustration text-center mb-4 mb-lg-0">
+        <div class="mail-box">
+          <div class="mail-envelope">
+            <div class="mail-flap"></div>
+            <div class="mail-lines"></div>
+          </div>
         </div>
       </div>
 
@@ -142,15 +153,14 @@
             </div>
 
             <div class="col-12">
-              <textarea name="message" class="form-control modern-input textarea-modern" rows="5"
-                placeholder="Escribe tu mensaje" required></textarea>
+              <textarea name="message" class="form-control modern-input textarea-modern" rows="5" placeholder="Escribe tu mensaje" required></textarea>
             </div>
 
           </div>
 
           <div class="text-center mt-4">
-            <button type="submit" class="btn-custom">
-              <span class="text lag">Enviar mensaje</span>
+            <button type="submit" class="modern-btn w-100">
+              Enviar mensaje
             </button>
           </div>
 
@@ -163,25 +173,23 @@
 
 </section>
 
-
     <!-- Controles del whatsapp -->
     <div class="social-widget" id="socialWidget">
         <div class="social-button" onclick="toggleMenu()">
             <img id="whatsappIcon" src="assets/imgs/Redes/whatsapp_b.png" alt="WhatsApp">
         </div>
         <div class="social-menu" id="socialMenu">
-            <a href="https://www.facebook.com/share/1GQqTXHZRy/" target="_blank" class="social-icon">
-                <img src="assets/imgs/Redes/facebook_b.png" alt="Facebook">
+            <a href="https://x.com/" target="_blank" class="social-icon">
+                <img src="assets/imgs/Redes/X1_b.png" alt="LinkedIn">
             </a>
-            <a href="https://www.instagram.com/arktis.produccion?igsh=MTFhejBlZTc3NzhtdQ==" target="_blank"
-                class="social-icon">
-                <img src="assets/imgs/Redes/instagram_b.png" alt="Instagram">
+            <a href="https://facebook.com" target="_blank" class="social-icon">
+                <img src="assets/imgs/Redes/facebook_b.png" alt="Twitter">
             </a>
-            <a href="https://youtube.com/@arktisproduccion?si=oGbIfO6TEfUMSN9V" target="_blank" class="social-icon">
-                <img src="assets/imgs/Redes/youtube_b.png" alt="Youtube">
+            <a href="https://instagram.com" target="_blank" class="social-icon">
+                <img src="assets/imgs/Redes/instagram_b.png" alt="Twitter">
             </a>
-            <a href="https://wa.me/573227082993" target="_blank" class="social-icon">
-                <img src="assets/imgs/Redes/whatsapp_b.png" alt="WhatsApp">
+            <a href="https://instagram.com" target="_blank" class="social-icon">
+                <img src="assets/imgs/Redes/whatsapp_b.png" alt="Instagram">
             </a>
         </div>
     </div>
@@ -190,46 +198,48 @@
     <footer class="footer fot py-4">
         <div class="container">
             <div class="row text-center text-md-left">
-
-                <!-- Columna 1 - Redes Sociales -->
+                <!-- Columna 1 -->
                 <div class="col-md-4 mb-4 mb-md-0">
-                    <h5 class="lag">Síguenos</h5>
-                    <div class="social-icons mt-3">
-                        <a href="https://www.facebook.com/share/1GQqTXHZRy/" target="_blank" class="social-icon">
+                    <h5>Sobre Nosotros</h5>
+                    <p class="text-muted">
+                        Somos una empresa dedicada a brindar soluciones innovadoras en tecnología. Nuestro objetivo es
+                        mejorar la vida de las personas a través de la tecnología.
+                    </p>
+                </div>
+                <!-- Columna 2 -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio" class="text-hover">Inicio</a></li>
+                        <li><a href="#nosotros" class="text-hover">Nosotros</a></li>
+                        <li><a href="#proyectos" class="text-hover">Proyectos</a></li>
+                        <li><a href="#contacto" class="text-hover">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <!-- Columna 3 -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Contacto</h5>
+                    <p class="text-muted">
+                        Dirección: Calle Falsa 123<br>
+                        Teléfono: (123) 456-7890<br>
+                        Email: info@ejemplo.com
+                    </p>
+                    <!-- Redes Sociales -->
+                    <div class="social-mt-3 e-">
+                        <a href="https://facebook.com" target="_blank" class="social-icon">
                             <img src="assets/imgs/Redes/facebook_b.png" alt="Facebook">
                         </a>
-                        <a href="https://www.instagram.com/arktis.produccion?igsh=MTFhejBlZTc3NzhtdQ==" target="_blank"
-                            class="social-icon">
-                            <img src="assets/imgs/Redes/instagram_b.png" alt="Instagram">
+                        <a href="https://twitter.com" target="_blank" class="social-icon">
+                            <img src="assets/imgs/Redes/instagram_b.png" alt="Twitter">
                         </a>
-                        <a href="https://youtube.com/@arktisproduccion?si=oGbIfO6TEfUMSN9V" target="_blank"
-                            class="social-icon">
-                            <img src="assets/imgs/Redes/youtube_b.png" alt="Youtube">
+                        <a href="https://instagram.com" target="_blank" class="social-icon">
+                            <img src="assets/imgs/Redes/X_b.png" alt="Instagram">
                         </a>
-                        <a href="https://wa.me/573227082993" target="_blank" class="social-icon">
-                            <img src="assets/imgs/Redes/whatsapp_b.png" alt="WhatsApp">
+                        <a href="https://linkedin.com" target="_blank" class="social-icon">
+                            <img src="assets/imgs/Redes/whatsapp_b.png" alt="LinkedIn">
                         </a>
                     </div>
                 </div>
-
-                <!-- Columna 2 - Enlaces -->
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h5 class="lag">Enlaces</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-hover lag">Inicio</a></li>
-                        <li><a href="contact.html" class="text-hover lag">Contáctanos</a></li>
-                    </ul>
-                </div>
-
-                <!-- Columna 3 - Contacto -->
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h5 class="lag">Contacto</h5>
-                    <p class="text-muted lag">
-                        Teléfono: (57) 3227082993<br>
-                        Email:arktisproduccion@gmail.com
-                    </p>
-                </div>
-
             </div>
         </div>
     </footer>

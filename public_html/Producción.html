@@ -17,8 +17,6 @@
     <link rel="stylesheet" href="assets/css/foodhut.css">
 </head>
 
-<!-- MODAL CONTACTO -->
-
 <div id="modalContacto" class="modal-contacto">
     <div class="modal-contenido">
 
@@ -86,8 +84,8 @@
 
 </div>
 
-
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
 
 
     <!-- Navbar -->
@@ -177,110 +175,228 @@
     </nav>
 
     <!-- header -->
-    <div class="hero-video">
-        <iframe class="hero-video__media"
-            src="https://www.youtube.com/embed/nbzP76Iv6eM?autoplay=1&mute=1&loop=1&playlist=nbzP76Iv6eM&controls=0&rel=0&showinfo=0"
-            title="Hero Video" allow="autoplay; encrypted-media" allowfullscreen>
-        </iframe>
-    </div>
+    <section class="mk-hero">
+        <video autoplay muted loop playsinline preload="none" class="mk-hero-video">
+            <source src="assets/imgs/banner_1.mp4" type="video/mp4">
+        </video>
 
+        <div class="mk-hero-overlay"></div>
 
-    <!--  About Section  -->
-    <section class="about-section">
-        <div class="overlay">
-            <div class="content">
-                <h2 class="lag">CREAMOS CONTENIDO QUE CONECTA Y VENDE</h2>
+    </section>
 
-                <h3 class="lag">Arktis Producción</h3>
+    <section id="gallery" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
+        <div class="container text-center">
+            <h2 class="section-title lag">Servicios</h2>
+        </div>
+    </section>
 
-                <p class="Ital">
-                    Creamos contenido visual que vende. Nos especializamos en fotografía,
-                    video comercial y marketing digital, ayudando a marcas a destacar,
-                    conectar con su público y aumentar sus ventas. Transformamos ideas
-                    en contenido estratégico y de alto impacto para impulsar tu negocio.
+    <section class="services-hero">
+
+        <!-- FONDO -->
+        <div class="bg" id="bg"></div>
+        <div class="cards">
+
+            <div class="card active" data-img="assets/imgs/Produccion/corporativo.png">
+                <h3 class="lag">Videos Corporativos</h3>
+                <p class="Ital"> Realizamos la producción audiovisual para dar a conocer tu empresa, sin importar la
+                    antigüedad o presupuesto de la misma.</p>
+            </div>
+
+            <div class="card" data-img="assets/imgs/Produccion/digital.png">
+                <h3 class="lag">Contenido Digital</h3>
+                <p class="Ital">Contamos con un equipo enfocado en la producción audiovisual en formatos para todo tipo
+                    de redes sociales, páginas web y social media.</p>
+            </div>
+
+            <div class="card" data-img="assets/imgs/Produccion/eventos.png">
+                <h3 class="lag">Eventos</h3>
+                <p class="Ital">Ofrecemos una amplia lista de soluciones audiovisuales para la cobertura de eventos
+                    empresariales.</p>
+            </div>
+
+            <div class="card" data-img="assets/imgs/Produccion/productos.png">
+                <h3 class="lag">Productos</h3>
+                <p class="Ital">Creamos experiencias audiovisuales con el fin de mostrar los productos de su empresa.
                 </p>
+            </div>
+
+            <div class="card" data-img="assets/imgs/Produccion/pos_produccion.png">
+                <h3 class="lag">Post producción</h3>
+                <p class="Ital">Contamos con un equipo totalmente capacitado para que el producto tenga todos los
+                    estándares nacionales e internacionales de la industria audiovisual.</p>
             </div>
         </div>
     </section>
 
-    <!-- Sección de servicios -->
-    <div id="gallery" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
-        <h1 class="lag">SERVICIOS</h1>
-    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
 
-    <!-- Carrusel 2 -->
-    <div class="container-fluid my-5">
-        <div id="myCarousel1" class="d-block w-100" data-ride="carousel">
-            <!-- Imágenes del carrusel -->
-            <div class="carousel-inner imagen-combinada">
-                <div class="img-fluid">
-                    <a href="MarketinDigital.html">
-                        <img src="assets/imgs/1a.png" alt="Imagen 1" class="d-block w-100">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+            const bg = document.getElementById("bg");
+            const cards = document.querySelectorAll(".card");
 
-    <div class="container-fluid my-5">
-        <div id="myCarousel2" class="d-block w-100" data-ride="carousel">
-            <div class="carousel-inner imagen-combinada">
-                <div class="img-fluid">
-                    <a href="Produccion.html">
-                        <img src="assets/imgs/2a.png" alt="Imagen 1" class="d-block w-100">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Fin Carrusel 2 -->
+            // Fondo inicial
+            if (cards.length > 0) {
+                bg.style.backgroundImage = `url(${cards[0].dataset.img})`;
+            }
 
-    <!-- Carrusel 3 -->
-    <div class="container-fluid my-5">
-        <div id="myCarousel3" class="d-block w-100" data-ride="carousel">
-            <!-- Imágenes del carrusel -->
-            <div class="carousel-inner imagen-combinada">
-                <div class="img-fluid">
-                    <a href="Fotografia.html">
-                        <img src="assets/imgs/3a.png" alt="Imagen 1" class="d-block w-100">
-                    </a>
+            // Hover
+            cards.forEach(card => {
+                card.addEventListener("mouseenter", function () {
 
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Fin Carrusel 3 -->
+                    cards.forEach(c => c.classList.remove("active"));
+                    this.classList.add("active");
 
-    <!-- Carrusel 4 -->
-    <div class="container-fluid my-5">
-        <div id="myCarousel4" class="d-block w-100" data-ride="carousel">
-            <!-- Imágenes del carrusel -->
-            <div class="carousel-inner imagen-combinada">
-                <div class="img-fluid">
-                    <a href="Rentadeequipos.html">
-                        <img src="assets/imgs/4a.png" alt="Imagen 1" class="d-block w-100">
-                    </a>
+                    bg.style.backgroundImage = `url(${this.dataset.img})`;
+                });
+            });
 
-                </div>
+        });
+    </script>
 
-            </div>
-        </div>
-    </div>
-    <!-- Fin Carrusel 4 -->
-
-    <div id="gallary" class="text-center lag bg-dark text-light has-height-md middle-items wow fadeIn colornegro">
-        <h1 class="lag">ALIADOS</h1>
-    </div>
+    <!--Logos-->
 
     <div class="py-5 my-4 logo-container">
-        <img src="assets/Marcas/kw.jpg" alt="Logo 2" class="logo">
-        <img src="assets/Marcas/corona_color.png" alt="Logo 3" class="logo">
-        <img src="assets/Marcas/photo_iron.png" alt="Logo 4" class="logo">
-        <img src="assets/Marcas/rtvc.png" alt="Logo 5" class="logo">
-        <img src="assets/Marcas/oim.png" alt="Logo 6" class="logo">
-        <img src="assets/Marcas/alpina_color.png" alt="Logo 7" class="logo">
+        <img src="assets/imgs/Logos_produccion/color/CapCut_Logo_b.png" alt="Logo 2" class="logo">
+        <img src="assets/imgs/Logos_produccion/color/Adobe_Creative_c.png" alt="Logo 3" class="logo">
+        <img src="assets/imgs/Logos_produccion/color/Godox_Logo_c.png" alt="Logo 4" class="logo">
+        <img src="assets/imgs/Logos_produccion/color/logo_black_c.png" alt="Logo 5" class="logo">
+        <img src="assets/imgs/Logos_produccion/color/logo_davinci_c.png" alt="Logo 6" class="logo">
+        <img src="assets/imgs/Logos_produccion/color/logo_midjourney_b.png" alt="Logo 7" class="logo">
+        <img src="assets/imgs/Logos_produccion/color/red_camera_c.jpg" alt="Logo 7" class="logo">
     </div>
 
+    <section class="proyecto-video">
+
+        <!-- Información Koreguaje -->
+        <!-- Texto izquierda -->
+        <div class="proyecto-info">
+            <h2 class="lag">KOREGÜAJE</h2>
+            <h3 class="Ital">Raíces En Fuego Cruzado</h3>
+
+            <p class="Ital">
+                Durante el año 2022 un equipo de realización viajó a la selva de Caquetá - Colombia
+                con el fin de conocer testimonios de parte de la comunidad indígena Koregüaje.
+                Como resultado se desarrolló un mini documental expuesto en distintas partes del país.
+            </p>
+
+            <ul class="Ital">
+                <li>Director: Michael Rojas Castellanos</li>
+                <li>Categoría: Documental</li>
+                <li>Duración: 22 minutos aprox</li>
+            </ul>
+        </div>
+
+        <!-- VIDEO DERECHA -->
+        <div class="proyecto-player">
+            <iframe src="https://www.youtube.com/embed/gJQjk-UoctY" title="Koregüaje" allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+
+    <!--Sección preguntas frecuentes-->
+
+    <section id="faq" class="faq-section">
+
+        <div class="faq-container">
+
+            <header class="faq-header">
+                <h2 class="faq-title lag">Preguntas Frecuentes</h2>
+                <p class="faq-subtitle Ital">Resolvemos tus dudas antes de iniciar tu proyecto</p>
+            </header>
+
+            <div class="faq" role="accordion">
+
+                <!-- ITEM 1 -->
+                <article class="faq-item active">
+                    <button class="faq-question" aria-expanded="true">
+                        <span class="icon">?</span>
+                        <span class="text lag">¿En qué se diferencia Arktis de otras productoras audiovisuales?</span>
+                        <span class="arrow">⌄</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="Ital">
+                            Concebimos el audiovisual como una respuesta artística a necesidades empresariales y
+                            personales.
+                            El cliente es nuestra principal fuente de inspiración y motor de cada proyecto.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- ITEM 2 -->
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="icon">?</span>
+                        <span class="text lag">¿Qué sucede si mi presupuesto no se ajusta?</span>
+                        <span class="arrow">⌄</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="Ital">
+                            Ofrecemos un espacio personalizado para entender tu proyecto y encontrar un acuerdo de
+                            trabajo
+                            que se adapte a tus posibilidades.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- ITEM 3 -->
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="icon">?</span>
+                        <span class="text lag">¿Qué tipo de producciones realizan?</span>
+                        <span class="arrow">⌄</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Realizamos producción para redes sociales, eventos, comerciales, documentales
+                            y productos audiovisuales para cine.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- ITEM 4 -->
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="icon">?</span>
+                        <span class="text lag">¿Cómo puedo comunicarme con ustedes?</span>
+                        <span class="arrow">⌄</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="Ital">
+                            Puedes escribirnos por redes sociales o WhatsApp al
+                            <strong>+57 320 373 4871</strong>.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Controles del whatsapp -->
+    <div class="social-widget" id="socialWidget">
+        <div class="social-button" onclick="toggleMenu()">
+            <img id="whatsappIcon" src="assets/imgs/Redes/whatsapp_b.png" alt="WhatsApp">
+        </div>
+        <div class="social-menu" id="socialMenu">
+            <a href="https://www.facebook.com/share/1GQqTXHZRy/" target="_blank" class="social-icon">
+                <img src="assets/imgs/Redes/facebook_b.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/arktis.produccion?igsh=MTFhejBlZTc3NzhtdQ==" target="_blank"
+                class="social-icon">
+                <img src="assets/imgs/Redes/instagram_b.png" alt="Instagram">
+            </a>
+            <a href="https://youtube.com/@arktisproduccion?si=oGbIfO6TEfUMSN9V" target="_blank" class="social-icon">
+                <img src="assets/imgs/Redes/youtube_b.png" alt="Youtube">
+            </a>
+            <a href="https://wa.me/573227082993" target="_blank" class="social-icon">
+                <img src="assets/imgs/Redes/whatsapp_b.png" alt="WhatsApp">
+            </a>
+        </div>
+    </div>
 
     <!-- Controles del whatsapp -->
     <div class="social-widget" id="socialWidget">
@@ -337,7 +453,6 @@
                         <li><a href="index.html" class="text-hover lag">Inicio</a></li>
                         <li><a href="#" class="lag text-hover" onclick="abrirModal(); return false;" class="text-hover lag">Contáctanos</a></li>
                     </ul>
-                </li>
                 </div>
 
                 <!-- Columna 3 - Contacto -->
