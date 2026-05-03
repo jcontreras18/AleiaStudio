@@ -254,3 +254,62 @@ window.addEventListener("click", function (e) {
   });
 });
 
+// =====================
+// ABRIR MODAL
+// =====================
+function abrirModal() {
+  const modal = document.getElementById("modalContacto");
+
+  if (modal) {
+    modal.style.display = "flex";
+  } else {
+    console.error("Modal aún no cargado");
+  }
+}
+
+// =====================
+// CERRAR MODAL
+// =====================
+function cerrarModal() {
+  const modal = document.getElementById("modalContacto");
+  if (modal) {
+    modal.style.display = "none";
+  }
+}
+
+// =====================
+// CARGAR MODAL + EVENTOS
+// =====================
+document.addEventListener("DOMContentLoaded", function () {
+
+  // Cargar el HTML del modal
+  fetch("modal.html")
+    .then(res => res.text())
+    .then(data => {
+      document.body.insertAdjacentHTML("beforeend", data);
+
+      const modal = document.getElementById("modalContacto");
+
+      // Cerrar con la X
+      document.querySelectorAll(".cerrar-modal").forEach(btn => {
+        btn.addEventListener("click", cerrarModal);
+      });
+
+      // Cerrar al hacer click afuera
+      modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+          cerrarModal();
+        }
+      });
+
+      // Cerrar con ESC
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          cerrarModal();
+        }
+      });
+
+    })
+    .catch(error => console.error("Error cargando modal:", error));
+
+});
