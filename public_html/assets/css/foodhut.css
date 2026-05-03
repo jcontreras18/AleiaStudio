@@ -15658,6 +15658,93 @@ body{
     }
 }
 
+/*footer*/
+.cta-footer {
+  background: linear-gradient(180deg, #1c1c1c, #2a2a2a);
+  color: #fff;
+  padding: 80px 40px;
+}
+
+/* CONTENEDOR */
+.cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* TOP */
+.cta-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cta-top h2 {
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.cta-top h2 span {
+  font-weight: 700;
+}
+
+/* BOTÓN */
+.cta-btn {
+  border: 1px solid #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #179cdc;
+  color: white;
+}
+
+/* CONTACTOS */
+.cta-contact {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 60px;
+  gap: 40px;
+}
+
+/* ITEM */
+.contact-item {
+  border-top: 1px solid #555;
+  padding-top: 20px;
+}
+
+.contact-item h4 {
+  color: #179cdc;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.contact-item p {
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+
+  .cta-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .cta-top h2 {
+    font-size: 36px;
+  }
+
+  .cta-contact {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
 
