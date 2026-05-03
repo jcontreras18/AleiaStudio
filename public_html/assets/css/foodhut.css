@@ -12546,7 +12546,7 @@ video {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 28px;
+  gap: 40px;
 }
 
 /* Logos */
@@ -15066,7 +15066,7 @@ transform: translateY(-3px);
 }
 
 .description{
-  color: #aaa;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -15112,6 +15112,16 @@ transform: translateY(-3px);
 .mk-hero{
   position:relative;
   height:85vh;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.mk-hero-home{
+  position:relative;
+  height:100vh;
   overflow:hidden;
   display:flex;
   align-items:center;
@@ -15256,7 +15266,6 @@ body{
 .title{
     text-align:center;
     color:white;
-    letter-spacing:5px;
     margin-bottom:60px;
 }
 
@@ -15427,7 +15436,7 @@ body{
 
 /* Parte derecha (texto) */
 .btn-custom .text {
-  background: #2ea3d6;
+  background: #179cdc;
   color: white;
   padding: 12px 24px;
   font-weight: bold;
@@ -15436,7 +15445,7 @@ body{
 
 /* Hover */
 .btn-custom:hover .text {
-  background: #2493c3;
+  background: #179cdc;
 }
 
 .btn-custom:hover .icon {
