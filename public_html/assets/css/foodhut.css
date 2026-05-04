@@ -14272,12 +14272,11 @@ html, body{
 /* ============================= */
 
 #contact{
-padding:260px 0 150px 0; /* 🔥 MÁS ABAJO */
+padding:260px 0 150px 0;
 
 }
 
 /* TARJETA */
-
 .contact-card{
 border-radius:20px;
 padding:60px;
@@ -14287,7 +14286,6 @@ margin:auto;
 }
 
 /* TITULO */
-
 .contact-title{
 color:white;
 font-weight:600;
@@ -14295,7 +14293,6 @@ letter-spacing:1px;
 }
 
 /* ILUSTRACION */
-
 .contact-illustration{
 display:flex;
 justify-content:center;
@@ -14364,7 +14361,7 @@ box-shadow:0 15px 35px rgba(59,130,246,0.6);
 @media (max-width:992px){
 
 #contact{
-padding:220px 0 300px 0; /* 🔥 TAMBIÉN MÁS ABAJO EN TABLET */
+padding:220px 0 300px 0;
 }
 
 .contact-card{
@@ -14386,7 +14383,7 @@ margin-bottom:40px;
 /* IMAGEN */
 .contactanos-imagen{
   width: 100%;
-  max-width: 500px; /* controla el tamaño en desktop */
+  max-width: 500px;
 }
 
 .contactanos-imagen img{
@@ -15685,11 +15682,12 @@ body{
 }
 
 /* TOP */
-.cta-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+.cta-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
 }
 
 .cta-top h2 {
@@ -15727,8 +15725,12 @@ body{
 
 /* ITEM */
 .contact-item {
-  border-top: 1px solid #555;
-  padding-top: 20px;
+text-decoration: none;
+color: inherit;
+border-top: 1px solid #555;
+padding-top: 20px;
+display: block;
+transition: 0.3s;
 }
 
 .contact-item h4 {
@@ -15741,23 +15743,50 @@ body{
   color: #ccc;
 }
 
-@media (max-width: 768px) {
+.contact-item:hover {
+  transform: translateY(-5px);
+  border-top: 1px solid #179cdc;
+}
 
+@media (max-width: 768px) {
   .cta-top {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
   }
-
   .cta-top h2 {
     font-size: 36px;
   }
-
   .cta-contact {
     grid-template-columns: 1fr;
   }
 }
 
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-icon {
+  width: 35px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.contact-item:hover .contact-icon {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.lag-redes-sociales {
+  font-family: 'Anton-Regular.woff', sans-serif;
+  font-weight: bold;
+  color: #179cdc;
+  margin-bottom: 10px;
+  font-weight: 500;
+  }
+}
 
 
 
