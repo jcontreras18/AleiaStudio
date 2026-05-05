@@ -88,52 +88,57 @@
 
 
 <!-- Navbar -->
-<nav class="custom-navbar navbar navbar-dark fixed-top d-lg-none" data-spy="affix" data-offset-top="10">
-    <div class="container">
+    <nav class="custom-navbar navbar navbar-dark fixed-top d-lg-none" data-spy="affix" data-offset-top="10">
+        <div class="container">
 
-        <!-- Icono izquierdo (visible en móvil) -->
-        <a href="#" class="mr-2">
-            <img src="assets/imgs/Logo_4.png" alt="Icono" class="logo-mobile">
-        </a>
+            <!-- Icono izquierdo (visible en móvil) -->
+            <a href="#" class="mr-2">
+                <img src="assets/imgs/Logo_4.png" alt="Icono" class="logo-mobile">
+            </a>
 
-        <!-- Botón menú -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu"
+            <!-- Botón menú -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu"
                 aria-expanded="false">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- Menú móvil -->
-        <div class="collapse navbar-collapse" id="mobileMenu">
-            <ul class="navbar-nav ml-auto">
+            <!-- Menú móvil -->
+            <div class="collapse navbar-collapse" id="mobileMenu">
+                <ul class="navbar-nav ml-auto">
 
-                <li class="nav-item nb">
-                    <a class="nav-link text-hover lag" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item dropdown nb">
-                    <a class="nav-link dropdown-toggle lag" href="#" data-toggle="dropdown">
-                        Servicios
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item lag" href="MarketinDigital.html">Marketing digital</a>
-                        <a class="dropdown-item lag" href="Fotografia.html">Fotografía</a>
-                       <a class="dropdown-item lag" href="Producción.html">Producción audiovisual</a>
-                        <a class="dropdown-item lag" href="Rentadeequipos.html">Renta de equipos</a>
-                    </div>
+                    <li class="nav-item nb">
+                        <a class="nav-link text-hover lag" href="index.html">Inicio</a>
+                    </li>
+                      <li class="nav-item">
+                    <a class="nav-link text-hover lag" href="Nosotros.html">Nosotros</a>
                 </li>
 
-                <li class="nav-item nb">
-                    <a href="contact.html" class="lag text-hover">
-                        Contáctanos
-                    </a>
-                </li>
+                    <li class="nav-item dropdown nb">
+                        <a class="nav-link dropdown-toggle lag" href="#" data-toggle="dropdown">
+                            Servicios
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item lag" href="MarketinDigital.html">Marketing digital</a>
+                            <a class="dropdown-item lag" href="Fotografia.html">Fotografía</a>
+                            <a class="dropdown-item lag" href="Producción.html">Producción audiovisual</a>
+                            <a class="dropdown-item lag" href="Rentadeequipos.html">Renta de equipos</a>
+                        </div>
+                    </li>
 
-            </ul>
+                    <li class="nav-item nb">
+                        <a href="#" class="lag text-hover" onclick="abrirModal(); return false;">
+                            Contáctanos
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
 
- <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-flex" data-spy="affix"
+    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-flex" data-spy="affix"
         data-offset-top="10">
         <div class="container">
 
@@ -149,10 +154,15 @@
                     <a class="nav-link text-hover lag" href="index.html">Inicio</a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link text-hover lag" href="Nosotros.html">Nosotros</a>
+                </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle lag" href="#" data-toggle="dropdown">
                         Servicios
                     </a>
+
                     <div class="dropdown-menu">
                         <a class="dropdown-item lag" href="MarketinDigital.html">Marketing digital</a>
                         <a class="dropdown-item lag" href="Fotografia.html">Fotografía</a>
@@ -172,9 +182,6 @@
         </div>
     </nav>
 
-<!-- ============================= -->
-<!-- HERO PRO -->
-<!-- ============================= -->
 <section class="mk-hero">
     <video autoplay muted loop playsinline preload="none" class="mk-hero-video">
         <source src="assets/imgs/Marketing/Marketing_digital.mp4" type="video/mp4">
@@ -183,9 +190,6 @@
 </section>
 
 
-<!-- ============================= -->
-<!-- SERVICIOS -->
-<!-- ============================= -->
 <section class="mk-services" id="servicios">
 
     <div class="mk-services-header">
@@ -327,61 +331,62 @@
     </div>
 
     <!-- page footer -->
-<section class="cta-footer">
-    <div class="cta-container">
+   <section class="cta-footer">
+        <div class="cta-container">
 
-        <!-- TITULO -->
-        <div class="cta-top">
-            <h2 class="lag">
-                Tienes un <span>PROYECTO</span><br>
-                EN MENTE?
-            </h2>
-            <a href="#" class="lag cta-btn" onclick="abrirModal(); return false;">
-                Hablemos</a>
+            <!-- TITULO -->
+            <div class="cta-top">
+                <h2 class="lag">
+                    Tienes un <span>PROYECTO</span><br>
+                    EN MENTE?
+                </h2>
+                <a href="#" class="lag cta-btn" onclick="abrirModal(); return false;">
+                    Hablemos</a>
+            </div>
+
+            <!-- CONTACTOS -->
+            <div class="cta-contact">
+
+                <a href="https://wa.me/573227082993" class="contact-item">
+                    <div class="contact-content">
+                        <div>
+                            <div class="lag-redes-sociales">WhatsApp</div>
+                        </div>
+                        <img src="assets/imgs/Redes/whatsapp_b.png" class="contact-icon">
+                    </div>
+                </a>
+
+
+                <a href="https://www.facebook.com/share/1GQqTXHZRy/" class="contact-item">
+                    <div class="contact-content">
+                        <div>
+                            <div class="lag-redes-sociales">Facebook</div>
+                        </div>
+                        <img src="assets/imgs/Redes/facebook_b.png" class="contact-icon">
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/arktis.produccion?igsh=MTFhejBlZTc3NzhtdQ==" class="contact-item">
+                    <div class="contact-content">
+                        <div>
+                            <div class="lag-redes-sociales">Instagram</div>
+                        </div>
+                        <img src="assets/imgs/Redes/instagram_b.png" class="contact-icon">
+                    </div>
+                </a>
+
+                <a href="https://youtube.com/@arktisproduccion?si=oGbIfO6TEfUMSN9V" class="contact-item">
+                    <div class="contact-content">
+                        <div>
+                            <div class="lag-redes-sociales">YouTube</div>
+                    </div>
+                        <img src="assets/imgs/Redes/youtube_b.png" class="contact-icon">
+                    </div>
+                </a>
+            </div>
         </div>
+    </section>
 
-        <!-- CONTACTOS -->
-        <div class="cta-contact">
-
-            <a href="https://wa.me/573227082993" class="contact-item">
-                <div class="contact-content">
-                    <div>
-                        <div class="lag-redes-sociales">WhatsApp</div>
-                    </div>
-                    <img src="assets/imgs/Redes/whatsapp_b.png" class="contact-icon">
-                </div>
-            </a>
-
-
-            <a href="https://www.facebook.com/share/1GQqTXHZRy/" class="contact-item">
-                <div class="contact-content">
-                    <div>
-                        <div class="lag-redes-sociales">Facebook</div>
-                    </div>
-                    <img src="assets/imgs/Redes/facebook_b.png" class="contact-icon">
-                </div>
-            </a>
-
-            <a href="https://www.instagram.com/arktis.produccion?igsh=MTFhejBlZTc3NzhtdQ==" class="contact-item">
-                <div class="contact-content">
-                    <div>
-                        <div class="lag-redes-sociales">Instagram</div>
-                    </div>
-                    <img src="assets/imgs/Redes/instagram_b.png" class="contact-icon">
-                </div>
-            </a>
-
-            <a href="https://youtube.com/@arktisproduccion?si=oGbIfO6TEfUMSN9V" class="contact-item">
-                <div class="contact-content">
-                    <div>
-                        <div class="lag-redes-sociales">YouTube</div>
-                    </div>
-                    <img src="assets/imgs/Redes/youtube_b.png" class="contact-icon">
-                </div>
-            </a>
-        </div>
-    </div>
-</section>
 
     <div class="bg-dark text-light text-center border-top wow fadeIn">
         <p class="mb-0 py-3 text-muted small">&copy; Copyright
