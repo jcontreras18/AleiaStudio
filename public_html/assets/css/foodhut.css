@@ -12433,6 +12433,25 @@ video {
   opacity: 1;
 }
 
+.whatsapp-float{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+.whatsapp-float img{
+    width: 30px;
+}
+
 
 .whatsapp-widget {
   position: fixed;
@@ -12484,25 +12503,6 @@ video {
   font-size: 16px;
 }
 
-.social-widget {
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 1000;
-}
-
-.social-button {
-  width: 50px;
-  height: 50px;
-  background-color: #25D366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  animation: onda 1.7s infinite;
-}
 
 .social-button img {
   width: 70%;
@@ -12513,15 +12513,6 @@ video {
   transform: scale(1.1);
 }
 
-.social-menu {
-  display: none;
-  position: absolute;
-  bottom: 70px;
-  right: 0;
-  background-color: #000000;
-  padding: 10px;
-  border-radius: 10px;
-}
 
 .social-menu.open {
   display: block;
@@ -12760,42 +12751,11 @@ video {
   text-decoration: none;
 }
 
-.social-icon img {
-  width: 27px;
-  height: 27px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  letter-spacing: 9px;
-}
 
 
 .social-icon:hover img {
   transform: scale(1.1);
   opacity: 0.7;
-}
-
-/* Estilo Responsive */
-@media (max-width: 768px) {
-  .social {
-    justify-content: center;
-  }
-
-  .social-icon img {
-    width: 35px;
-    height: 35px;
-  }
-}
-
-@media (max-width: 480px) {
-  .social {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .social-icon img {
-    width: 30px;
-    height: 30px;
-  }
 }
 
 .e- {
