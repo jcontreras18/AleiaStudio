@@ -118,7 +118,7 @@
                         <div class="dropdown-menu">
                             <a class="dropdown-item lag" href="MarketinDigital.html">Marketing digital</a>
                             <a class="dropdown-item lag" href="Fotografia.html">Fotografía</a>
-                            <a class="dropdown-item lag" href="Producción.html">Producción audiovisual</a>
+                            <a class="dropdown-item lag" href="Produccion.html">Producción audiovisual</a>
                             <a class="dropdown-item lag" href="Rentadeequipos.html">Renta de equipos</a>
                         </div>
                     </li>
@@ -164,7 +164,7 @@
                     <div class="dropdown-menu">
                         <a class="dropdown-item lag" href="MarketinDigital.html">Marketing digital</a>
                         <a class="dropdown-item lag" href="Fotografia.html">Fotografía</a>
-                        <a class="dropdown-item lag" href="Producción.html">Producción audiovisual</a>
+                        <a class="dropdown-item lag" href="Produccion.html">Producción audiovisual</a>
                         <a class="dropdown-item lag" href="Rentadeequipos.html">Renta de equipos</a>
                     </div>
                 </li>
@@ -206,7 +206,50 @@
 
     </div>
 
+    <div class="image-modal" id="imageModal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-image" id="modalImage" alt="imagen click" src="">
+    </div>
+
 </section>
+
+
+<script>
+    const galleryItems = document.querySelectorAll('.gallery-item img');
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const closeModal = document.querySelector('.close-modal');
+
+    /* SOLO DESKTOP */
+    galleryItems.forEach(img => {
+
+        img.addEventListener('click', () => {
+
+            if(window.innerWidth <= 768){
+                return;
+            }
+
+            modal.classList.add('active');
+            modalImg.src = img.src;
+        });
+
+    });
+
+    /* CERRAR */
+    closeModal.addEventListener('click', () => {
+        modal.classList.remove('active');
+    });
+
+    /* CERRAR CLICK FUERA */
+    modal.addEventListener('click', (e) => {
+
+        if(e.target !== modalImg){
+            modal.classList.remove('active');
+        }
+
+    });
+</script>
+
 
 <!-- Controles del whatsapp -->
 <a href="https://wa.me/573227082993" target="_blank" class="whatsapp-float">
