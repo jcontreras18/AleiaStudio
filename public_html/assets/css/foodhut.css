@@ -15449,7 +15449,6 @@ body{
 }
 
 @media (max-width: 768px) {
-
   .about-section {
     height: auto;
     padding: 60px 20px;
@@ -15470,17 +15469,14 @@ body{
   }
 
 }
-
 @media (max-width: 768px) {
   .overlay {
     height: auto;
   }
 }
-
 .content h2 {
 font-size: 24px;
 }
-
 
 .btn-custom {
   display: inline-flex;
@@ -15601,16 +15597,16 @@ body{
 }
 
 .linea{
-    width:700px;
-    height:2px;
-    background:#fff;
-    margin: 0 auto 34px auto;
+    width: 60%;
+    max-width: 900px;
+    height: 2px;
+    background: #fff;
+    margin: 20px auto 50px auto;
 }
 
 .contenido-wrapper{
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 .imagenes-vertical{
@@ -15632,40 +15628,132 @@ body{
 
 /* Grid texto */
 .contenido-grid{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap:60px;
-    align-items:start;
+    display: grid;
+    grid-template-columns: 2.2fr 0.8fr;
+    gap: 140px;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
 }
 
 .contenido-grid p{
-    line-height:1.8;
-    margin-bottom:30px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.contenido-grid > div:first-child{
+    max-width: 650px;
+    margin-left: auto; /* NUEVO */
+}
+
+/* COLUMNA DERECHA */
+.contenido-grid > div:last-child{
+    max-width: 300px;
+    margin-right: auto; /* NUEVO */
 }
 
 /* Responsive */
 @media(max-width:992px){
     .contenido-grid{
         grid-template-columns:1fr;
+        gap: 40px;
+        text-align: left;
+    }
+    .contenido-grid > div:first-child,
+    .contenido-grid > div:last-child{
+        max-width: 100%;
+        margin: 0;
     }
     .linea{
-    background:#fff;
-    width:100%;
+        width:100%;
     }
 }
 
-/* Imagen final de helpfi */
-.imagen-helpfi {
-  position:relative;
-  padding:300px 20px;
-  background:url("../imgs/helpfi_1.png") center/cover;
-  }
+/*Texto del proyecto Helpfi*/
 
-  @media (max-width: 768px) {
-    .imagen-helpfi {
-      padding: 80px 15px; /* menos alto */
+.helpfi-info{
+    max-width: 1300px;
+    margin: auto;
+    padding: 60px 40px;
+}
+
+/* LINEA */
+.helpfi-line{
+    width: 500px;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 50px;
+}
+
+.helpfi-line::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 4px;
+    background: #000;
+}
+
+/* GRID PRINCIPAL */
+.helpfi-grid{
+    display: grid;
+    grid-template-columns: 2fr 0.8fr;
+    gap: 120px;
+}
+
+/* TEXTO GENERAL */
+.helpfi-grid p{
+    line-height: 2;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* INTRO */
+.helpfi-intro{
+    max-width: 900px;
+}
+
+/* SUBTITULO */
+.helpfi-subtitle{
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+/* OBJETIVOS */
+.helpfi-objetivos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+/* DERECHA */
+.helpfi-right p{
+    margin-bottom: 55px;
+    line-height: 1.7;
+}
+
+/* RESPONSIVE */
+@media(max-width:992px){
+    .helpfi-line{
+        width: 100%;
     }
-  }
+    .helpfi-grid{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .helpfi-objetivos{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .helpfi-grid p,
+    .helpfi-right p,
+    .helpfi-subtitle{
+        font-size: 16px;
+        line-height: 1.8;
+    }
+}
+/*Final texto proyecto helpfi*/
 
 .contenedor-grande{
     width: 100%;
@@ -15680,6 +15768,136 @@ body{
     display: block;
 }
 
+/*Redes sociales*/
+.redes-info{
+    max-width: 1400px;
+    margin: auto;
+    padding: 90px 40px;
+    color: #fff;
+}
+
+/* TITULO */
+.titulo-redes{
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+/* LINEA */
+.linea-redes{
+    width: 70%;
+    max-width: 850px;
+    height: 2px;
+    background: #fff;
+    margin: 30px auto 50px;
+}
+
+/* GRID */
+.contenido-redes{
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.7fr;
+    gap: 90px;
+    align-items: start;
+    text-align: left;
+}
+
+/* TEXTO IZQUIERDA Y CENTRO */
+.texto-redes p{
+    line-height: 2;
+    font-weight: 300;
+}
+
+/* COLUMNA DERECHA */
+.info-redes{
+    padding-left: 20px;
+}
+
+.info-redes p{
+    line-height: 1.8;
+    margin-bottom: 45px;
+}
+
+.info-redes strong{
+    font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media(max-width:992px){
+    .contenido-redes{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .linea-redes{
+        width: 100%;
+    }
+
+    .texto-redes p,
+    .info-redes p{
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .info-redes{
+        padding-left: 0;
+    }
+}
+
+/*Texto en imagen de redes sociales*/
+.proyecto-img{
+    position: relative;
+    width: 100%;
+}
+
+.proyecto-img img{
+    width: 100%;
+    display: block;
+}
+
+/* TEXTO ENCIMA */
+.texto-redes-sociales{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    max-width: 420px;
+}
+
+/* TITULO */
+.texto-redes-sociales h2{
+    margin-bottom: 18px;
+    line-height: 1.1;
+}
+
+/* LINEA */
+.linea-redes-imagen{
+    width: 100%;
+    height: 2px;
+    background: rgba(255,255,255,0.5);
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.linea-redes::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 120px;
+    height: 2px;
+    background: #fff;
+}
+
+/* TEXTO */
+.texto-redes-sociales p{
+    line-height: 1.7;
+    color: rgba(255,255,255,0.95);
+}
+
 /* Proyectos - información Koreguaje */
 .proyecto-video{
     display: grid;
@@ -15691,7 +15909,11 @@ body{
 }
 
 .proyecto-info{
+    max-width: 1400px;
+    margin: auto;
+    padding: 70px 40px;
     color: #fff;
+    text-align: center; /* NUEVO */
 }
 
 .proyecto-info h2{
