@@ -16085,62 +16085,110 @@ transition: 0.3s;
   font-weight: 500;
   }
 
+/* Sección general */
+.nosotros-section{
+  width: 100%;
+  overflow-x: hidden;
+}
 
-.gallery2{
+/* HERO */
+.about3-gallery {
   display: flex;
   justify-content: center;   /* centra horizontal */
   align-items: center;       /* centra vertical */
-  min-height: 100vh;         /* ocupa toda la pantalla */
+  min-height: 80vh;         /* ocupa toda la pantalla en desktop */
 }
 
-.contenedor-nosotros{
-  text-align: center;        /* centra el texto */
+/* Contenedor */
+.about3-contenedor {
+  max-width: 1100px;
+  width: 100%;
 }
 
-.bloque-nosotros{
-  max-width: 1000px;
-}
-
-.texto-nosotros{
+.about3-texto {
   color: #e5e5e5;
-  font-size: clamp(32px, 5vw, 80px);
   font-weight: 700;
   line-height: 1.2;
+  font-size: clamp(28px, 5vw, 72px);
 }
 
-.resaltado-nosotros{
+.about3-resaltado {
   color: #169cdc;
-  position: relative;
   font-style: italic;
+  position: relative;
 }
 
-.resaltado-nosotros::after{
+.about3-resaltado::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -5px;
+  bottom: -6px;
   width: 100%;
   height: 3px;
   background: #e5e5e5;
 }
 
-.titulo-seccion{
-  max-width: 900px;   /* evita líneas muy largas */
-  margin: 0 auto;     /* centra el bloque */
-  text-align: center;
+/* 🔥 IMAGEN MENOS SEPARADA */
+.about3-img-banner {
+  margin-top: -10px;   /* elimina el espacio grande */
 }
 
-
-.descripcion{
-  color: #dcdcdc;
-  line-height: 1.8;   /* mejora lectura */
-  text-align: justify; /* justificado */
-}
-
-/* separación entre párrafos simulada */
-.descripcion br{
+.about3-img-banner-img {
+  width: 100%;
+  height: auto;
   display: block;
-  margin-bottom: 12px;
-  content: "";
 }
 
+/* TITULO + TEXTO */
+.about3-titulo-seccion {
+  max-width: 900px;
+  margin: 20px auto 0 auto; /* menos separación arriba */
+  padding: 0 20px;
+}
+
+.about3-titulo-seccion h1 {
+  margin-bottom: 10px;
+}
+
+.about3-descripcion {
+  color: #dcdcdc;
+  line-height: 1.8;
+  text-align: justify;
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about3-gallery {
+    min-height: auto;
+    align-items: flex-start;
+    padding: 120px 20px 60px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .about3-texto {
+    font-size: 26px;
+  }
+
+  .about3-resaltado::after {
+    height: 2px;
+  }
+}
+
+#modalContacto {
+    display: none;
+}
+
+#modalContacto.active {
+    display: flex;
+}
+
+#imageViewer {
+    display: none;
+}
+
+#imageViewer.active {
+    display: flex;
+}

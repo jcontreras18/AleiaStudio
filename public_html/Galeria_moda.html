@@ -181,96 +181,59 @@
             </ul>
         </div>
     </nav>
-    <section class="gallery">
+ <section class="gallery">
 
-        <div class="text-center text-light titulo-seccion">
-            <h1 class="lag">MODA</h1>
-        </div>
+    <div class="text-center text-light titulo-seccion">
+        <h1 class="lag">MODA</h1>
+    </div>
 
+    <div class="gallery-grid">
 
-        <div class="gallery-grid">
+        <a class="gallery-item" href="javascript:void(0)">
+            <img src="assets/imgs/Moda/Moda_1.avif" alt="Imagen 1">
+        </a>
 
-            <a class="gallery-item">
-                <img src="assets/imgs/Moda/Moda_1.avif" alt="Imagen 1">
-            </a>
+        <a class="gallery-item" href="javascript:void(0)">
+            <img src="assets/imgs/Moda/Moda_2.avif" alt="Imagen 2">
+        </a>
 
-            <a class="gallery-item">
-                <img src="assets/imgs/Moda/Moda_2.avif" alt="Imagen 2">
-            </a>
+        <a class="gallery-item" href="javascript:void(0)">
+            <img src="assets/imgs/Moda/Moda_3.avif" alt="Imagen 3">
+        </a>
 
-            <a class="gallery-item">
-                <img src="assets/imgs/Moda/Moda_3.avif" alt="Imagen 3">
-            </a>
+        <a class="gallery-item" href="javascript:void(0)">
+            <img src="assets/imgs/Moda/Moda_4.avif" alt="Imagen 4">
+        </a>
 
-            <a class="gallery-item">
-                <img src="assets/imgs/Moda/Moda_4.avif" alt="Imagen 4">
-            </a>
+        <a class="gallery-item" href="javascript:void(0)">
+            <img src="assets/imgs/Moda/Moda_5.avif" alt="Imagen 5">
+        </a>
 
-            <a class="gallery-item">
-                <img src="assets/imgs/Moda/Moda_5.avif" alt="Imagen 5">
-            </a>
+        <a class="gallery-item" href="javascript:void(0)">
+            <img src="assets/imgs/Moda/Moda_6.jpg" alt="Imagen 6">
+        </a>
 
-            <a class="gallery-item">
-                <img src="assets/imgs/Moda/Moda_6.jpg" alt="Imagen 6">
-            </a>
+        <a class="gallery-item" href="javascript:void(0)">
+            <img src="assets/imgs/Moda/Moda_7.avif" alt="Imagen 7">
+        </a>
 
-            <a class="gallery-item">
-                <img src="assets/imgs/Moda/Moda_7.avif" alt="Imagen 6">
-            </a>
+        <a class="gallery-item" href="javascript:void(0)">
+            <img src="assets/imgs/Moda/Moda_8.avif" alt="Imagen 8">
+        </a>
 
-            <a class="gallery-item">
-                <img src="assets/imgs/Moda/Moda_8.avif" alt="Imagen 6">
-            </a>
+        <a class="gallery-item" href="javascript:void(0)">
+            <img src="assets/imgs/Moda/Moda_9.avif" alt="Imagen 9">
+        </a>
 
-            <a class="gallery-item">
-                <img src="assets/imgs/Moda/Moda_9.avif" alt="Imagen 6">
-            </a>
-        </div>
+    </div>
 
-        <div class="image-modal" id="imageModal">
-            <span class="close-modal">&times;</span>
-            <img class="modal-image" id="modalImage" alt="imagen click" src="">
-        </div>
+    <!-- VISOR -->
+    <div class="image-modal" id="imageModal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-image" id="modalImage" src="" alt="Imagen ampliada">
+    </div>
 
-    </section>
-
-    <script>
-        const galleryItems = document.querySelectorAll('.gallery-item img');
-        const modal = document.getElementById('imageModal');
-        const modalImg = document.getElementById('modalImage');
-        const closeModal = document.querySelector('.close-modal');
-
-        /* SOLO DESKTOP */
-        galleryItems.forEach(img => {
-
-            img.addEventListener('click', () => {
-
-                if(window.innerWidth <= 768){
-                    return;
-                }
-
-                modal.classList.add('active');
-                modalImg.src = img.src;
-            });
-
-        });
-
-        /* CERRAR */
-        closeModal.addEventListener('click', () => {
-            modal.classList.remove('active');
-        });
-
-        /* CERRAR CLICK FUERA */
-        modal.addEventListener('click', (e) => {
-
-            if(e.target !== modalImg){
-                modal.classList.remove('active');
-            }
-
-        });
-    </script>
-
-
+</section>
     <!-- Controles del whatsapp -->
     <a href="https://wa.me/573227082993" target="_blank" class="whatsapp-float">
         <img src="assets/imgs/Redes/whatsapp_b.png" alt="WhatsApp">
@@ -357,7 +320,7 @@
 
     <!-- FoodHut js -->
     <script src="assets/js/foodhut.js"></script>
-
+<script src="assets/js/Moda.js"></script>
 </body>
 
 </html>

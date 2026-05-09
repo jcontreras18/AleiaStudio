@@ -34,67 +34,6 @@ document.querySelector('.whatsapp-button').addEventListener('click', function ()
   socialIconsContainer.classList.toggle('show');
 });
 
-// carrusel
-
-function openModal(imageIndex) {
-  const modal = document.getElementById("myModal");
-  const modalImage = document.getElementById("modalImage");
-  const modalText = document.getElementById("modalText");
-
-  // Configura la imagen y el texto según la imagen del carrusel que se haya clicado
-  switch (imageIndex) {
-    case 1:
-      modalImage.src = "imagen1.jpg";
-      modalText.innerText = "Descripción para la Imagen 1";
-      break;
-    case 2:
-      modalImage.src = "imagen2.jpg";
-      modalText.innerText = "Descripción para la Imagen 2";
-      break;
-    case 3:
-      modalImage.src = "imagen3.jpg";
-      modalText.innerText = "Descripción para la Imagen 3";
-      break;
-  }
-
-  modal.style.display = "block";
-}
-
-function closeModal() {
-  const modal = document.getElementById("myModal");
-  modal.style.display = "none";
-}
-
-function openModal(imageIndex) {
-  const modal = document.getElementById("myModal");
-  const modalImage = document.getElementById("modalImage");
-  const modalText = document.getElementById("modalText");
-
-  switch (imageIndex) {
-    case 1:
-      modalImage.src = "assets/imgs/Header2.jpeg";
-      modalText.innerText = "Descripción para la Imagen 1";
-      break;
-    case 2:
-      modalImage.src = "assets/imgs/Header1.jpeg";
-      modalText.innerText = "Descripción para la Imagen 2";
-      break;
-    case 3:
-      modalImage.src = "assets/imgs/Header3.jpeg";
-      modalText.innerText = "Descripción para la Imagen 3";
-      break;
-  }
-
-  modal.style.display = "block";
-}
-
-function closeModal() {
-  const modal = document.getElementById("myModal");
-  modal.style.display = "none";
-}
-
-
-
 
 document.addEventListener('DOMContentLoaded', function () {
   // Selecciona todos los elementos nav-item con dropdown
@@ -276,40 +215,3 @@ function cerrarModal() {
     modal.style.display = "none";
   }
 }
-
-// =====================
-// CARGAR MODAL + EVENTOS
-// =====================
-document.addEventListener("DOMContentLoaded", function () {
-
-  // Cargar el HTML del modal
-  fetch("modal.html")
-    .then(res => res.text())
-    .then(data => {
-      document.body.insertAdjacentHTML("beforeend", data);
-
-      const modal = document.getElementById("modalContacto");
-
-      // Cerrar con la X
-      document.querySelectorAll(".cerrar-modal").forEach(btn => {
-        btn.addEventListener("click", cerrarModal);
-      });
-
-      // Cerrar al hacer click afuera
-      modal.addEventListener("click", function (e) {
-        if (e.target === modal) {
-          cerrarModal();
-        }
-      });
-
-      // Cerrar con ESC
-      document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") {
-          cerrarModal();
-        }
-      });
-
-    })
-    .catch(error => console.error("Error cargando modal:", error));
-
-});

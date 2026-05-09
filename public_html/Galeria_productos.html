@@ -51,7 +51,7 @@
 
                                 <div class=" Ital col-md-6">
                                     <input type="email" class="form-control modern-input"
-                                           placeholder="Correo electrónico" required>
+                                        placeholder="Correo electrónico" required>
                                 </div>
 
                                 <div class="Ital col-md-6">
@@ -60,7 +60,7 @@
 
                                 <div class="Ital col-12">
                                     <textarea class="form-control modern-input textarea-modern" rows="5"
-                                              placeholder="Escribe tu mensaje" required></textarea>
+                                        placeholder="Escribe tu mensaje" required></textarea>
                                 </div>
 
                             </div>
@@ -88,7 +88,7 @@
 
 
     <!-- Navbar -->
-     <nav class="custom-navbar navbar navbar-dark fixed-top d-lg-none" data-spy="affix" data-offset-top="10">
+    <nav class="custom-navbar navbar navbar-dark fixed-top d-lg-none" data-spy="affix" data-offset-top="10">
         <div class="container">
 
             <!-- Icono izquierdo (visible en móvil) -->
@@ -109,9 +109,9 @@
                     <li class="nav-item nb">
                         <a class="nav-link text-hover lag" href="index.html">Inicio</a>
                     </li>
-                      <li class="nav-item">
-                    <a class="nav-link text-hover lag" href="Nosotros.html">Nosotros</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-hover lag" href="Nosotros.html">Nosotros</a>
+                    </li>
 
                     <li class="nav-item dropdown nb">
                         <a class="nav-link dropdown-toggle lag" href="#" data-toggle="dropdown">
@@ -206,7 +206,7 @@
                 <img src="assets/imgs/Producto/Producto_4.avif" alt="Imagen 4">
             </a>
 
-            <a  class="gallery-item">
+            <a class="gallery-item">
                 <img src="assets/imgs/Producto/Producto_5.avif" alt="Imagen 5">
             </a>
 
@@ -222,48 +222,12 @@
 
     </section>
 
-    <script>
-        const galleryItems = document.querySelectorAll('.gallery-item img');
-        const modal = document.getElementById('imageModal');
-        const modalImg = document.getElementById('modalImage');
-        const closeModal = document.querySelector('.close-modal');
-
-        /* SOLO DESKTOP */
-        galleryItems.forEach(img => {
-
-            img.addEventListener('click', () => {
-
-                if(window.innerWidth <= 768){
-                    return;
-                }
-
-                modal.classList.add('active');
-                modalImg.src = img.src;
-            });
-
-        });
-
-        /* CERRAR */
-        closeModal.addEventListener('click', () => {
-            modal.classList.remove('active');
-        });
-
-        /* CERRAR CLICK FUERA */
-        modal.addEventListener('click', (e) => {
-
-            if(e.target !== modalImg){
-                modal.classList.remove('active');
-            }
-
-        });
-    </script>
-
 
     <!-- Controles del whatsapp -->
     <a href="https://wa.me/573227082993" target="_blank" class="whatsapp-float">
         <img src="assets/imgs/Redes/whatsapp_b.png" alt="WhatsApp">
     </a>
-    
+
     <!-- page footer -->
     <section class="cta-footer">
         <div class="cta-container">
@@ -321,7 +285,7 @@
         </div>
     </section>
 
-<div class="bg-dark text-light text-center border-top wow fadeIn">
+    <div class="bg-dark text-light text-center border-top wow fadeIn">
         <p class="mb-0 py-3 text-muted small">&copy; Copyright
             <script>document.write(new Date().getFullYear())</script> Arktis Producción
             <a href=""></a>
@@ -345,7 +309,7 @@
 
     <!-- FoodHut js -->
     <script src="assets/js/foodhut.js"></script>
-
+    <script src="assets/js/Moda.js"></script>
 </body>
 
 </html>
