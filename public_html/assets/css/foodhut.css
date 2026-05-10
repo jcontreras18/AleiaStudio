@@ -14355,7 +14355,7 @@ margin:auto;
 /* TITULO */
 .contact-title{
 color:white;
-font-weight:600;
+font-size: 1.5em;
 letter-spacing:1px;
 }
 
@@ -16192,20 +16192,4 @@ transition: 0.3s;
   .about3-resaltado::after {
     height: 2px;
   }
-}
-
-#modalContacto {
-    display: none;
-}
-
-#modalContacto.active {
-    display: flex;
-}
-
-#imageViewer {
-    display: none;
-}
-
-#imageViewer.active {
-    display: flex;
 }
