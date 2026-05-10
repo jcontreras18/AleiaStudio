@@ -5285,10 +5285,6 @@ input[type="button"].btn-block {
   border-color: rgba(0, 0, 0, 0.1);
 }
 
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23343a40' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
 .navbar-light .navbar-text {
   color: #343a40;
 }
@@ -12016,9 +12012,6 @@ pre {
   }
 }
 
-
-
-
 .custom-navbar .collapse .navbar-nav,
 .custom-navbar .collapse .navbar-brand {
   width: 100%;
@@ -12088,7 +12081,7 @@ pre {
 .header {
   position: relative;
     width: 100%;
-    height: 100vh; /* Ocupa el 100% del alto de la pantalla */
+    height: 100vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -12113,10 +12106,7 @@ pre {
   transform: translate(-50%, -50%);
   border-radius: 3px;
   filter: blur(2px);
-  /* Desenfoque opcional */
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5) !important;
-  /* Sombra difusa para suavizar los bordes */
-
 }
 
 .content {
@@ -12131,16 +12121,11 @@ pre {
 .header .overlay {
   height: 100%;
   background: linear-gradient(to bottom,
-      /* Degradado de arriba hacia abajo */
       rgba(33, 37, 41, 0.32) 0%,
-      /* Color inicial con opacidad */
       rgba(33, 37, 41, 0) 70%,
-      /* Color con menos opacidad, hacia el final */
       rgba(33, 37, 41, 0.18) 100%
-      /* Color completamente transparente al final */
     );
   display: flex;
-  /* Utiliza solo la sintaxis estándar de flexbox */
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -12182,15 +12167,6 @@ pre {
   max-width: 1440px;
 }
 
-.has-img-bg {
-  /* width: 100%; Ajusta el ancho al 100% del viewport */
-  height: 90vh;
-  /* Ajusta la altura al 100% del viewport */
-  background: url(../imgs/blog-1.png) no-repeat center center;
-  background-size: 61% auto;
-  /* Ajusta el tamaño de la imagen al 50% del ancho del contenedor, altura automática para mantener la proporción */
-  position: relative;
-}
 
 .pad {
   padding-top: 50px;
@@ -12312,13 +12288,11 @@ pre {
   opacity: 1;
 }
 
-
 .video-container {
   width: 100%;
   max-width: 800px;
   position: relative;
   padding-top: 56.25%;
-  /* 16:9 Aspect Ratio */
 }
 
 video {
@@ -12333,7 +12307,6 @@ video {
 
 .text-hover:hover {
   color: #dfdff1 !important;
-  /* Color del texto al pasar el mouse */
   border-bottom: 1px solid #dfdff1;
 }
 
@@ -12341,36 +12314,31 @@ video {
 @media (max-width: 600px) {
   .header {
     height: 50vh;
-    /* Ajusta la altura en pantallas más pequeñas si es necesario */
   }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
   .header {
     height: 75vh;
-    /* Ajusta la altura en pantallas medianas si es necesario */
   }
 }
 
 .carousel-item img {
   width: 100%;
-  height: auto; /* Ajusta la altura automáticamente */
-  max-height: 60vh; /* Limita la altura máxima */
-  object-fit: contain; /* Cambia a "contain" para mantener la forma */
+  height: auto;
+  max-height: 60vh;
+  object-fit: contain;
 }
 
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
   .carousel-item img {
-      max-height: 50vh; /* Reduce la altura máxima en dispositivos móviles */
+      max-height: 50vh;
   }
 }
-/* Asegura que el contenedor esté centrado */
 .carousel-container1 {
   width: 900px;
-  /* Ajusta el tamaño máximo del carrusel */
   margin: 0 auto;
-  /* Centra el contenedor horizontalmente */
 }
 
 .imagen-combinada {
@@ -12383,7 +12351,6 @@ video {
 .imagen-combinada img {
   display: block;
   transition: filter 0.3s ease;
-  /* Animación suave */
 }
 
 .imagen-combinada::after {
@@ -12394,24 +12361,19 @@ video {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
-  /* Negro con 30% de opacidad */
   opacity: 0;
-  /* Inicialmente invisible */
   transition: opacity 0.3s ease;
-  /* Animación suave */
   pointer-events: none;
-  /* No bloquear interacción con la imagen */
 }
 
 .imagen-combinada:hover img {
   filter: brightness(0.6);
-  /* Oscurecer la imagen */
 }
 
 .imagen-combinada {
-  position: relative;      /* Necesario para posicionar ::after */
-  display: inline-block;   /* Para que el tamaño se ajuste a la imagen */
-  cursor: pointer;         /* Cambia el cursor a manito siempre */
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
 /* Pseudo-elemento que aparecerá al pasar el mouse */
@@ -12530,7 +12492,6 @@ video {
 }
 
 
-
 /* Contenedor de los logos */
 .logo-container {
   display: flex;
@@ -12606,17 +12567,13 @@ video {
 /* Efecto al pasar el ratón sobre los íconos */
 .social-link:hover .social-icon {
   opacity: 1;
-  /* Hace el ícono completamente visible al pasar el ratón */
   transform: scale(1.1);
-  /* Escalar ligeramente el ícono al pasar el ratón */
 }
 
 /* Efecto al hacer clic en los íconos */
 .social-link:active .social-icon {
   transform: scale(1.2);
-  /* Agrandar el ícono al hacer clic */
   opacity: 1;
-  /* Mantener la opacidad completamente visible al hacer clic */
 }
 
 
@@ -12717,14 +12674,10 @@ video {
     }
 
 }
-
-
-/* HOVER ELEGANTE */
 .gallery-item:hover img {
   transform: scale(1.05);
 }
 
-/* RESPONSIVE */
 @media (max-width: 1024px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -12754,42 +12707,6 @@ video {
 }
 
 
-/* Estilos para el modal de redes sociales */
-.social-modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
-}
-
-.social-modal-content {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-  position: relative;
-  width: 300px;
-}
-
-.social-modal-content img {
-  width: 40px;
-  height: 40px;
-  margin: 0 10px;
-}
-
-.social-modal-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
 .fot {
   background-color: #353a40 !important;
 }
@@ -12815,8 +12732,6 @@ video {
   color: #fff;
   text-decoration: none;
 }
-
-
 
 .social-icon:hover img {
   transform: scale(1.1);
@@ -12856,11 +12771,9 @@ video {
   0% {
     transform: scale(1);
   }
-
   50% {
     transform: scale(1.1);
   }
-
   100% {
     transform: scale(1);
   }
@@ -12882,7 +12795,6 @@ video {
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   animation: onda 1.7s infinite;
-  /* Añade la animación */
 }
 
 .whatsapp-button:hover {
@@ -12927,14 +12839,10 @@ video {
   transform: scale(1.1);
 }
 
-/* Estilos cuando el contenedor está desplegado */
 .social-icons-container.show {
   max-height: 500px;
-  /* Ajusta este valor según la cantidad de íconos */
   opacity: 1;
 }
-
-/* Media Queries para hacer el diseño responsive */
 
 /* Pantallas de hasta 768px (tablets en vertical y dispositivos móviles) */
 @media (max-width: 768px) {
@@ -12942,27 +12850,21 @@ video {
     bottom: 20px;
     right: 20px;
   }
-
   .whatsapp-button {
     padding: 10px;
   }
-
   .whatsapp-icon {
     font-size: 24px;
   }
-
   .social-icons-container {
     bottom: 40px;
     right: 5px;
   }
-
   .social-icon {
     font-size: 24px;
   }
-
   .social-link {
     margin-bottom: 10px;
-    /* Reducir espacio entre íconos */
   }
 }
 
@@ -12972,27 +12874,21 @@ video {
     bottom: 10px;
     right: -7px;
   }
-
   .whatsapp-button {
     padding: 8px;
   }
-
   .whatsapp-icon {
     font-size: 20px;
   }
-
   .social-icons-container {
     bottom: 30px;
     right: 3px;
   }
-
   .social-icon {
     font-size: 20px;
   }
-
   .social-link {
     margin-bottom: 8px;
-    /* Reducir espacio entre íconos */
   }
 }
 
@@ -13014,10 +12910,8 @@ video {
   transform: scale(1.1);
 }
 
-/* Estilos para el modal */
 .modal1 {
   display: none;
-  /* Oculto por defecto */
   position: fixed;
   z-index: 1;
   left: 0;
@@ -13026,7 +12920,6 @@ video {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8);
-  /* Fondo oscuro semi-transparente */
 }
 
 .modal-content1 {
@@ -13080,14 +12973,11 @@ video {
   display: none;
   position: absolute;
   top: 150%;
-  /* Espacio hacia abajo */
   left: -10px;
-  /* Desplazar a la izquierda */
   margin: 0;
   padding: 0;
   border-radius: 1.1rem;
   background-color: #9e9fa9c7;
-  /* Fondo gris oscuro */
 }
 
 /* Mostrar el dropdown cuando se haga clic en el elemento */
@@ -13103,16 +12993,12 @@ video {
   clear: both;
   font-weight: 500;
   color: #ffffff;
-  /* Texto blanco */
   text-align: inherit;
   white-space: nowrap;
-  /*background-color: #343a4021;  Fondo semi-transparente */
   border: 0;
   cursor: pointer;
   position: relative;
-  /* Necesario para el efecto de la barra */
   overflow: hidden;
-  /* Para asegurar que la barra no se desborde */
   transition: padding-left 0.3s ease;
   /* Transición para el efecto de desplazamiento */
 }
@@ -13300,13 +13186,11 @@ video {
 .services {
   width: 100%;
   box-sizing: border-box;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 20px;
-
-  padding: 0; /* ❌ elimina el desplazamiento vertical */
+  padding: 0;
 }
 
 .service {
@@ -13334,39 +13218,30 @@ p {
 .service:hover {
   background-color: rgba(255, 255, 255, 0.2);
   transform: scale(1.05);
-  /* Efecto de escala en hover */
 }
 
 .service h2 {
   margin-bottom: 10px;
   font-size: 1.2em;
   font-weight:500;
-  /* Tamaño del título */
 }
 
 .service p {
   font-size: 0.9em;
-  /* Tamaño del texto descriptivo */
 }
 
 .service img {
   width: 80%;
-  /* Ajusta el ancho de la imagen al 80% del contenedor */
   max-width: 150px;
-  /* Establece un ancho máximo para limitar el tamaño en pantallas grandes */
   height: auto;
-  /* Mantiene la proporción de la imagen */
   margin-bottom: 10px;
-  /* Añade un espacio debajo de la imagen */
 }
 
 /* Media queries para pantallas medianas */
 @media (max-width: 992px) {
   .service {
     flex: 1 1 45%;
-    /* Ajuste para pantallas medianas */
     max-width: none;
-    /* Permite que el elemento use el ancho disponible */
   }
 }
 
@@ -13374,19 +13249,13 @@ p {
 @media (max-width: 600px) {
   .services {
     flex-direction: column;
-    /* Cambia la dirección de los elementos a columna */
     align-items: center;
-    /* Centra los elementos en el eje transversal */
   }
-
   .service {
     width: 80%;
-    /* Ocupan el 80% del ancho en pantallas pequeñas */
   }
-
   .service img {
     max-width: 120px;
-    /* Reduce el tamaño máximo de la imagen en pantallas pequeñas */
   }
 }
 
@@ -13402,7 +13271,7 @@ p {
   width: auto;
   height: auto;
   z-index: -1;
-  object-fit: cover; /* Hace que el video cubra el área sin deformarse */
+  object-fit: cover;
 }
 
 .overlay {
@@ -13411,18 +13280,18 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1; /* Coloca el overlay encima del video */
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
   .header {
-      height: 50vh; /* Ajusta la altura para dispositivos móviles */
+      height: 50vh;
   }
 
   #background-video {
       width: 100%;
       height: 100%;
-      object-fit: cover; /* Mantiene el video cubriendo todo el espacio */
+      object-fit: cover;
   }
 }
 
@@ -13599,7 +13468,7 @@ p {
 }
 
 .cards {
-  grid-template-columns: repeat(3, 1fr); /* 👈 SOLO 3 */
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   padding: 2rem;
   list-style: none;
@@ -13610,22 +13479,18 @@ p {
 }
 
 /* Media queries para mejorar la responsividad */
-
 @media (max-width: 768px) {
   .card__header {
     gap: 0.5em;
     padding: 1em;
   }
-
   .card__thumb {
     width: 40px;
     height: 40px;
   }
-
   .card__title {
     font-size: 1em;
   }
-
   .card__description {
     font-size: 0.9em;
     padding: 0 1em 1em;
@@ -13638,16 +13503,14 @@ p {
     padding: 1rem;
   }
 
-
 /*cards movil*/
 @media (max-width: 480px) {
   .cards {
-    grid-template-columns: 1fr; /* 👈 1 imagen */
+    grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1rem;
   }
 }
-
 
   .card__header {
     flex-direction: column;
@@ -13665,11 +13528,10 @@ p {
 }
 
 .card__overlay {
-  background-color: rgba(0, 0, 0, 0.6); /* Ejemplo de superposición */
+  background-color: rgba(0, 0, 0, 0.6); /
   padding: 20px;
   color: #fff;
 }
-
 
 
 /* Contenedor principal */
@@ -13795,15 +13657,15 @@ ul li {
 
 /* Modal estilo */
 .modal {
-  display: none; /* Oculto por defecto */
+  display: none;
   position: fixed;
   z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente */
-  overflow: auto; /* Permitir desplazamiento si es necesario */
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
 }
 
 .modal-content {
@@ -13813,7 +13675,7 @@ ul li {
   max-height: 90%;
   width: auto;
   height: auto;
-  object-fit: contain; /* Ajusta la imagen dentro del espacio sin deformarse */
+  object-fit: contain;
 }
 
 .close {
@@ -13876,8 +13738,6 @@ border-right: 5px solid #f5efef;
 .hover-button:hover::after {
   width: 100%;
   height: 100%;
-  /* Puedes descomentar y ajustar el color si lo necesitas */
-  /* border-color: white; */
 }
 
 .data-container {
@@ -13888,106 +13748,31 @@ border-right: 5px solid #f5efef;
 
 /* Estilos para la imagen */
 .custom-image {
-  width: 100%; /* Hace que la imagen sea responsive */
-  max-width: 500px; /* Limita el ancho máximo a 500px */
-  height: auto; /* Mantiene la proporción de la imagen */
-  display: block; /* Asegura que la imagen no tenga espacio extra debajo */
-  margin: 0 auto; /* Centra la imagen horizontalmente */
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Margen superior solo en vista responsive */
 @media (max-width: 992px) {
   .responsive-margin {
-      margin-top: 3rem; /* Ajusta el valor según el espacio que desees */
+      margin-top: 3rem;
   }
 }
 
 .imagen-completa {
     width: 100%;
-    height: 100vh; /* ocupa toda la altura de la pantalla */
+    height: 100vh;
     overflow: hidden;
 }
 
 .imagen-completa img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* se expande sin deformarse */
+    object-fit: cover;
     display: block;
-}
-
-/* Contenedor principal */
-.hero-video {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
-}
-
-/* Video de fondo */
-.hero-video__media {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* El video siempre cubre el contenedor */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .6), rgb(0 0 0 / 24%));
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
-/* Overlay oscuro/transparente */
-.hero-video__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Ajusta la opacidad */
-    z-index: 2;
-}
-
-/* Contenido encima del video */
-.hero-video__content {
-    position: relative;
-    z-index: 3;
-    max-width: 800px;
-    padding: 0 20px;
-}
-
-/* Botón */
-.hero-video__btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  padding: 14px 34px;
-  background: linear-gradient(135deg, #ff6b6b, #ff3b3b);
-  color: #fff !important;        /* Texto blanco */
-  text-decoration: none;
-  border-radius: 50px;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  transition: 
-    background 0.3s ease,
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
-  box-shadow: 0 8px 20px rgba(255, 107, 107, 0.35);
-}
-
-/* Hover */
-.hero-video__btn:hover {
-  background: linear-gradient(135deg, #ff3b3b, #ff1f1f);
-  color: #fff !important;        /* Texto blanco también en hover */
-  transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(255, 59, 59, 0.45);
 }
 
 /* SECCIÓN FAQ */
@@ -14162,25 +13947,20 @@ border-right: 5px solid #f5efef;
 
 }
 
-
-
 /* MOBILE */
 @media (max-width: 768px) {
   .faq-title {
   font-size: 18px;
   }
-
   .faq-question { 
     padding: 16px;
   }
-
 }
-
 
 .hero-slider {
   position: relative;
-  height: 80vh;       /* ESTO ES CLAVE */
-  margin-bottom: 80px; /* espacio entre carruseles */
+  height: 80vh;
+  margin-bottom: 80px;
 }
 
 .slide {
@@ -14268,7 +14048,7 @@ border-right: 5px solid #f5efef;
 
 /* TARJETAS (todas iguales) */
 .card {
-  flex: 1; /* todas ocupan lo mismo */
+  flex: 1;
   padding: 20px;
   color: white;
 
@@ -14283,7 +14063,7 @@ border-right: 5px solid #f5efef;
   /* estilo vidrio */
   background: rgba(255,255,255,0.15);
   border: 1px solid rgba(255,255,255,0.35);
-  cursor: default; /* ya no es interactivo */
+  cursor: default;
 }
 
 /* quitar completamente efectos */
@@ -14294,7 +14074,7 @@ border-right: 5px solid #f5efef;
 }
 
 .card.active {
-  flex: 1; /* igual que todas */
+  flex: 1;
   background: rgba(255,255,255,0.15);
 }
 
@@ -14312,20 +14092,17 @@ border-right: 5px solid #f5efef;
 /* ===================== */
 
 @media (max-width: 768px) {
-
   .services-hero {
     height: auto;
     overflow: visible;
   }
-
   .cards {
     flex-direction: column;
     gap: 15px;
   }
-
   .card {
     width: 100%;
-    min-height: 160px; /* 🔥 mismo tamaño */
+    min-height: 160px;
   }
 }
 
@@ -14523,9 +14300,9 @@ margin-bottom:40px;
 /* GRID DE REELS */
 .reels-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* ancho mínimo para responsivo */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 35px;
-  max-width: 1300px; /* más espacio para cards anchos */
+  max-width: 1300px;
   margin: auto;
   justify-items: center;
   align-items: start;
@@ -14993,7 +14770,6 @@ transform: translateY(-3px);
   background: transparent;
 }
 
-/* 🔥 elimina fondos blancos internos */
 .modal-content *{
   background-color: transparent;
 }
@@ -15005,18 +14781,14 @@ transform: translateY(-3px);
   position: absolute;
   top: 6px;
   right: 6px;
-
   width: 30px;
   height: 30px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-size: 18px;
   color: #fff;
   background: rgba(0,0,0,0.6);
-
   border-radius: 50%;
   cursor: pointer;
   z-index: 50;
@@ -15032,17 +14804,14 @@ transform: translateY(-3px);
 /* RESPONSIVE */
 /* ===================== */
 @media (max-width:768px){
-
   .modal{
     padding: 4px;
   }
-
   .modal-content{
     max-width: 95%;
     max-height: 88vh;
     border-radius: 10px;
   }
-
   .cerrar{
     width: 28px;
     height: 28px;
@@ -15208,10 +14977,29 @@ transform: translateY(-3px);
   z-index:1;
 }
 
-.mk-hero-content{
-  position:relative;
-  z-index:2;
-  max-width:700px;
+/* CONTENIDO CENTRADO */
+.mk-hero-contenido{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+}
+
+.mk-hero-titulo{
+    line-height: 0.95;
+    margin: 0;
+}
+
+@media (max-width: 768px){
+    .mk-hero-titulo{
+        font-size: 38px;
+        line-height: 1.1;
+    }
 }
 
 .mk-hero h1{
@@ -15239,7 +15027,7 @@ transform: translateY(-3px);
 }
 
 /* ============================= */
-/* SERVICES */
+/* MARKETING DIGITAL - SERVICIOS */
 /* ============================= */
 .mk-services{
   padding:100px 8%;
@@ -15316,13 +15104,8 @@ transform: translateY(-3px);
 }
 
 /* ============================= */
-/* PROYECTOS */
+/* MARKETING DIGITAL - SNUESTROS PROYECTOS */
 /* ============================= */
-body{
-    background:#000;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .projects{
     padding:80px 10%;
 }
@@ -15350,11 +15133,9 @@ body{
 }
 
 @media(max-width:900px){
-
     .projects-container{
         grid-template-columns:1fr;
     }
-
 }
 .card-content{
     padding:30px;
@@ -15404,7 +15185,6 @@ body{
   position: relative;
   margin-top: 40px;
 }
-
 
 .overlay {
   width: 100%;
@@ -15584,7 +15364,7 @@ body{
 .proyecto-info{
     max-width:1400px;
     margin:auto;
-    padding:70px 40px;
+    padding:15px 40px;
     color:#fff;
 }
 
@@ -15859,6 +15639,20 @@ body{
     max-width: 420px;
 }
 
+@media (max-width: 768px){
+
+    .texto-redes-sociales{
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
 /* TITULO */
 .texto-redes-sociales h2{
     margin-bottom: 18px;
@@ -15890,6 +15684,7 @@ body{
     color: rgba(255,255,255,0.95);
 }
 
+
 /* Proyectos - información Koreguaje */
 .proyecto-video{
     display: grid;
@@ -15903,9 +15698,9 @@ body{
 .proyecto-info{
     max-width: 1400px;
     margin: auto;
-    padding: 70px 40px;
+    padding: 40px 40px;
     color: #fff;
-    text-align: center; /* NUEVO */
+    text-align: center;
 }
 
 .proyecto-info h2{
@@ -15945,7 +15740,7 @@ body{
 @media (max-width: 768px){
     .proyecto-video{
         grid-template-columns: 1fr;
-        padding: 40px 20px;
+        padding: 20px;
     }
     .proyecto-player{
         height: 300px;
@@ -16086,9 +15881,9 @@ transition: 0.3s;
 /* HERO */
 .about3-gallery {
   display: flex;
-  justify-content: center;   /* centra horizontal */
-  align-items: center;       /* centra vertical */
-  min-height: 80vh;         /* ocupa toda la pantalla en desktop */
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
 }
 
 /* Contenedor */
@@ -16121,9 +15916,8 @@ transition: 0.3s;
   background: #e5e5e5;
 }
 
-/* 🔥 IMAGEN MENOS SEPARADA */
 .about3-img-banner {
-  margin-top: -10px;   /* elimina el espacio grande */
+  margin-top: -10px;
 }
 
 .about3-img-banner-img {
@@ -16135,7 +15929,7 @@ transition: 0.3s;
 /* TITULO + TEXTO */
 .about3-titulo-seccion {
   max-width: 900px;
-  margin: 20px auto 0 auto; /* menos separación arriba */
+  margin: 20px auto 0 auto;
   padding: 0 20px;
 }
 
