@@ -36,14 +36,14 @@ if (isset($_POST['nombre'], $_POST['correo'],$_POST['mensaje'])) {
             $mail->isSMTP();
             $mail->Host       = 'smtp.hostinger.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'contact@spokenstores.com';
-            $mail->Password   = 'Lmti2026@';
+            $mail->Username   = '';
+            $mail->Password   = '';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = 587;
 
-            $mail->setFrom('contact@spokenstores.com', 'Equipo Arktis');
+            $mail->setFrom('', 'Equipo Arktis');
 
-            $mail->addAddress('edwin.ocampov@gmail.com');
+            $mail->addAddress('');
             $mail->addReplyTo($correo, $nombre);
 
             $mail->Subject = 'Nuevo mensaje desde el formulario';
