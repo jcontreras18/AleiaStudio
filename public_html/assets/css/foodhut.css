@@ -14216,6 +14216,10 @@ margin-bottom:40px;
   text-align:left;
 }
 
+.faq-item.active .faq-answer{
+  text-align:center;
+}
+
 }
 
 .contactanos-contenedor{
