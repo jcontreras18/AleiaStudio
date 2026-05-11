@@ -30,7 +30,7 @@
                     <!-- IMAGEN -->
                     <div class="col-lg-6">
                         <div class="contactanos-imagen">
-                            <img src="assets/imgs/imagen-contactanos.png" alt="Contáctanos">
+                            <img src="assets/imgs/imagencontactanos.png" alt="Contáctanos">
                         </div>
                     </div>
 
@@ -41,26 +41,45 @@
                             <h2 class="contact-title lag">CONTÁCTANOS</h2>
                         </div>
 
-                        <form class="contact-form">
+                        <!-- FORMULARIO -->
+                        <form id="formContacto" class="contact-form" action="forms/contact.php" method="POST">
 
                             <div class="row g-3">
 
-                                <div class=" Ital col-md-6">
-                                    <input type="text" class="form-control modern-input" placeholder="Nombre" required>
+                                <div class="col-md-6">
+                                    <input 
+                                        type="text" 
+                                        name="nombre"
+                                        placeholder="Nombre" 
+                                        class="Ital form-control modern-input" 
+                                        placeholder="Nombre" 
+                                        required>
                                 </div>
 
-                                <div class=" Ital col-md-6">
-                                    <input type="email" class="form-control modern-input"
-                                           placeholder="Correo electrónico" required>
+                                <div class="col-md-6">
+                                    <input 
+                                        type="email" 
+                                        name="correo"
+                                        class="Ital form-control modern-input"
+                                        placeholder="Correo electrónico" 
+                                        required>
                                 </div>
 
-                                <div class="Ital col-md-6">
-                                    <input type="tel" class="form-control modern-input" placeholder="Teléfono">
+                                <div class="col-md-6">
+                                    <input 
+                                        type="tel" 
+                                        name="telefono"
+                                        class="Ital form-control modern-input" 
+                                        placeholder="Teléfono">
                                 </div>
 
-                                <div class="Ital col-12">
-                                    <textarea class="form-control modern-input textarea-modern" rows="5"
-                                              placeholder="Escribe tu mensaje" required></textarea>
+                                <div class="col-12">
+                                    <textarea 
+                                        name="mensaje"
+                                        class="Ital form-control modern-input textarea-modern" 
+                                        rows="5"
+                                        placeholder="Escribe tu mensaje" 
+                                        required></textarea>
                                 </div>
 
                             </div>
@@ -81,8 +100,9 @@
         </section>
 
     </div>
-
 </div>
+
+
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
 
@@ -386,85 +406,6 @@
             </div>
         </div>
     </section>
-
-
-    <!--  <section id="faq" class="faq-section">-->
-
-<!--    <div class="faq-container">-->
-
-<!--      <header class="faq-header">-->
-<!--        <h2 class="faq-title lag">Preguntas Frecuentes</h2>-->
-<!--        <p class="faq-subtitle Ital">Resolvemos tus dudas antes de iniciar tu proyecto</p>-->
-<!--      </header>-->
-
-<!--      <div class="faq" role="accordion">-->
-
-<!--        &lt;!&ndash; ITEM 1 &ndash;&gt;-->
-<!--        <article class="faq-item active">-->
-<!--          <button class="faq-question" aria-expanded="true">-->
-<!--            <span class="icon">?</span>-->
-<!--            <span class="text lag">¿En qué se diferencia Arktis de otras productoras audiovisuales?</span>-->
-<!--            <span class="arrow">⌄</span>-->
-<!--          </button>-->
-<!--          <div class="faq-answer">-->
-<!--            <p class="Ital">-->
-<!--              Concebimos el audiovisual como una respuesta artística a necesidades empresariales y personales.-->
-<!--              El cliente es nuestra principal fuente de inspiración y motor de cada proyecto.-->
-<!--            </p>-->
-<!--          </div>-->
-<!--        </article>-->
-
-<!--        &lt;!&ndash; ITEM 2 &ndash;&gt;-->
-<!--        <article class="faq-item">-->
-<!--          <button class="faq-question" aria-expanded="false">-->
-<!--            <span class="icon">?</span>-->
-<!--            <span class="text lag">¿Qué sucede si mi presupuesto no se ajusta?</span>-->
-<!--            <span class="arrow">⌄</span>-->
-<!--          </button>-->
-<!--          <div class="faq-answer">-->
-<!--            <p class="Ital">-->
-<!--              Ofrecemos un espacio personalizado para entender tu proyecto y encontrar un acuerdo de trabajo-->
-<!--              que se adapte a tus posibilidades.-->
-<!--            </p>-->
-<!--          </div>-->
-<!--        </article>-->
-
-<!--        &lt;!&ndash; ITEM 3 &ndash;&gt;-->
-<!--        <article class="faq-item">-->
-<!--          <button class="faq-question" aria-expanded="false">-->
-<!--            <span class="icon">?</span>-->
-<!--            <span class="text lag">¿Qué tipo de producciones realizan?</span>-->
-<!--            <span class="arrow">⌄</span>-->
-<!--          </button>-->
-<!--          <div class="faq-answer">-->
-<!--            <p>-->
-<!--              Realizamos producción para redes sociales, eventos, comerciales, documentales-->
-<!--              y productos audiovisuales para cine.-->
-<!--            </p>-->
-<!--          </div>-->
-<!--        </article>-->
-
-<!--        &lt;!&ndash; ITEM 4 &ndash;&gt;-->
-<!--        <article class="faq-item">-->
-<!--          <button class="faq-question" aria-expanded="false">-->
-<!--            <span class="icon">?</span>-->
-<!--            <span class="text lag">¿Cómo puedo comunicarme con ustedes?</span>-->
-<!--            <span class="arrow">⌄</span>-->
-<!--          </button>-->
-<!--          <div class="faq-answer">-->
-<!--            <p class="Ital">-->
-<!--              Puedes escribirnos por redes sociales o WhatsApp al-->
-<!--              <strong>+57 320 373 4871</strong>.-->
-<!--            </p>-->
-<!--          </div>-->
-<!--        </article>-->
-
-<!--      </div>-->
-
-<!--    </div>-->
-
-<!--  </section>-->
-
 
 
   <!-- page footer -->

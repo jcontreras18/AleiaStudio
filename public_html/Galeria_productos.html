@@ -41,26 +41,45 @@
                             <h2 class="contact-title lag">CONTÁCTANOS</h2>
                         </div>
 
-                        <form class="contact-form">
+                        <!-- FORMULARIO -->
+                        <form id="formContacto" class="contact-form" action="forms/contact.php" method="POST">
 
                             <div class="row g-3">
 
-                                <div class=" Ital col-md-6">
-                                    <input type="text" class="form-control modern-input" placeholder="Nombre" required>
+                                <div class="col-md-6">
+                                    <input 
+                                        type="text" 
+                                        name="nombre"
+                                        placeholder="Nombre" 
+                                        class="Ital form-control modern-input" 
+                                        placeholder="Nombre" 
+                                        required>
                                 </div>
 
-                                <div class=" Ital col-md-6">
-                                    <input type="email" class="form-control modern-input"
-                                        placeholder="Correo electrónico" required>
+                                <div class="col-md-6">
+                                    <input 
+                                        type="email" 
+                                        name="correo"
+                                        class="Ital form-control modern-input"
+                                        placeholder="Correo electrónico" 
+                                        required>
                                 </div>
 
-                                <div class="Ital col-md-6">
-                                    <input type="tel" class="form-control modern-input" placeholder="Teléfono">
+                                <div class="col-md-6">
+                                    <input 
+                                        type="tel" 
+                                        name="telefono"
+                                        class="Ital form-control modern-input" 
+                                        placeholder="Teléfono">
                                 </div>
 
-                                <div class="Ital col-12">
-                                    <textarea class="form-control modern-input textarea-modern" rows="5"
-                                        placeholder="Escribe tu mensaje" required></textarea>
+                                <div class="col-12">
+                                    <textarea 
+                                        name="mensaje"
+                                        class="Ital form-control modern-input textarea-modern" 
+                                        rows="5"
+                                        placeholder="Escribe tu mensaje" 
+                                        required></textarea>
                                 </div>
 
                             </div>
@@ -81,8 +100,8 @@
         </section>
 
     </div>
-
 </div>
+
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" style="background-color: #030303;">
 
