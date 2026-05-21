@@ -15913,6 +15913,7 @@ transition: 0.3s;
 
 .about3-img-banner {
   margin-top: -10px;
+  margin-top: -5px;
 }
 
 .about3-img-banner-img {
@@ -15924,12 +15925,12 @@ transition: 0.3s;
 /* TITULO + TEXTO */
 .about3-titulo-seccion {
   max-width: 900px;
-  margin: 20px auto 0 auto;
+  margin: 70px auto 0 auto;
   padding: 0 20px;
 }
 
 .about3-titulo-seccion h1 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .about3-descripcion {
