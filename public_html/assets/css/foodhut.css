@@ -15211,7 +15211,7 @@ transform: translateY(-3px);
 }
 
 .content p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -15242,7 +15242,7 @@ transform: translateY(-3px);
   }
 }
 .content h2 {
-font-size: 24px;
+font-size: 26px;
 }
 
 .btn-custom {
@@ -15876,9 +15876,11 @@ transition: 0.3s;
 /* HERO */
 .about3-gallery {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+    min-height: 80;
+    padding-top: 23vh;
+    padding-bottom: 30px;
 }
 
 /* Contenedor */
