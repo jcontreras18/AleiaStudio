@@ -15378,6 +15378,7 @@ body{
     .contenido-grid{
         grid-template-columns:1fr;
         gap: 40px;
+        text-size: 14px;
         text-align: left;
     }
     .contenido-grid > div:first-child,
