@@ -14381,7 +14381,7 @@ transform: translateY(-3px);
 /* TÍTULO */
 .titulo{
   color:#fff;
-  font-size:clamp(26px, 4vw, 42px); /* evita media queries */
+  font-size:clamp(26px, 4vw, 48px); /* evita media queries */
   margin-bottom:50px;
 }
 
@@ -15066,7 +15066,6 @@ transform: translateY(-3px);
 
 .title{
     text-align:center;
-    color:white;
     margin-bottom:60px;
 }
 
@@ -15650,7 +15649,6 @@ body{
     max-width: 1400px;
     margin: auto;
     padding: 21px;
-    color: #fff;
     text-align: center;
 }
 
